@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+/* Layout (global rules for all sizes) */
+
+body
+{
+    margin:0;
+    padding:0;
+}
+
+header a.logo
+{
+    display:block;
+    position:absolute;
+    background-position: 0px 0px;
+    background-repeat:no-repeat;
+}
+
+nav {right:30px;display:block;position:absolute;}
+
+/*.page_content{padding-left:30px;padding-right:30px;}*/
+.pageWrapper {padding-left:30px;padding-right:30px;}
+
+/* Layout Large Screens (default for older browsers) */
+.headerSponsor{height:455px;background: url(../images/sponsors/math8_header.jpg) no-repeat right bottom !important;}
+header{height:545px;background: url(../images/banner_lg.jpg) no-repeat right bottom;}
+header a.logo{width:701px;height: 125px;top:45px;left:30px;background-image: url(../images/National_Math_Bee_Logo_lg.png);}
+
+
+
+nav {top:160px;}
+nav a {margin: 12px 0px 10px 20px;}
+nav a:hover {color:#6c6d6f;border-bottom:4px solid #0770b0;}
+nav a.selected, nav a.selected:hover{border-bottom:4px solid #0770b0;}
+
+.social {position:absolute;top:15px;right:30px;}
+.social_contact{position:static;}
+
+article{padding-top:30px;}
+section{padding-top:30px;}
+.welcome{padding-top:60px;}
+.welcome_SignIn{margin-top:80px;}
+
+.promo_container {padding: 10px 10px 20px 10px;margin: 40px 15px 30px 15px;border:1px solid #e1e1e1;}
+.promo_container .promo{width:40%;float:left;background-position: 0px 8px;}
+.promo_container .promo .content {padding: 15px 30px 0px 70px;}
+
+.system_list_1{width:55%;float:left;}
+.system_list_2{width:45%;float:left;}
+.system_list .content {padding-right:15px;}
+.system_list_2 .content{text-align:center;}
+.system_list_2 .batteruplogo {margin-top:-60px;}
+.system_list ul li{font-size:1.1em;line-height:1.6em;margin-bottom:10px;}
+.system_list ul{list-style: url(../images/bullet_blue.png);}
+
+.system_value .content ul {list-style-type:none;margin-top:30px;}
+.system_value .content ul li {font-size:1.1em;line-height:1.5em;margin-bottom:15px;height:40px;padding-left:70px;padding-top:10px;}
+.system_value .value_rehospitalization{background:url(../images/icon_hospital.png) no-repeat center left;}
+.system_value .value_emergency{background:url(../images/icon_ambulance.png) no-repeat center left;}
+.system_value .value_quality{background:url(../images/icon_heart.png) no-repeat center left;}
+.system_value .value_geographic{background:url(../images/icon_location.png) no-repeat center left;}
+.system_value .value_communication{background:url(../images/icon_communication.png) no-repeat center left;}
+.system_value .value_realtime{background:url(../images/icon_realtime.png) no-repeat center left;}
+.system_value h1, .system_value p {text-align:center;}
+.system_value p{color:#007439;}
+
+.system_centered .patient_centered{width:50%;float:left;}
+.system_centered .clinician_centered{width:50%;float:left;}
+.system_centered ul {padding:0px 30px 1px 30px;list-style:none;}
+.system_centered .patient_centered ul{border-right:1px solid #e1e1e1;}
+.system_centered ul li{font-size:1.1em;line-height:1.5em;margin-bottom:15px;}
+.system_centered .content{}
+.system_centered h1{margin-bottom:40px;text-align:center;}
+.system_centered h2 {text-align:center;margin-top:15px;}
+.system_centered .content{padding-top:20px;margin: 0px 0px 0px 0px;border:1px solid #e1e1e1;}
+ 
+.spotlight{position:absolute;top:240px;left:30px;width:490px;height:330px;}
+.spotlight_slider{position:absolute;top:240px;left:30px;width:490px;height:325px;background-color:#fff;padding-top:5px;}
+
+.spotlight_signin{background: #fff}
+.spotlight_blue{background: #fff url(../images/National_Math_Bee_Girls.jpg) no-repeat 5px 5px;}
+.spotlight_kids{background: #fff url(../images/National_Math_Bee_Kids.jpg) no-repeat 5px 5px;}
+.spotlight_sponsor{background: #fff url(../images/sponsors/Sponsor_Kids.jpg) no-repeat 5px 5px;}
+.spotlight_stadium{background: #fff url(../images/BatterUpStadium.jpg) no-repeat 5px 5px;}
+.spotlight_trophies{background: #fff url(../images/National_Math_Bee-Buzz.jpg) no-repeat 5px 5px;}
+
+.spotlight_product{position:absolute;top:280px;left:30px;}
+.spotlight_contact{background: #fff url(../images/National_Math_Bee_Team.jpg) no-repeat 5px 5px;}
+.spotlight_news{background:#fff;padding:5px;position:absolute;top:240px;left:30px;width:480px;height:320px;}
+
+.spotlight_phone{position:absolute;top:550px;right:30px;}
+.spotlight_phone h3{color:#a1a1a1;}
+
+.bio {padding-top:80px;}
+.bioImg{position:absolute;top:240px;left:30px;width:256px;height:320px;border:5px solid #fff;}
+.biotitle{position:absolute;top:590px;left:30px;}
+.bio h3{margin-top:10px;}
+
+.team .team_member {width:20%;float:left;}
+.team .team_intern {width:25%;float:left;}
+
+.product_installation .content
+{
+    padding:20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-image:url(../images/background.gif);
+    border:1px solid #e1e1e1;   
+}
+.product_installation .content_section
+{
+    width:50%;
+    float:left;   
+}
+.product_install_before{border-right:1px solid #c1c1c1;padding-right:20px;}
+.product_install_after{padding-left:20px;}
+
+
+.contact .contact_section{width:50%;float:left;}
+
+.contact_form{width:60%;float:left;}
+.contact_form p{margin-bottom:0em;margin-top:.75em;}
+.contact_follow p{margin-bottom:0em;margin-top:.75em;}
+.contact_follow{width:40%;float:left;}
+.contact_form_left{padding-right:30px;border-right:1px solid #e1e1e1;}
+    .contact_form_left .content{margin-top:30px;}
+.contact_form_right{padding-left:30px;}
+    .contact_form_right .content{margin-top:30px;}
+.contact_button{margin-top:15px;}
+.contact_details
+{
+    padding:10px 20px 10px 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #d1d1d1;   
+    font-size:1.3em;
+    margin-top:20px;
+    font-style:normal;
+}
+.contact_details p{margin:.3em 0px .3em 0px;}
+
+
+/*--------------------- NEWS -------------------------*/
+.news_item {margin-top:-30px;}
+.news_item article{width:70%;float:left;}
+.news_item section{width:30%;float:left;}
+.news_item article .content{padding-right:20px;}
+.news_item section .content{padding-left:20px;border-left:1px solid #e1e1e1;}
+.news_story{padding-top:20px;}
+
+.newsItem{position:relative;padding:0px;margin:0px 0px 20px 0px;}
+    
+.newsImage{width:170px;float:left;}
+    .newsImagePad{padding:0px;}
+    
+.newsHeadlines{width:60%;float:left;}
+    .newsTitle{font-size:1.15em;line-height:1.15em;padding-top:5px;}
+    .newsTitle a{text-decoration:none; color:#106c9e;}
+    .newsTitle a:hover{color:#1696db;}
+    .newsDesc{font-size:.9em;line-height:1em;margin-top:10px;color:#acafb0;}
+
+.gvNews{margin-top:40px;}
+
+
+/*------------------------- EVENTS ----------------------------*/
+.event_row {margin-bottom:20px;}
+
+.event_date{width:70px;float:left;height:60px;}
+    .event_date a{font-size:1.25em;padding-top:5px;width:50px;height:45px;display:block;text-decoration:none;text-align:center;font-weight:bold;margin-bottom:10px;background-color:#00acdc;color:#fff;}
+    .event_date a:hover{color:#fff;background-color:#1696db;}
+    
+.event_details{float:left;width:70%}
+    .event_details p{font-size:.85em;color:#919191;}
+    .event_details a{text-decoration:none;color:#106c9e;}
+    .event_details a:hover {color:#1696db;}
+    
+    .event_title{}
+    
+    .event_link{margin-top:30px;}
+    
+    .event_row2{}
+    .event_column1{width:75px;float:left;height:25px;color:#a1a1a1;}
+    .event_column2{width:300px;float:left;height:25px;}
+    .event_data{margin-top:30px;}
+
+
+/*--------------------- PRODUCTS -------------------------*/
+
+.product_welcome {margin-top:80px;}
+.schedule_welcome {margin-top:80px;}
+
+.system_features .content ul {list-style-type:none;margin-top:30px;}
+.system_features .content ul li {font-size:1.1em;line-height:1.0em;margin-bottom:15px;height:40px;padding-left:70px;padding-top:10px;}
+.system_features .feature_patients{background:url(../images/icon_patients.png) no-repeat top left;}
+.system_features .feature_web{background:url(../images/icon_computer.png) no-repeat top left;}
+.system_features .feature_time{background:url(../images/icon_time.png) no-repeat top left;}
+.system_features .feature_materials{background:url(../images/icon_materials.png) no-repeat top left;}
+.system_features .feature_reporting{background:url(../images/icon_reports.png) no-repeat top left;}
+.system_features .feature_survey{background:url(../images/icon_survey.png) no-repeat top left;}
+.system_features h1, .system_features p {text-align:center;}
+
+
+.configuration_options {position:relative;margin-top:50px;}
+.configuration_options h2{position:absolute;top:20px;}
+.configuration_options .title {color:#0a5a93;font-size:1.2em;font-weight:bold;position:absolute;top:50px;}
+.config_option .title2 {color:#0a5a93;font-size:1.2em;font-weight:bold;}
+.config_option{width:33%;float:left;text-align:center;}
+
+.product_description{padding: 20px 20px 0px 20px;text-align:left;}
+
+.calendar{width:350px;line-height:40px;font-size:20px;text-align:left;}
+.calendar a {font-size:20px;}
+
+
+
+.batterup_game{text-align:center;}
+
+
+
+	    
+
+/*--------------------- FOOTER -------------------------*/
+footer {margin-top:40px;}
+footer .footer_section{width:25%;float:left;}
+
+@media screen and (max-width:990px)
+{
+ footer {padding-left:20px;}   
+}
+
+
+.col1_3{width:33%;float:left;}
+.col1_4{width:25%;float;left;}
+.col_content{margin-left:5px;margin-right:5px;}
+.col h3 {padding:0px;margin:0px;display:block;font-size:1.2em;color:#0770B0;}
+.h3_blue {text-align:left;font-size:2em;line-height:1.1em;color:#0770B0;margin-top:10px;}
+.col_batter{width:33%;float:left;}
+
+.batter_image{width:250px;height:450px;text-align:center;float:left;position:relative;}
+.batter_image img {border:1px solid #aaa;display:block;}
+.batter_rankings{margin-top:30px;}
+.batter_rankings_title{text-align:center;font-size:2em;line-height:1.2em;color:#0770B0;margin-top:30px;}
+
+.batter_modes_title{text-align:center;font-size:1.6em;color:#0770B0;margin-top:20px;text-decoration:underline;}
+.batter_modes{width:260px;margin:0px auto;margin-top:20px;}
+.batter_modes input{padding:0px;margin:0px;}
+
+.batter_image_header{position:absolute;width:100px;height:30px;top:5px;left:10px;font-size:20px;text-align:left;text-shadow: 1px 1px 1px #fff}
+.batter_image_state{position:absolute;width:100px;height:30px;top:5px;right:10px;text-shadow: 1px 1px 1px #fff;font-size:20px;}
+.batter_image_number{position:absolute;width:240px;height:30px;top:290px;left:0px;font-size:20px;text-align:center;text-shadow: 1px 1px 1px #fff}
+.batter_image_school{position:absolute;width:240px;height:60px;top:370px;left:0px;font-size:20px;text-align:center;text-shadow: 1px 1px 1px #fff;overflow:hidden;}
+.BatterPagerNumeric{font-size:18px;}
+
+.batter_image_baTitle{position:absolute;width:240px;height:30px;top:320px;left:0px;font-size:20px;text-align:center;text-shadow: 1px 1px 1px #fff}
+.batter_image_ba{position:absolute;width:240px;height:30px;top:345px;left:0px;font-size:20px;text-align:center;text-shadow: 1px 1px 1px #fff}
+
+/*Tournament Schedule*/
+.TS1{width: 30%; background-color: #66cc00; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}
+.TS2{width: 30%; background-color: #006699; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}
+.TS3{width: 30%; background-color: #f26622; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}

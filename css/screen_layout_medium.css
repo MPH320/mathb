@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* Layout Medium Screens */
+
+header {height: 585px; background: url(../images/banner_lg.jpg) no-repeat right bottom;}
+
+header a.logo
+{
+    position:static;
+    width:200px;
+    height:133px;
+    top:20px;
+    right:20px;
+    background-image: url(../images/National_Math_Bee_Logo_sm.png);
+    background-position:center bottom;
+    margin:20px auto 0px auto;
+
+}
+
+.social {position:static;width:250px;margin:auto;margin-top:50px;}
+
+nav {left:30px;display:block;position:absolute;top:180px;}
+nav a{margin: 12px 0px 7px 15px; font-size: .95em;}
+nav a:hover {color:#6c6d6f;border-bottom:4px solid #0770b0;}
+nav a.selected, nav a.selected:hover{border-bottom:4px solid #0770b0;}
+
+.page_content{padding-left:15px;padding-right:15px;}
+
+.spotlight{position:absolute;left:2%;top:295px;}
+
+/*.spotlight{position:absolute;top:200px;left:15px;width:490px;height:330px;}
+.spotlight_product{position:absolute;top:200px;left:15px;width:490px;height:330px;}
+.spotlight_slider{position:absolute;top:200px;left:15px;width:490px;height:325px;background-color:#fff;padding-top:5px;}
+.spotlight_news{position:absolute;top:220px;left:15px;width:480px;height:320px;}
+.spotlight_contact{position:absolute;top:220px;left:15px;width:480px;height:320px;}
+
+.welcome{margin-top:140px;}*/
+.product_welcome{margin-top:150px;}
+.product_welcome h1{text-align:center;}
+.topSection{margin-top:150px !important;}
+
+.promo.two {background-image:url(../images/promo_pdf.png);border-left:none;}
+.promo.three {background-image:url(../images/promo_powerpoint.png);border-left:none;}
+.promo_container .promo{width:50%;float:left;background-position: 0px 8px;}
+
+.system_list_1{width:100%;float:none;}
+.system_list_2{width:100%;float:none;}
+.system_list_2 .batteruplogo {margin-top:20px;}
+
+.system_centered .patient_centered{width:100%;float:none;}
+.system_centered .clinician_centered{width:100%;float:none;}
+
+.promo_container{padding:0px 20px 15px 20px;}
+
+.promo_container .promo{background-position: 0px 8px;}
+
+.promo_container .promo .content{padding:70px 30px 0px 0px;}
+
+.system_value .content ul li {padding-left:50px;}
+.system_value .content ul {margin-left:-15px;}
+
+body{background-image:none;}
+
+.team .team_intern, .team .team_member {width:33%;float:left;}
+
+.configuration_options {margin-top:30px;}
+.configuration_options .title, .configuration_options h2{text-align:center;position:static;line-height:1em;}
+.config_option{width:100%;text-align:center;border-bottom:1px solid #eee;}
+.config_option .title2 {position:static;}
+.config_option_3{margin-top:80px;border:none;}
+
+.product_installation .content
+{
+    padding:20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-image:url(../images/background.gif);
+    border:1px solid #e1e1e1;   
+}
+.product_installation .content_section
+{
+    width:100%;
+    float:none;   
+}
+.product_install_before{border-bottom:1px solid #c1c1c1;border-right:none;padding-right:0px;}
+.product_install_after{padding-left:0px;padding-top:15px;}
+
+.contact_form{width:100%;float:none;border-bottom:1px solid #e1e1e1;padding-bottom:20px;}
+.contact_follow{width:100%;float:none;padding-top:20px;}
+.contact_form_left{padding-right:0px;border-right:none;}
+    .contact_form_left .content{margin-top:30px;}
+.contact_form_right{padding-left:0px;}
+    .contact_form_right .content{margin-top:30px;}
+
+.news_item article{width:100%;float:none;border-bottom:1px solid #e1e1e1;}
+.news_item section{width:100%;float:none;border-bottom:1px solid #e1e1e1;}
+.news_item section .content{padding-left:0px;border-left:none;}
+
+.bio {padding-top:220px;}
+.bioImg{position:absolute;top:200px;left:15px;width:256px;height:320px;border:5px solid #fff;}
+.biotitle{position:absolute;top:550px;left:15px;}
+.bio h3{margin-top:10px;}
+
+.demo_section{margin:100px 50px 0px 50px;}
+.demo_column{width:100%;float:none;text-align:center;margin-bottom:30px;}
+
+.kindle_giveaway{border-left:none;border-right:none;}
+.kindle_form_left{border-right:none;}
+
+
+.editStudentIcons{width:40px;float:left;height:150px;position:relative;}
+.editModeStudentIcons{width:40px;float:left;height:150px;position:relative;}	
+.editStudent{position:absolute;top:50px;left:0px;}
+
+
+.col_batter{width:50%;float:left;}

@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* Layout Small Screens */
+
+header{height:200px; background: url(../images/banner_sm.jpg) no-repeat right 0px;padding-top:80px;}
+
+header a.logo 
+{
+
+    width:200px;
+    height:133px;
+    position:static;
+    margin:0px auto 0px auto;
+    top:0px;
+    left:0px;
+    background-image: url(../images/National_Math_Bee_Logo_sm.png);
+    background-size:100%;
+    
+}
+
+section{padding:20px 20px 10px 20px;}
+
+nav
+{
+    position:static;
+    padding: 10px 0px 10px 0px;
+    background-color:#fff;
+}
+
+.social {position:static;width:250px;margin:auto;}
+
+
+nav a
+{
+    color:#fff;
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid #fff;
+    background:#00acdc url(../images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+nav a:hover {color:#00acdc;background-color:rgba(255,255,255,.15);border:1px solid #00acdc;}
+nav a.selected, nav a.selected:hover{color:#00acdc;background-color:rgba(255,255,255,.15);border:1px solid #00acdc;}
+
+.spotlight{position:absolute;top:250px;left:0px;max-width:450px;min-width:300px;width:100%;height:auto;}
+.spotlight_product{position:absolute;top:180px;left:30px;}
+.spotlight_product img{max-width:450px;min-width:300px;width:100%;height:auto;}
+.spotlight_slider{position:absolute;top:175px;left:0px;max-width:450px;min-width:300px;height:auto;width:100%;background-color:#fff;padding-top:5px;}
+.spotlight_news{display:none;}
+.spotlight_contact{display:none;}
+
+
+.page_content{padding-left:0px;padding-right:0px;}
+
+.promo_container{padding:0px;}
+.promo_container .promo
+{
+    width:auto; /*they'll now take the full width instead of 33%*/
+    float:none;
+    padding:10px 0px 20px 0px;
+    background-position: 20px 13px;
+    border-top:1px solid #ccc;
+}
+
+.promo_container .promo .content{padding:0px 20px 5px 90px;}
+
+.welcome{margin-top:0px;}
+.welcome_SignIn{margin-top:350px;}
+.topSection{margin-top:350px !important;}
+
+footer{border-top:1px solid #a6abc5;}
+
+body{background-image:none;}
+
+
+
+
+.system_centered .patient_centered{width:100%;float:none;}
+.system_centered .clinician_centered{width:100%;float:none;}
+.system_centered {text-align:center;}
+
+.system_list h1{text-align:center;}
+.system_list_1{width:100%;float:none;}
+.system_list_2{width:100%;float:none;}
+.system_list_2 img{max-width:100%; height:auto;}
+.system_list_2 .batteruplogo {margin-top:20px;}
+
+.system_value .content ul li {padding-left:50px; height:60px;}
+.system_value .content ul {margin-left:-30px;}
+
+.configuration_options {margin-top:30px;}
+.configuration_options .title, .configuration_options h2{text-align:center;position:static;line-height:1em;}
+.config_option{width:100%;text-align:center;border-bottom:1px solid #eee;}
+.config_option .title2 {position:static;}
+.config_option_3{margin-top:80px;border:none;}
+
+
+.product_installation .content
+{
+    padding:20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-image:url(../images/background.gif);
+    border:1px solid #e1e1e1;   
+}
+.product_installation .content_section
+{
+    width:100%;
+    float:none;   
+}
+.product_install_before{border-bottom:1px solid #c1c1c1;border-right:none;padding-right:0px;}
+.product_install_after{padding-left:0px;padding-top:15px;}
+
+.contact_form{width:100%;float:none;border-bottom:1px solid #e1e1e1;padding-bottom:20px;}
+.contact_follow{width:100%;float:none;padding-top:20px;}
+.contact_form_left{padding-right:0px;border-right:none;}
+    .contact_form_left .content{margin-top:30px;}
+.contact_form_right{padding-left:0px;}
+    .contact_form_right .content{margin-top:30px;}
+
+.system_features .content ul {margin-left:-40px;}
+
+.news_item article{width:100%;float:none;text-align:center;border-bottom:1px solid #e1e1e1;}
+.news_item section{width:100%;float:none;text-align:center;border-bottom:1px solid #e1e1e1;padding:20px 0px 0px 0px !important;}
+
+.news_item article .content{padding-right:0px;}
+.news_item section .content{padding-left:0px;border-left:none;}
+.news_item .content {padding:0px 20px 0px 10px;}
+
+.newsImage{width:100%;float:none;}
+.newsHeadlines{width:100%;float:none;}
+
+.bio {padding-top:480px;}
+.bioImg{position:absolute;top:180px;left:20px;width:256px;height:320px;border:5px solid #fff;}
+.biotitle{position:absolute;top:530px;left:20px;}
+.bio h3{margin-top:10px;}
+
+
+.demo_section{margin:100px 50px 0px 50px;}
+.demo_column{width:100%;float:none;text-align:center;margin-bottom:30px;}
+
+.kindle_giveaway .content{padding:0px;border:none;}
+.kindle_form_right {display:none;}
+.kindle_form_left {border:none;}
+
+.kindle_required{position:absolute;top:-30px;right:30px;}
+
+
+
+
+
+.pageWrapper {padding-left:15px;padding-right:15px;}
+
+.adminBorder {border-top:none;}
+.navTeacherMenu
+{
+    position:static;
+    padding: 10px 0px 10px 0px;
+    background-color:#fff;
+    border-bottom:1px solid #aaa;
+}
+
+.navTeacherMenu a
+{
+    color:#fff;
+    display:block;
+    margin:15px;
+    padding:9px;
+    border:1px solid #fff;
+    background:#00acdc url(../images/mobile_link_arrow.png) no-repeat right center;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    text-indent:0px;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight:bold;
+    font-size: .9em;    
+}
+
+    .navTeacher {width:auto;height:auto;}
+    .navParent {width:auto;height:auto;}
+	.navClassroom {width:auto;height:auto;}
+	.navStudents {width:auto;height:auto;}
+	.navChildren {width:auto;height:auto;}			
+    .navReports {width:auto;height:auto;}	
+    
+.navTeacherMenu a:hover {color:#00acdc;background-color:rgba(255,255,255,.15);border:1px solid #00acdc;}
+.navTeacherMenu a.currentSection, .navTeacherMenu a.currentSection:hover{color:#00acdc;background-color:rgba(255,255,255,.15);border:1px solid #00acdc;}
+
+.editStudentIcons{width:40px;float:left;height:220px;position:relative;}
+.editModeStudentIcons{width:40px;float:left;height:250px;position:relative;}
+.editStudent{position:absolute;top:50px;left:0px;}
+
+.col1_3{width:100%;}
+.col1_4{width:100%;}
+.col_content{margin:5px;}
+
+.col_batter{width:100%;}
+
+
+/*Tournament Schedule*/
+.TS1{width: 100%; background-color: #66cc00; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}
+.TS2{width: 100%; background-color: #006699; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}
+.TS3{width: 100%; background-color: #f26622; color: #fff; padding: 20px 10px 10px 10px; float: left;text-align:center}
