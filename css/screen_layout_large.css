@@ -26,7 +26,7 @@ nav {right:30px;display:block;position:absolute;}
 header{height:545px;background: url(../images/banner_lg.jpg) no-repeat right bottom;}
 header a.logo{width:701px;height: 125px;top:45px;left:30px;background-image: url(../images/National_Math_Bee_Logo_lg.png);}
 
-
+header a.logo-a{width:701px;height: 125px;top:45px;left:30px;background-image: url(../home/National_Math_Bee_Logo_lg.png);}
 
 nav {top:160px;}
 nav a {margin: 12px 0px 10px 20px;}
