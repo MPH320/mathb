@@ -1,555 +1,417 @@
-
-
-
 <!DOCTYPE html>
 
 <html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /><title>
-	National Math Bee
-</title><meta name="description" /><meta name="keywords" /><meta name="author" /><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" /><link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" /><link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
-
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        
-
-
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-53966126-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-
-
-    </head>
-
-    <body class="background">
-        <form method="post" action="./Students.aspx" id="form1" wtx-context="8493F8FD-6EB7-4E10-A4B8-F79D75030DB9">
-<div class="aspNetHidden">
-
-
-
-
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form1'];
-if (!theForm) {
-    theForm = document.form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<script src="/WebResource.axd?d=39sFr7zF1mi3r_KYN43MXCIMAGo3ns_nFk3dfkAzEz-HjrIsiRqOWnPjYdG2dKka322aWoDDv8UMeLx6F_Ic5QW0-gGDD2Vjd4PfekxupwI1&amp;t=636354654046607314" type="text/javascript"></script>
-
-
-<script src="/ScriptResource.axd?d=2Gj7wmZcEI5dnTMr-wlF4wIBTZxsKMkLVp-3kSdWp7elMBzd7s5oEjWkkkq2z9Q2eQLQ1twU-eKXpQdZG_iFgWulrzA8ZYsYD-0AeUksPqO7bLd-A1NLdLFm-m_TT3GmnYHwZ5DNm33BvKOPc2gsSK_SV2ILZo4hs-Pn7zGYA-w1&amp;t=3d6efc1f" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=gIlsOfwMNcvHFcqJuh7ha_BwSjhM6FTjT_rsg5kzUTnJOA_hzhgZ-FVsFCnjliOB0w3J9ZmoFRGwzfWFK02dirffCO1pdPsQDMa7pGYJRbb1cjRinhnDUdj7CKSeS9XQ_2m3uZL8Ql8-kq2GYmZrpHopsA5Q3mgjz1UQmEsBety0y0foPtRV06HqJn-wOeVD0&amp;t=3d6efc1f" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	
-	
-</div>
-
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$ContentPlaceHolder1$UpdatePanelMaster','ContentPlaceHolder1_UpdatePanelMaster'], [], [], 90, 'ctl00');
-//]]>
-</script>
-
-            
-            <div class="page">
-                <header id="hdrMain">
-                    <a href="../default.aspx" class="logo"></a>                    
-                </header>
-
-
-                
-
-                <div class="page_content">
-                    
-
-<div style="border-top:1px solid #333;">
-    <div class="pageWrapper">
-        <div class="navTeacherMenu">
-            <a href="Default.aspx" id="ContentPlaceHolder1_navTeacherTab" class="navTeacher">Teacher</a>
-            <a href="Classrooms.aspx" id="ContentPlaceHolder1_navClassroomTab" class="navClassroom">Classroom</a>
-            <a href="Students.aspx" id="ContentPlaceHolder1_navStudentsTab" class="navStudents currentSection">Students</a>
-            <a href="Reports.aspx" class="navReports">Reports</a>
-            <div class="clear-fix"></div>
-            
-        </div>
-    </div>
-</div>
-
-<div class="pageWrapper">
-<br>
-<div id="ContentPlaceHolder1_UpdatePanelMaster">
-
-    
-
-
-        
-        
-
-
-
-
-
-
-    <div id="ContentPlaceHolder1_divAddStudents">
-        <h1 id="ContentPlaceHolder1_h1Add">Add A Student</h1>
-            
-        <div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
-
-            <div style="float:left;width:100%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblClassrooms" style="color:Gray;font-size:Medium;">Assign Student to this Classroom</span><br>
-                <select name="ctl00$ContentPlaceHolder1$ddlClassrooms" id="ContentPlaceHolder1_ddlClassrooms" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" wtx-context="4E88F0DA-F907-475C-9133-7619A55D645D">
-	<option value="Choose A Classroom">Choose A Classroom</option>
-	<option value="2126">myclass</option>
-	<option selected="selected" value="2127">class</option>
-
-</select>
-                <br><br>
-                 <span id="ContentPlaceHolder1_Label2" style="color:Gray;font-size:Medium;">Names will not be displayed on the website.</span><br><br>
-            </div>
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblFName" style="color:Gray;font-size:Medium;">First Name</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtFName" type="text" id="ContentPlaceHolder1_txtFName" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="D224C6E4-6430-4522-8EA3-45F1038BDAE6">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 825.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblMName" style="color:Gray;font-size:Medium;">Middle Name (Optional)</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtMName" type="text" id="ContentPlaceHolder1_txtMName" style="color:Gray;font-size:Medium;height:30px;width:280px;" wtx-context="71C0C9CB-9FD9-472E-9E85-5175E9640623">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 825.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblLName" style="color:Gray;font-size:Medium;">Last Name</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtLName" type="text" id="ContentPlaceHolder1_txtLName" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="C7C55031-090C-47C7-B8E9-AB8BE01AEAA7">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 903.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblUsername" style="color:Gray;font-size:Medium;">Sign In Username</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtUsername" type="text" id="ContentPlaceHolder1_txtUsername" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="139FCE70-4361-4BF9-81D9-3C5D43DE00A3">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 903.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblPassword" style="color:Gray;font-size:Medium;">Sign In Password</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtPassword" type="password" id="ContentPlaceHolder1_txtPassword" value="" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="BA317898-4A49-4BB8-AAE3-6C63A567E102">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 981.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblPasswordRetype" style="color:Gray;font-size:Medium;">Retype Password</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtPasswordRetype" type="password" id="ContentPlaceHolder1_txtPasswordRetype" value="" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="D6FFA692-290B-497C-981B-9B7114BD967B">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 981.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblGrade" style="color:Gray;font-size:Medium;">Grade</span><br>
-                <select name="ctl00$ContentPlaceHolder1$ddlGrade" id="ContentPlaceHolder1_ddlGrade" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" wtx-context="0F874044-7F90-44E5-A1E4-4C35A49F656A">
-	<option selected="selected" value="Choose A Grade">Choose A Grade</option>
-	<option value="1">First</option>
-	<option value="2">Second</option>
-	<option value="3">Third</option>
-	<option value="4">Fourth</option>
-	<option value="5">Fifth</option>
-	<option value="6">Sixth</option>
-
-</select>
-                <br><br>
-            </div>
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblGender" style="color:Gray;font-size:Medium;">Gender</span><br>
-                <select name="ctl00$ContentPlaceHolder1$ddlGender" id="ContentPlaceHolder1_ddlGender" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" wtx-context="7A32B113-30C3-436F-B6E3-86A49B4983A9">
-	<option selected="selected" value="Choose A Gender">Choose A Gender</option>
-	<option value="Female">Female</option>
-	<option value="Male">Male</option>
-
-</select>
-                <br><br>
-            </div>
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblRace" style="color:Gray;font-size:Medium;">Race</span><br>
-                <select name="ctl00$ContentPlaceHolder1$ddlRace" id="ContentPlaceHolder1_ddlRace" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" wtx-context="C20D3308-A496-4BF5-86C5-2B8094B9E379">
-	<option selected="selected" value="Choose A Race">Choose A Race</option>
-	<option value="African-American">African-American</option>
-	<option value="Asian">Asian</option>
-	<option value="Caucasian">Caucasian</option>
-	<option value="Hispanic">Hispanic</option>
-	<option value="Native American">Native American</option>
-	<option value="Other">Other</option>
-
-</select>
-                <br><br>
-            </div>
-
-            <div style="float:left;width:33%;min-width:300px;">
-                <span id="ContentPlaceHolder1_lblBirthday" style="color:Gray;font-size:Medium;">Birthday (ex. 12/31/2004)</span><br>
-                <input name="ctl00$ContentPlaceHolder1$txtBirthday" type="text" id="ContentPlaceHolder1_txtBirthday" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;" wtx-context="E9726BBB-27A5-4265-800A-44F566AFB79C">
-                <br><br>
-            <span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 1141.83px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-            <div style="float:left;width:33%;min-width:300px;height:60px;">            
-                <div style="margin-top:10px;"><input type="image" name="ctl00$ContentPlaceHolder1$btnSaveStudent" id="ContentPlaceHolder1_btnSaveStudent" onmouseover="this.src='../images/btn_SaveOver.png'" onmouseout="this.src='../images/btn_SaveUp.png'" src="../images/btn_SaveUp.png" wtx-context="43D9B1AA-E54A-4BB2-9A5B-DEBAA866683D"></div>
-            </div>
-
-            <div class="clear-fix"></div>
-            <span id="ContentPlaceHolder1_lblSaveStudentError" style="color:#990000;font-size:Medium;"></span><br>
-            <span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;">Student Saved Succesfully</span>
-        </div>
-        <br>
-        <input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png" wtx-context="46136E18-0636-49EA-8F4B-2C25F86BFBCC">
-    </div>
-
-
-
-
-    <br><br>
-
-
-    
-
-    <div id="ContentPlaceHolder1_divStudents">
-        <div style="width:200px;float:left;">
-            <h1 id="ContentPlaceHolder1_h1List">Students</h1>
-        </div>
-        <div style="min-width:350px;float:left;">
-            <span id="ContentPlaceHolder1_lblShowClassroom" style="color:Gray;font-size:Medium;">Show Classroom:</span>
-            <select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlClassroomFilter\',\'\')', 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;" wtx-context="AD7589C6-8CEE-4847-A457-0E003CC6693E">
-	<option selected="selected" value="All Classrooms">All Classrooms</option>
-	<option value="Unassigned">Unassigned</option>
-	<option value="2126">myclass</option>
-	<option value="2127">class</option>
-
-</select>
-        </div>
-        <div class="clear-fix"></div>   
-        <br>
-        
-        <div>
-	<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
-		<tbody><tr>
-			<td>
-                        <div class="editStudentRow">
-
-                            <div class="editStudentIcons">
-                                <img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-                                <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_0" title="Edit Student" class="editStudent" src="../images/invEdit.png" wtx-context="0A31D95C-E62B-47FF-96B0-25A470767330">
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Player#</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
-                            </div>
-
-                            <div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label8_0" style="color:Silver;">Grade</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label9_0" style="font-size:Medium;">2</span>
-                            </div>
-
-                            <div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Password</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label7_0" title="password" style="font-size:Medium;">password</span>
-                            </div>
-                                                       
-                            <div style="width:70px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Gender</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">Female</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label14_0" style="color:Silver;">Birthday</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label15_0" style="font-size:Medium;">3/20/1985</span>
-                            </div>
-
-                            <div style="width:180px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Race</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label13_0" style="font-size:Medium;">Asian</span>
-                            </div>
-
-                            <div class="clear-fix"></div>
-                        </div>
-                        </td>
-		</tr><tr>
-			<td>
-                        <br>
-                             <div class="editStudentRow">
-                             <div id="ContentPlaceHolder1_gvStudents_divEditForm_1">
-
-                                <div class="editModeStudentIcons">
-                                    <img src="../images/icon_student.png" alt="Student" class="editModeStudentIcon">
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_1" title="Update Student" class="editModeStudent" src="../images/invSave.png" wtx-context="62B7E7E1-633A-4669-94A4-528966DBE293">
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnDeleteStudent" id="ContentPlaceHolder1_gvStudents_btnDeleteStudent_1" title="Delete Student" class="deleteStudent" src="../images/iconDelete25.png" wtx-context="495EF60A-7327-45DA-9425-73F9C52C5C9F">
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnCancelStudent" id="ContentPlaceHolder1_gvStudents_btnCancelStudent_1" title="Cancel" class="cancelStudent" src="../images/iconCancel.png" wtx-context="2766DA67-23C0-45F8-A29F-1B21B41EA428">
-
-                                </div>
-
-                                
-
-                                <div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label8_1" style="color:Silver;">Grade</span><br>                                
-                                <select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGrade" id="ContentPlaceHolder1_gvStudents_ddlGrade_1" style="font-size:Medium;height:35px;width:90px;" wtx-context="2562BEE6-82AA-4F6D-AA0F-51668EE1D694">
-				<option value="1">First</option>
-				<option selected="selected" value="2">Second</option>
-				<option value="3">Third</option>
-				<option value="4">Fourth</option>
-				<option value="5">Fifth</option>
-				<option value="6">Sixth</option>
-
-			</select>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2" wtx-context="03B445EC-56C0-421E-BE80-E7D248BCCD3C">
-                            </div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">First Name</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentFName" type="text" value="m" id="ContentPlaceHolder1_gvStudents_txtEditStudentFName_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="7020267D-9CBB-4EA4-8240-60B4B36C9819">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label16_1" style="color:Silver;">Middle Name</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentMName" type="text" id="ContentPlaceHolder1_gvStudents_txtEditStudentMName_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="60B5D3E7-C5EC-45AC-A888-89C90D41F84F">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label17_1" style="color:Silver;">Last Name</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentLName" type="text" value="p" id="ContentPlaceHolder1_gvStudents_txtEditStudentLName_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="F40FA41A-B230-4A83-A3B6-B50E4CCD7755">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentUsername" type="text" value="mp320" id="ContentPlaceHolder1_gvStudents_txtEditStudentUsername_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="4DD90EC9-3346-4B3B-8F4C-910E8A79C562">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Password</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentPassword" type="text" value="password" id="ContentPlaceHolder1_gvStudents_txtEditStudentPassword_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="1A81983D-BA05-4ED7-983D-ED45131E0A10">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-                                                       
-                            <div style="width:120px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Gender</span><br>
-                                <select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGender" id="ContentPlaceHolder1_gvStudents_ddlGender_1" style="font-size:Medium;height:35px;width:100px;" wtx-context="783C9369-E3E7-427D-8CE6-05E47EB1E346">
-				<option value="Female">Female</option>
-				<option selected="selected" value="Male">Male</option>
-
-			</select>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGender" id="ContentPlaceHolder1_gvStudents_hfStudentGender_1" value="Male" wtx-context="794C18FF-3A09-4F1F-A2C2-10E25AD5128C">
-                            </div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label14_1" style="color:Silver;">Birthday</span><br>
-                                <input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentBirthday" type="text" value="3/20/2004" id="ContentPlaceHolder1_gvStudents_txtEditStudentBirthday_1" style="font-size:Medium;height:30px;width:100px;" wtx-context="C0BA5D1D-690A-49E5-8141-B0C63B34AEFC">
-                            <span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span></div>
-
-                            <div style="width:120px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Race</span><br>
-                                <select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlRace" id="ContentPlaceHolder1_gvStudents_ddlRace_1" style="font-size:Medium;height:35px;width:100px;" wtx-context="DFD35F8B-9324-40E5-97CE-D3058285D44B">
-				<option value="African-American">African-American</option>
-				<option value="Asian">Asian</option>
-				<option value="Caucasian">Caucasian</option>
-				<option selected="selected" value="Hispanic">Hispanic</option>
-				<option value="Native American">Native American</option>
-				<option value="Other">Other</option>
-
-			</select>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentRace" id="ContentPlaceHolder1_gvStudents_hfStudentRace_1" value="Hispanic" wtx-context="C4116C41-9760-4E5F-8B97-B9535C1EDFC3">
-                            </div>
-
-
-                            <div style="width:300px;float:left;height:60px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_lblClassroomEdit_1" style="color:Silver;">Classroom</span><br>
-                                <select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit\',\'\')', 0)" id="ContentPlaceHolder1_gvStudents_ddlClassroomEdit_1" style="font-size:Large;height:35px;width:280px;" wtx-context="1133EE84-AF50-4DB9-9B68-B309F12F2D64">
-				<option value="No Classroom Assigned">No Classroom Assigned</option>
-				<option value="2126">myclass</option>
-				<option selected="selected" value="2127">class</option>
-
-			</select>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfClassroomID" id="ContentPlaceHolder1_gvStudents_hfClassroomID_1" value="2127" wtx-context="72602D26-272F-493D-8F21-3A29577BE54D">
-
-                            </div>
-
-
-                                <div class="clear-fix"></div>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentID" id="ContentPlaceHolder1_gvStudents_hfStudentID_1" value="16026" wtx-context="D10D3F50-E016-4802-8D9F-262CC0777AF8"><br>
-                                <span id="ContentPlaceHolder1_gvStudents_lblUpdateMessage_1" style="color:#990000;"></span><br>
-                                </div>
-                                
-                                
-
-                            </div>
-                            <br>
-
-
-                        </td>
-		</tr><tr>
-			<td>
-                        <br>
-                             <div class="editStudentRow">
-                             
-                                
-                                <div id="ContentPlaceHolder1_gvStudents_divConfirmDelete_2" class="editConfirmDelete">
-                                    <span id="ContentPlaceHolder1_gvStudents_Label19_2" style="color:White;font-size:Large;">Are you sure you want to delete this student - fsasdf sfadfsd?</span><br>
-                                    <span id="ContentPlaceHolder1_gvStudents_Label18_2" style="color:White;font-size:Large;">All BatterUp inning data will be deleted as well.</span><br>
-                                    <input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvStudents_btnConfirmDelete_2" wtx-context="F53494F4-2B08-4B65-8BB8-A953932C7696">
-                                    <input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvStudents_btnCancelDelete_2" wtx-context="B5F07646-1C08-4E76-8DB8-23573820664D">
-                                </div>
-
-                            </div>
-                            <br>
-
-
-                        </td>
-		</tr><tr>
-			<td>
-                        <div class="editStudentRow">
-
-                            <div class="editStudentIcons">
-                                <img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-                                <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl05$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_3" title="Edit Student" class="editStudent" src="../images/invEdit.png" wtx-context="39D493A7-15C0-4C06-96BB-FCC930A81094">
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label1_3" style="color:Silver;">Player#</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label21_3" style="font-size:Medium;">16296</span>
-                            </div>
-
-                            <div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label8_3" style="color:Silver;">Grade</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label9_3" style="font-size:Medium;">6</span>
-                            </div>
-
-                            <div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_3" style="color:Silver;">Name</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_3" style="font-size:Medium;">vxzczx, xvzc vxcz</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_3" style="color:Silver;">Username</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label5_3" title="xvcvcx" style="font-size:Medium;">xvcvcx</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_3" style="color:Silver;">Password</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label7_3" title="password" style="font-size:Medium;">password</span>
-                            </div>
-                                                       
-                            <div style="width:70px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_3" style="color:Silver;">Gender</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label11_3" style="font-size:Medium;">Female</span>
-                            </div>
-
-                            <div style="width:100px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label14_3" style="color:Silver;">Birthday</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label15_3" style="font-size:Medium;">3/20/1985</span>
-                            </div>
-
-                            <div style="width:180px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_3" style="color:Silver;">Race</span><br>
-                                <span id="ContentPlaceHolder1_gvStudents_Label13_3" style="font-size:Medium;">Asian</span>
-                            </div>
-
-                            <div class="clear-fix"></div>
-                        </div>
-                        </td>
-		</tr>
-	</tbody></table>
-</div>
-             
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-            </div>
-
-</div>
-
-                </div>
-
-                
-
-                <nav>
-                    <a href="../default.aspx" id="navHome" class="navHome">Home</a>
-                    
-                    <a href="../tournament/default.aspx" id="navTournament" class="navTournament">Tournament</a>
-                    <a href="../batterup/batterup.aspx" id="navBatterUp" class="navBatterUp">BatterUp</a>
-                    
-                    <a href="../contact/default.aspx" id="navContact" class="navContact">Contact Us</a>
-                    <a id="navSignIn" class="navSignIn" href="javascript:__doPostBack('ctl00$navSignIn','')">Sign Out</a>
-                    <a href="./" id="navTeachers" class="navTeachers selected">Teacher</a>
-                </nav>
-
-                <div class="social">
-
-                    <a href="https://twitter.com/NationalMathBee" class="social_twitter" target="_blank">Twitter</a>
-                    <a href="http://www.facebook.com/pages/National-Math-Bee/191250144339108" class="social_facebook" target="_blank">Facebook</a>
-                    <a href="https://plus.google.com/111804013780922297750" rel="publisher" class="social_google_plus" target="_blank">Google+</a>
-                    
-                    <a href="http://www.pinterest.com/nationalmathbee" class="social_pinterest" target="_blank">Pinterest</a>
-                    <a href="http://www.youtube.com/NationalMathBee" class="social_youtube" target="_blank">YouTube</a>
-
-                </div>
-
-                <footer> 
-                    © <span id="spDates">2017-2018</span>  National Math Bee
-                </footer>
-            </div>
-    
-        <span style="display: none !important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" wtx-context="8F346CCB-C92F-4282-A9F2-8C9A277F75A1"></span><span style="display: none !important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" wtx-context="EFFECF6F-945F-4BE8-B5AC-F2485A785412"></span><span style="display: none !important;"><input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" wtx-context="35C52582-B201-4B62-827A-F198F039DC55"></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODAwMDQyMDkxD2QWAmYPZBYCAgMPZBYUAgUPZBYCAgcPZBYCZg9kFgwCAQ8WAh4HVmlzaWJsZWhkAgMPFgIfAGgWAgIBDw8WAh4EVGV4dAUjQ2xpY2sgQWRkIHRvIGJlZ2luIGFkZGluZyBzdHVkZW50cyFkZAIFDw8WAh8AaGRkAgcPFgIfAGcWGAIFDxAPFgoeC0JvcmRlclN0eWxlCyolU3lzdGVtLldlYi5VSS5XZWJDb250cm9scy5Cb3JkZXJTdHlsZQQeCUZvcmVDb2xvcgojHgtfIURhdGFCb3VuZGceCUJhY2tDb2xvcgn/////HgRfIVNCAkxkDxYCAgECAhYCEAUHbXljbGFzcwUEMjEyNmcQBQVjbGFzcwUEMjEyN2cWAQICZAILDw8WCB8DCiMfAgsrBAQfBgJMHwUJ/////2RkAhMPDxYIHwMKIx8CCysEBB8GAkwfBQn/////ZGQCFw8PFggfAwojHwILKwQEHwYCTB8FCf////9kZAIbDw8WCB8DCiMfAgsrBAQfBgJMHwUJ/////xYCHgV2YWx1ZWRkAh8PDxYIHwMKIx8CCysEBB8GAkwfBQn/////FgIfB2RkAiMPEA8WCB8CCysEBB8GAkwfBQn/////HwMKI2RkZGQCJw8QDxYIHwILKwQEHwYCTB8FCf////8fAwojZGRkZAIrDxAPFggfAgsrBAQfBgJMHwUJ/////x8DCiNkZGRkAi8PDxYIHwMKIx8CCysEBB8GAkwfBQn/////ZGQCMw8PFgIfAWVkZAI1Dw8WAh8BBRlTdHVkZW50IFNhdmVkIFN1Y2Nlc2Z1bGx5ZGQCCQ9kFgQCBQ8QDxYCHwRnZA8WAgICAgMWAhAFB215Y2xhc3MFBDIxMjZnEAUFY2xhc3MFBDIxMjdnFgFmZAIHDzwrABEEAA8WBB8EZx4LXyFJdGVtQ291bnQCBGQBEBYAFgAWAAoWAAwUKwAAFgJmD2QWDmYPDxYCHwBoZGQCAQ9kFgJmD2QWEAIFDw8WAh8BBQUxNjI5NWRkAgkPDxYCHwEFATJkZAINDw8WAh8BBRNkZ2ZzZHNmZywgc2RmIHNkZmdnZGQCEQ8PFgQfAQUHZ2Zkc3NnZh4HVG9vbFRpcAUHZ2Zkc3NnZmRkAhUPDxYEHwEFCHBhc3N3b3JkHwkFCHBhc3N3b3JkZGQCGQ8PFgIfAQUGRmVtYWxlZGQCHQ8PFgIfAQUJMy8yMC8xOTg1ZGQCIQ8PFgIfAQUFQXNpYW5kZAICD2QWAmYPZBYEAgEPZBYIAgkPEA8WAh8EZ2RkZGQCIw8QDxYCHwRnZGRkZAItDxAPFgIfBGdkZGRkAjMPEA8WAh8EZ2QPFgICAQICFgIQBQdteWNsYXNzBQQyMTI2ZxAFBWNsYXNzBQQyMTI3Z2RkAgMPFgIfAGgWAgIBDw8WAh8BBTNBcmUgeW91IHN1cmUgeW91IHdhbnQgdG8gZGVsZXRlIHRoaXMgc3R1ZGVudCAtIG0gcD9kZAIDD2QWAmYPZBYQAgUPDxYCHwEFBTE2Mjk0ZGQCCQ8PFgIfAQUBMmRkAg0PDxYCHwEFGHNmYWRmc2QsIGZzYXNkZiBzYWRmc2ZkYWRkAhEPDxYEHwEFBXNzZmFkHwkFBXNzZmFkZGQCFQ8PFgQfAQUIcGFzc3dvcmQfCQUIcGFzc3dvcmRkZAIZDw8WAh8BBQZGZW1hbGVkZAIdDw8WAh8BBQkzLzIwLzE5ODVkZAIhDw8WAh8BBRBBZnJpY2FuLUFtZXJpY2FuZGQCBA9kFgJmD2QWEAIFDw8WAh8BBQUxNjI5NmRkAgkPDxYCHwEFATZkZAINDw8WAh8BBRF2eHpjengsIHh2emMgdnhjemRkAhEPDxYEHwEFBnh2Y3ZjeB8JBQZ4dmN2Y3hkZAIVDw8WBB8BBQhwYXNzd29yZB8JBQhwYXNzd29yZGRkAhkPDxYCHwEFBkZlbWFsZWRkAh0PDxYCHwEFCTMvMjAvMTk4NWRkAiEPDxYCHwEFBUFzaWFuZGQCBQ8PFgIfAGhkZAIGDw8WAh8AaGRkAgsPD2QPEBYBZhYBFgIeDlBhcmFtZXRlclZhbHVlArYRFgECBWRkAgcPFgIeBWNsYXNzBQduYXZIb21lZAIJDxYCHwBoZAILDxYCHwsFDW5hdlRvdXJuYW1lbnRkAg0PFgIfCwULbmF2QmF0dGVyVXBkAg8PFgQfCwULbmF2U3BvbnNvcnMfAGhkAhEPFgIfCwUKbmF2Q29udGFjdGQCEw8WBB4JaW5uZXJodG1sBQhTaWduIE91dB8LBQluYXZTaWduSW5kAhUPFgQfDAUHVGVhY2hlch8LBRRuYXZUZWFjaGVycyBzZWxlY3RlZGQCFw8WAh8MBQkyMDE3LTIwMThkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYIBShjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGJ0blNhdmVTdHVkZW50BSFjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGJ0bkRvbmUFOWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZTdHVkZW50cyRjdGwwMiRidG5FZGl0U3R1ZGVudAU5Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0dWRlbnRzJGN0bDAzJGJ0bkVkaXRTdHVkZW50BTtjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2U3R1ZGVudHMkY3RsMDMkYnRuRGVsZXRlU3R1ZGVudAU7Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0dWRlbnRzJGN0bDAzJGJ0bkNhbmNlbFN0dWRlbnQFOWN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZTdHVkZW50cyRjdGwwNCRidG5FZGl0U3R1ZGVudAU5Y3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0dWRlbnRzJGN0bDA1JGJ0bkVkaXRTdHVkZW50BSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2U3R1ZGVudHMPPCsADAIBAgEIAgFklaV3sQy2GF1qNf8mbfh/rSQo0eK6P/sRY2QPaTRryKg=" wtx-context="E270ADB5-8FE6-45DB-85EE-BDB513C10841"></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2CE45EC1" wtx-context="6D06A820-436C-4541-89E2-870B33C20D5F"></span><span style="display: none !important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEcVe5Af/Nt5dMVRr0wGksxcY7uaLfAxPqzHNv0qYKyZWtdKPDRHc3gY3jFDlC8bmXOT6Qu/W/cEfF+6cxYHIn8KXFteo/CAaf3XkHmKuWXEYetlxXzQ3VlnRFmJgj+oBNDFnIUI3YjUSbViT/TnVCF7GAYGC+2NqjcLsoC6PBGOPXjjswiyhm+g6KodwobC/fOjF9X14T+irc98XTtdek/kwe5zxkFFkzp1uM5LFcut9HK5haoN644N9jaf1SDw9fQQw0W/Ai4Eo1pWYjQQpk3BOXFRVvmo0MKtX7iXb18IWkpeJ7RrinTKCdq/mn+xGPAn1xRqDtogRJ/zE9FafFP2JNdDks4RBrwytYDx6WB49xZ2aSOKFZjTzZT6DQ/xdIAY6EWRYxrFRPWhaCNjSpZGCRSM2kAnT+llizHvl9EXWUJItHHG4cnst/iv8KDLrA9fAs6QGV74h0PLj0tMKCuO1WYEbpy6jVSKq0DBGpyhR20tGtnFLJXmdxmUzGivy3v0x633MGWpko64VjSiB3OiSj0yQM7gdQnkftQ0FAhI59rh1l8iAWuhlufsipj9nbe9wnHVXSYEPA/8zX5fTsaqF6qUAjeRXGxGpHSn2Jlsu9h4Za0G92JdVudRj6syjfPY/hJrdRd0jUje9j68haE59qzTV2lp2gjrntShsPWKYS+vj1YdHSVFO+XSf+4oXLKYuY/6J3Tw7i4mjk0LQkvrXUScV8Yfc3LfqDpoYK+EBWikhH8zIuzFq2ZKp5m8w+aCGSAWDysj+2ZsDPGBw4ODdN0VnL2nbh7g9/A4z3v5C/Rwl5U1un530OUI+tlRBcyfV+ST6pLkoZcHbOEZ+X4LyIBQg2m0MtiR56Q+jL07S4u+pgqzE4GIKesEMEAMVZ+mNQ/s/SopQOKt6zMb2CvPrAQmvlg+WDUxtSQ7Iy/62pvcw2/NAehZewlxLa3EZlOVkZQFH4qxqpY+2RU9Z3v2n/HwgfrLo4UHqXcsVcJPWaxLUQ9x3Jic1AywXMPU1ONJAcoLL3LWIGCf1AGhvPupfKhiaJoBjuXi8BWZHiZW/pYydbzZqXKEwxXmfNB9K9VH4DWqpnOz02rygdOUc2cGztyxqON7oepv2dlQvFULCcEfVYT3w5f9/7+m6LK6XcsNSEc7KC6J9Dl3twIPITqzowIWMerEDxyBVqSWpcewpzYcocFOOsU6Y1efMWq6t/G5E7p7zgmTCGRer6fFbUYHpTe8HeLHFOs3Z7Wz9NCpJ4seEc+2iuouMMy112zwcbfmMk583+04sXLH8nNHq3N/5EDm+hTXvhqOmBH001xeSnijOeMg0pUtv1ECDzcwVHq+0pDfy9xUJzlwzDQUylabADTzcpCSZ6XmqV/q/szaXoPJr4o22xkwkUUS2x+YDfPORrW7KIwWaHFmUdZT0AsnHZuFYLGys23gOT70yl8TuE/fj6CV94bRAL1p0FW+4s+GW/EeQsLUKBpcVbLKy1uS8CdgL+cbW7E6aHXuE4uV6MCubqQ87c2/pf8W3kduxqEkn46chR80FcvlwFMQOkBq" wtx-context="EEBE38D0-F814-4939-8C2E-612E907DAF9C"></span></form>
-    
-
-
-
-<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; background-image: url(&quot;chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@2x.png&quot;); background-size: 100px 25px; opacity: 0.9; cursor: pointer;"></span></body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>National Math Bee</title>
+		<meta name="description" />
+		<meta name="keywords" />
+		<meta name="author" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+	</head>
+
+	<body class="background">
+
+
+
+		<div class="page">
+			<header id="hdrMain">
+				<a href="../index.html" class="logo"></a>                    
+			</header>
+
+			<div class="page_content">
+				<div style="border-top:1px solid #333;">
+					<div class="pageWrapper">
+						<div class="navTeacherMenu">
+							<a href="teacher.html" id="ContentPlaceHolder1_navTeacherTab" class="navTeacher">Teacher</a>
+							<a href="classrooms.html" id="ContentPlaceHolder1_navClassroomTab" class="navClassroom">Classroom</a>
+							<a href="students.html" id="ContentPlaceHolder1_navStudentsTab" class="navStudents currentSection">Students</a>
+							<a href="reports.html" class="navReports">Reports</a>
+							<div class="clear-fix"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="pageWrapper"><br>
+					<div id="ContentPlaceHolder1_UpdatePanelMaster">
+
+						<div id="ContentPlaceHolder1_divAddStudents">
+							<h1 id="ContentPlaceHolder1_h1Add">Add A Student</h1>
+							<div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
+								<div style="float:left;width:100%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblClassrooms" style="color:Gray;font-size:Medium;">Assign Student to this Classroom</span><br>
+									<select name="ctl00$ContentPlaceHolder1$ddlClassrooms" id="ContentPlaceHolder1_ddlClassrooms" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;">
+										<option value="Choose A Classroom">Choose A Classroom</option>
+										<option value="2126">myclass</option>
+										<option selected="selected" value="2127">class</option>
+									</select><br><br>
+									<span id="ContentPlaceHolder1_Label2" style="color:Gray;font-size:Medium;">Names will not be displayed on the website.</span><br><br>
+								</div>
+
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblFName" style="color:Gray;font-size:Medium;">First Name</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtFName" type="text" id="ContentPlaceHolder1_txtFName" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;">
+									<br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 825.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblMName" style="color:Gray;font-size:Medium;">Middle Name (Optional)</span>\<br>
+									<input name="ctl00$ContentPlaceHolder1$txtMName" type="text" id="ContentPlaceHolder1_txtMName" style="color:Gray;font-size:Medium;height:30px;width:280px;"><br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 825.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblLName" style="color:Gray;font-size:Medium;">Last Name</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtLName" type="text" id="ContentPlaceHolder1_txtLName" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;">
+									<br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 903.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblUsername" style="color:Gray;font-size:Medium;">Sign In Username</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtUsername" type="text" id="ContentPlaceHolder1_txtUsername" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;">
+									<br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 903.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblPassword" style="color:Gray;font-size:Medium;">Sign In Password</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtPassword" type="password" id="ContentPlaceHolder1_txtPassword" value="" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;">
+									<br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 302px; top: 981.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblPasswordRetype" style="color:Gray;font-size:Medium;">Retype Password</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtPasswordRetype" type="password" id="ContentPlaceHolder1_txtPasswordRetype" value="" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;"><br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 981.833px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblGrade" style="color:Gray;font-size:Medium;">Grade</span><br>
+									<select name="ctl00$ContentPlaceHolder1$ddlGrade" id="ContentPlaceHolder1_ddlGrade" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;">
+										<option selected="selected" value="Choose A Grade">Choose A Grade</option>
+										<option value="1">First</option>
+										<option value="2">Second</option>
+										<option value="3">Third</option>
+										<option value="4">Fourth</option>
+										<option value="5">Fifth</option>
+										<option value="6">Sixth</option>
+									</select>
+									<br><br>
+								</div>
+
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblGender" style="color:Gray;font-size:Medium;">Gender</span><br>
+									<select name="ctl00$ContentPlaceHolder1$ddlGender" id="ContentPlaceHolder1_ddlGender" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" >
+										<option selected="selected" value="Choose A Gender">Choose A Gender</option>
+										<option value="Female">Female</option>
+										<option value="Male">Male</option>
+									</select><br><br>
+								</div>
+
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblRace" style="color:Gray;font-size:Medium;">Race</span><br>
+									<select name="ctl00$ContentPlaceHolder1$ddlRace" id="ContentPlaceHolder1_ddlRace" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;" >
+										<option selected="selected" value="Choose A Race">Choose A Race</option>
+										<option value="African-American">African-American</option>
+										<option value="Asian">Asian</option>
+										<option value="Caucasian">Caucasian</option>
+										<option value="Hispanic">Hispanic</option>
+										<option value="Native American">Native American</option>
+										<option value="Other">Other</option>
+									</select>
+									<br><br>
+								</div>
+
+								<div style="float:left;width:33%;min-width:300px;">
+									<span id="ContentPlaceHolder1_lblBirthday" style="color:Gray;font-size:Medium;">Birthday (ex. 12/31/2004)</span><br>
+									<input name="ctl00$ContentPlaceHolder1$txtBirthday" type="text" id="ContentPlaceHolder1_txtBirthday" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:30px;width:280px;">
+									<br><br>
+									<span style="opacity: 1; background-size: 19px 13px; left: 602px; top: 1141.83px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+								</div>
+
+								<div style="float:left;width:33%;min-width:300px;height:60px;">            
+									<div style="margin-top:10px;">
+										<input type="image" name="ctl00$ContentPlaceHolder1$btnSaveStudent" id="ContentPlaceHolder1_btnSaveStudent" onmouseover="this.src='../images/btn_SaveOver.png'" onmouseout="this.src='../images/btn_SaveUp.png'" src="../images/btn_SaveUp.png">
+									</div>
+								</div>
+
+								<div class="clear-fix"></div>
+								<span id="ContentPlaceHolder1_lblSaveStudentError" style="color:#990000;font-size:Medium;"></span><br>
+								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;">Student Saved Succesfully</span>
+							</div><br>
+							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png">
+						</div><br><br>
+
+						<div id="ContentPlaceHolder1_divStudents">
+							<div style="width:200px;float:left;">
+								<h1 id="ContentPlaceHolder1_h1List">Students</h1>
+							</div>
+							<div style="min-width:350px;float:left;">
+								<span id="ContentPlaceHolder1_lblShowClassroom" style="color:Gray;font-size:Medium;">Show Classroom:</span>
+								<select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlClassroomFilter\',\'\')', 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;">
+									<option selected="selected" value="All Classrooms">All Classrooms</option>
+									<option value="Unassigned">Unassigned</option>
+									<option value="2126">myclass</option>
+									<option value="2127">class</option>
+								</select>
+							</div>
+							<div class="clear-fix"></div><br>
+
+							<div>
+								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
+									<tbody>
+										<tr>
+											<td>
+												<div class="editStudentRow">
+													<div class="editStudentIcons">
+														<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
+														<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_0" title="Edit Student" class="editStudent" src="../images/invEdit.png">
+													</div>
+													<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">
+														<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Player#</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
+													</div>
+
+													<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">             
+														<span id="ContentPlaceHolder1_gvStudents_Label8_0" style="color:Silver;">Grade</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label9_0" style="font-size:Medium;">2</span>
+													</div>
+
+													<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+														<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
+														<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Password</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label7_0" title="password" style="font-size:Medium;">password</span>
+													</div>
+
+													<div style="width:70px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Gender</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">Female</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label14_0" style="color:Silver;">Birthday</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label15_0" style="font-size:Medium;">3/20/1985</span>
+													</div>
+
+													<div style="width:180px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Race</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label13_0" style="font-size:Medium;">Asian</span>
+													</div>
+
+													<div class="clear-fix"></div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td><br>
+												<div class="editStudentRow">
+													<div id="ContentPlaceHolder1_gvStudents_divEditForm_1">
+
+														<div class="editModeStudentIcons">
+															<img src="../images/icon_student.png" alt="Student" class="editModeStudentIcon">
+															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_1" title="Update Student" class="editModeStudent" src="../images/invSave.png">
+															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnDeleteStudent" id="ContentPlaceHolder1_gvStudents_btnDeleteStudent_1" title="Delete Student" class="deleteStudent" src="../images/iconDelete25.png">
+															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnCancelStudent" id="ContentPlaceHolder1_gvStudents_btnCancelStudent_1" title="Cancel" class="cancelStudent" src="../images/iconCancel.png">
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">            
+															<span id="ContentPlaceHolder1_gvStudents_Label8_1" style="color:Silver;">Grade</span><br>      
+															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGrade" id="ContentPlaceHolder1_gvStudents_ddlGrade_1" style="font-size:Medium;height:35px;width:90px;">
+																<option value="1">First</option>
+																<option selected="selected" value="2">Second</option>
+																<option value="3">Third</option>
+																<option value="4">Fourth</option>
+																<option value="5">Fifth</option>
+																<option value="6">Sixth</option>
+															</select>
+															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2">
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
+															<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">First Name</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentFName" type="text" value="m" id="ContentPlaceHolder1_gvStudents_txtEditStudentFName_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
+															<span id="ContentPlaceHolder1_gvStudents_Label16_1" style="color:Silver;">Middle Name</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentMName" type="text" id="ContentPlaceHolder1_gvStudents_txtEditStudentMName_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
+															<span id="ContentPlaceHolder1_gvStudents_Label17_1" style="color:Silver;">Last Name</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentLName" type="text" value="p" id="ContentPlaceHolder1_gvStudents_txtEditStudentLName_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentUsername" type="text" value="mp320" id="ContentPlaceHolder1_gvStudents_txtEditStudentUsername_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Password</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentPassword" type="text" value="password" id="ContentPlaceHolder1_gvStudents_txtEditStudentPassword_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNyAxMiI+IDxkZWZzPiA8cGF0aCBpZD0iYSIgZD0iTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3oiLz4gPC9kZWZzPiA8dXNlIGZpbGw9IiNiNmI2YjYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEpIiB4bGluazpocmVmPSIjYSIvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Gender</span><br>
+															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGender" id="ContentPlaceHolder1_gvStudents_ddlGender_1" style="font-size:Medium;height:35px;width:100px;">
+																<option value="Female">Female</option>
+																<option selected="selected" value="Male">Male</option>
+															</select>
+															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGender" id="ContentPlaceHolder1_gvStudents_hfStudentGender_1" value="Male">
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_Label14_1" style="color:Silver;">Birthday</span><br>
+															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentBirthday" type="text" value="3/20/2004" id="ContentPlaceHolder1_gvStudents_txtEditStudentBirthday_1" style="font-size:Medium;height:30px;width:100px;">
+															<span style="opacity: 1; background-size: 19px 13px; left: 82px; top: 32.1771px; width: 19px; min-width: 19px; height: 13px; position: absolute; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nMTcnIGhlaWdodD0nMTInIHZpZXdCb3g9JzAgMCAxNyAxMic+IDxkZWZzPiA8cGF0aCBpZD0nYScgZD0nTTcuOTA5IDEuNDYybDIuMTIxLjg2NHMtLjY3MS4xMy0xLjIwOS4yOTRjMCAwIC40MzcuNjM0Ljc3LjkzOC4zOTEtLjE4LjY1Ny0uMjQ4LjY1Ny0uMjQ4LS44MTEgMS42NjgtMi45NzkgMi43MDMtNC41MyAyLjcwMy0uMDkzIDAtLjQ4Mi0uMDA2LS43MjcuMDE1LS40MzUuMDIxLS41ODEuMzgtLjM3NC40NzMuMzczLjIwMSAxLjE0My42NjIuOTU4IDEuMDA5QzUuMiA4LjAwMy45OTkgMTEgLjk5OSAxMWwuNjQ4Ljg4Nkw2LjEyOSA4LjYzQzguNjAyIDYuOTQ4IDEyLjAwNiA2IDE1IDZoM1Y1aC00LjAwMWMtMS4wNTggMC0yLjA0LjEyMi0yLjQ3My0uMDItLjQwMi0uMTMzLS41MDItLjY3OS0uNDU1LTEuMDM1YTcuODcgNy44NyAwIDAgMSAuMTg3LS43MjljLjAyOC0uMDk5LjA0Ni0uMDc3LjE1NS0uMDk5LjU0LS4xMTIuNzc3LS4wOTUuODIxLS4xNi4xNDYtLjI0NS4yNTQtLjk3NC4yNTQtLjk3NEw3LjU2OS4zODlzLjIwMiAxLjAxMy4zNCAxLjA3M3onLz4gPC9kZWZzPiA8dXNlIGZpbGw9JyMwMDdDOTcnIGZpbGwtcnVsZT0nZXZlbm9kZCcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEpJyB4bGluazpocmVmPScjYScvPiA8L3N2Zz4=&quot;); background-repeat: no-repeat; background-position: 0px 0px; border: none; display: inline; visibility: visible; z-index: auto;"></span>
+														</div>
+
+														<div style="width:120px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Race</span><br>
+															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlRace" id="ContentPlaceHolder1_gvStudents_ddlRace_1" style="font-size:Medium;height:35px;width:100px;">
+																<option value="African-American">African-American</option>
+																<option value="Asian">Asian</option>
+																<option value="Caucasian">Caucasian</option>
+																<option selected="selected" value="Hispanic">Hispanic</option>
+																<option value="Native American">Native American</option>
+																<option value="Other">Other</option>
+															</select>
+															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentRace" id="ContentPlaceHolder1_gvStudents_hfStudentRace_1" value="Hispanic">
+														</div>
+
+														<div style="width:300px;float:left;height:60px;position:relative;">
+															<span id="ContentPlaceHolder1_gvStudents_lblClassroomEdit_1" style="color:Silver;">Classroom</span><br>
+															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit\',\'\')', 0)" id="ContentPlaceHolder1_gvStudents_ddlClassroomEdit_1" style="font-size:Large;height:35px;width:280px;">
+																<option value="No Classroom Assigned">No Classroom Assigned</option>
+																<option value="2126">myclass</option>
+																<option selected="selected" value="2127">class</option>
+															</select>
+															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfClassroomID" id="ContentPlaceHolder1_gvStudents_hfClassroomID_1" value="2127">
+														</div>
+
+														<div class="clear-fix"></div>
+														<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentID" id="ContentPlaceHolder1_gvStudents_hfStudentID_1" value="16026"><br>
+														<span id="ContentPlaceHolder1_gvStudents_lblUpdateMessage_1" style="color:#990000;"></span><br>
+													</div>
+
+												</div>
+												<br>
+
+
+											</td>
+										</tr>
+										<tr>
+											<td><br>
+												<div class="editStudentRow">
+													<div id="ContentPlaceHolder1_gvStudents_divConfirmDelete_2" class="editConfirmDelete">
+														<span id="ContentPlaceHolder1_gvStudents_Label19_2" style="color:White;font-size:Large;">Are you sure you want to delete this student - fsasdf sfadfsd?</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label18_2" style="color:White;font-size:Large;">All BatterUp inning data will be deleted as well.</span><br>
+														<input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvStudents_btnConfirmDelete_2">
+														<input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvStudents_btnCancelDelete_2">
+													</div>
+												</div>
+												<br>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="editStudentRow">
+													<div class="editStudentIcons">
+														<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
+														<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl05$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_3" title="Edit Student" class="editStudent" src="../images/invEdit.png">
+													</div>
+
+													<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">             
+														<span id="ContentPlaceHolder1_gvStudents_Label1_3" style="color:Silver;">Player#</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label21_3" style="font-size:Medium;">16296</span>
+													</div>
+
+													<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                  
+														<span id="ContentPlaceHolder1_gvStudents_Label8_3" style="color:Silver;">Grade</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label9_3" style="font-size:Medium;">6</span>
+													</div>
+
+													<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+														<span id="ContentPlaceHolder1_gvStudents_Label3_3" style="color:Silver;">Name</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_3" style="font-size:Medium;">vxzczx, xvzc vxcz</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
+														<span id="ContentPlaceHolder1_gvStudents_Label4_3" style="color:Silver;">Username</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label5_3" title="xvcvcx" style="font-size:Medium;">xvcvcx</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label6_3" style="color:Silver;">Password</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label7_3" title="password" style="font-size:Medium;">password</span>
+													</div>
+
+													<div style="width:70px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label10_3" style="color:Silver;">Gender</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label11_3" style="font-size:Medium;">Female</span>
+													</div>
+
+													<div style="width:100px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label14_3" style="color:Silver;">Birthday</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label15_3" style="font-size:Medium;">3/20/1985</span>
+													</div>
+
+													<div style="width:180px;float:left;height:50px;position:relative;">
+														<span id="ContentPlaceHolder1_gvStudents_Label12_3" style="color:Silver;">Race</span><br>
+														<span id="ContentPlaceHolder1_gvStudents_Label13_3" style="font-size:Medium;">Asian</span>
+													</div>
+
+													<div class="clear-fix"></div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav>
+				<a href="../index.html" id="navHome" class="navHome">Home</a>
+				<a href="../tournament/default.html" id="navTournament" class="navTournament">Tournament</a>
+				<a href="../batterup/batterup.html" id="navBatterUp" class="navBatterUp">BatterUp</a>
+				<a href="../contact/default.html" id="navContact" class="navContact">Contact Us</a>
+				<a  href="../singin/default.html" id="navSignIn" class="navSignIn">Sign Out</a>
+				<a href="teacher.html" id="navTeachers" class="navTeachers selected">Teacher</a>
+			</nav>
+
+			<div class="social">
+				<a href="https://twitter.com/NationalMathBee" class="social_twitter" target="_blank">Twitter</a>
+				<a href="http://www.facebook.com/pages/National-Math-Bee/191250144339108" class="social_facebook" target="_blank">Facebook</a>
+				<a href="https://plus.google.com/111804013780922297750" rel="publisher" class="social_google_plus" target="_blank">Google+</a>
+				<a href="http://www.pinterest.com/nationalmathbee" class="social_pinterest" target="_blank">Pinterest</a>
+				<a href="http://www.youtube.com/NationalMathBee" class="social_youtube" target="_blank">YouTube</a>
+			</div>
+
+			<footer> 
+				© <span id="spDates">2017-2018</span>  National Math Bee
+			</footer>
+		</div>
+	</body>
 </html>
 
 
