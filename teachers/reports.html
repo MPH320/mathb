@@ -1,340 +1,222 @@
-
-
-
 <!DOCTYPE html>
 
 <html>
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /><title>
-	National Math Bee
-</title><meta name="description" /><meta name="keywords" /><meta name="author" /><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" /><link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" /><link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
-
-        <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-        
-
-
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-53966126-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-
-
-    </head>
-
-    <body class="background">
-        <form method="post" action="./Reports.aspx" id="form1">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIxMzU1NTg3NzgPZBYCZg9kFgICAw9kFhQCBQ9kFgQCBw9kFgJmD2QWBAIDD2QWAgIDDxAPFgIeC18hRGF0YUJvdW5kZ2QPFgICAQICFgIQBQdteWNsYXNzBQQyMTI2ZxAFBWNsYXNzBQQyMTI3ZxYBZmQCBQ88KwARAwAPFgQfAGceC18hSXRlbUNvdW50AgNkARAWABYAFgAMFCsAABYCZg9kFgxmDw8WAh4HVmlzaWJsZWhkZAIBD2QWAmYPZBYQAgMPDxYCHgRUZXh0BQUxNjI5NWRkAgcPDxYCHwMFATJkZAILDw8WAh8DBRNkZ2ZzZHNmZywgc2RmIHNkZmdnZGQCEQ8PFgQfAwUHZ2Zkc3NnZh4HVG9vbFRpcAUHZ2Zkc3NnZmRkAhMPZBYCAgMPDxYCHwMFATBkZAIVD2QWAgIDDw8WAh8DBQEwZGQCFw8WAh8CaBYCAgMPDxYCHwMFATBkZAIZDxYCHwJoFgICAw8PFgIfAwUBMGRkAgIPZBYCZg9kFhACAw8PFgIfAwUFMTYwMjZkZAIHDw8WAh8DBQEyZGQCCw8PFgIfAwUFcCwgbSBkZAIRDw8WBB8DBQVtcDMyMB8EBQVtcDMyMGRkAhMPZBYCAgMPDxYCHwMFATBkZAIVD2QWAgIDDw8WAh8DBQEwZGQCFw8WAh8CaBYCAgMPDxYCHwMFATBkZAIZDxYCHwJoFgICAw8PFgIfAwUBMGRkAgMPZBYCZg9kFhACAw8PFgIfAwUFMTYyOTRkZAIHDw8WAh8DBQEyZGQCCw8PFgIfAwUYc2ZhZGZzZCwgZnNhc2RmIHNhZGZzZmRhZGQCEQ8PFgQfAwUFc3NmYWQfBAUFc3NmYWRkZAITD2QWAgIDDw8WAh8DBQEwZGQCFQ9kFgICAw8PFgIfAwUBMGRkAhcPFgIfAmgWAgIDDw8WAh8DBQEwZGQCGQ8WAh8CaBYCAgMPDxYCHwMFATBkZAIEDw8WAh8CaGRkAgUPDxYCHwJoZGQCCQ8PZA8QFgFmFgEWAh4OUGFyYW1ldGVyVmFsdWUCthEWAQIFZGQCBw8WAh4FY2xhc3MFB25hdkhvbWVkAgkPFgIfAmhkAgsPFgIfBgUNbmF2VG91cm5hbWVudGQCDQ8WAh8GBQtuYXZCYXR0ZXJVcGQCDw8WBB8GBQtuYXZTcG9uc29ycx8CaGQCEQ8WAh8GBQpuYXZDb250YWN0ZAITDxYEHglpbm5lcmh0bWwFCFNpZ24gT3V0HwYFCW5hdlNpZ25JbmQCFQ8WBB8HBQdUZWFjaGVyHwYFFG5hdlRlYWNoZXJzIHNlbGVjdGVkZAIXDxYCHwcFCTIwMTctMjAxOGQYAQUkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndlN0dWRlbnRzDzwrAAwBCAIBZKPhWLTxzvQqJK2J6TucEgA/u9z4QpBsUPRBXTwvtuph" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form1'];
-if (!theForm) {
-    theForm = document.form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<script src="/WebResource.axd?d=39sFr7zF1mi3r_KYN43MXCIMAGo3ns_nFk3dfkAzEz-HjrIsiRqOWnPjYdG2dKka322aWoDDv8UMeLx6F_Ic5QW0-gGDD2Vjd4PfekxupwI1&amp;t=636354654046607314" type="text/javascript"></script>
-
-
-<script src="/ScriptResource.axd?d=2Gj7wmZcEI5dnTMr-wlF4wIBTZxsKMkLVp-3kSdWp7elMBzd7s5oEjWkkkq2z9Q2eQLQ1twU-eKXpQdZG_iFgWulrzA8ZYsYD-0AeUksPqO7bLd-A1NLdLFm-m_TT3GmnYHwZ5DNm33BvKOPc2gsSK_SV2ILZo4hs-Pn7zGYA-w1&amp;t=3d6efc1f" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=gIlsOfwMNcvHFcqJuh7ha_BwSjhM6FTjT_rsg5kzUTnJOA_hzhgZ-FVsFCnjliOB0w3J9ZmoFRGwzfWFK02dirffCO1pdPsQDMa7pGYJRbb1cjRinhnDUdj7CKSeS9XQ_2m3uZL8Ql8-kq2GYmZrpHopsA5Q3mgjz1UQmEsBety0y0foPtRV06HqJn-wOeVD0&amp;t=3d6efc1f" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D79E5CA" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAkn98ZLrFq2lxF2BejhGpMU2P4Sa3UXdI1I3vY+vIWhOfas01dpadoI657UobD1imGYuY/6J3Tw7i4mjk0LQkvrXUScV8Yfc3LfqDpoYK+EBeQVmaTJ6cLAMHGn9XbA9B+VkZQFH4qxqpY+2RU9Z3v2AAvdktr9dwd4D94Tr7x37fAnYC/nG1uxOmh17hOLleihrJFzRFOMbjjUted4xOZj833EZYAyLPAXd78vsd8nGw==" />
-</div>
-
-        <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$ContentPlaceHolder1$UpdatePanelMaster','ContentPlaceHolder1_UpdatePanelMaster'], [], [], 90, 'ctl00');
-//]]>
-</script>
-
-            
-            <div class="page">
-                <header id="hdrMain">
-                    <a href="../default.aspx" class="logo"></a>                    
-                </header>
-
-
-                
-
-                <div class="page_content">
-                    
-
-
-
-<div style="border-top:1px solid #333;">
-    <div class="pageWrapper">
-        <div class="navTeacherMenu">
-            <a href="Default.aspx" id="ContentPlaceHolder1_navTeacherTab" class="navTeacher">Teacher</a>
-            <a href="Classrooms.aspx" id="ContentPlaceHolder1_navClassroomTab" class="navClassroom">Classroom</a>
-            <a href="Students.aspx" id="ContentPlaceHolder1_navStudentsTab" class="navStudents">Students</a>
-            <a href="Reports.aspx" class="navReports currentSection">Reports</a>
-            <div class="clear-fix"></div>
-        </div>
-    </div>
-</div>
-
-<div class="pageWrapper">
-
-    <div id="ContentPlaceHolder1_UpdatePanelMaster">
-	
-
-
-    
-
-    <div>
-        <div style="width:250px;float:left;">
-            <h1 id="ContentPlaceHolder1_h1List">Batting Averages</h1>
-        </div>
-        <div id="ContentPlaceHolder1_divClassroomFilter" style="min-width:350px;float:left;">
-            <span id="ContentPlaceHolder1_lblShowClassroom" style="color:Gray;font-size:Medium;">For Classroom:</span>
-            <select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlClassroomFilter\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;">
-		<option selected="selected" value="All Classrooms">All Classrooms</option>
-		<option value="2126">myclass</option>
-		<option value="2127">class</option>
-
-	</select>
-        </div>
-        <div class="clear-fix"></div>   
-        <br />
-    </div>
-
-
-
-     <div>
-		<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
-			<tr>
-				<td>
-                        <div class="editStudentRow">
-
-                            <div class="editStudentIconshort">
-                                <img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
-                               
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Player#</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Grade</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">2</span>
-                            </div>
-
-                            
-
-                            <div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_0" value="2" />
-                            </div>
-
-                            <div style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
-                            </div>
-
-                           
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA1_0" style="width:90px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Addition BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label2_0" style="font-size:Medium;">0</span>
-                            </div>
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA2_0" style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Subtraction BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label7_0" style="font-size:Medium;">0</span>
-                            </div>
-
-                            
-
-                            
-                                                       
-                            
-
-                            <div class="clear-fix"></div>
-                        </div>
-                        </td>
-			</tr><tr>
-				<td>
-                        <div class="editStudentRow">
-
-                            <div class="editStudentIconshort">
-                                <img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
-                               
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Player#</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label21_1" style="font-size:Medium;">16026</span>
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Grade</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label11_1" style="font-size:Medium;">2</span>
-                            </div>
-
-                            
-
-                            <div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">p, m </span>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2" />
-                            </div>
-
-                            <div style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label5_1" title="mp320" style="font-size:Medium;">mp320</span>
-                            </div>
-
-                           
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA1_1" style="width:90px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label1_1" style="color:Silver;">Addition BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label2_1" style="font-size:Medium;">0</span>
-                            </div>
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA2_1" style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Subtraction BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label7_1" style="font-size:Medium;">0</span>
-                            </div>
-
-                            
-
-                            
-                                                       
-                            
-
-                            <div class="clear-fix"></div>
-                        </div>
-                        </td>
-			</tr><tr>
-				<td>
-                        <div class="editStudentRow">
-
-                            <div class="editStudentIconshort">
-                                <img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
-                               
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label12_2" style="color:Silver;">Player#</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label21_2" style="font-size:Medium;">16294</span>
-                            </div>
-
-                            <div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-                                <span id="ContentPlaceHolder1_gvStudents_Label10_2" style="color:Silver;">Grade</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label11_2" style="font-size:Medium;">2</span>
-                            </div>
-
-                            
-
-                            <div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-                                <span id="ContentPlaceHolder1_gvStudents_Label3_2" style="color:Silver;">Name</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_2" style="font-size:Medium;">sfadfsd, fsasdf sadfsfda</span>
-                                <input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_2" value="2" />
-                            </div>
-
-                            <div style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label4_2" style="color:Silver;">Username</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label5_2" title="ssfad" style="font-size:Medium;">ssfad</span>
-                            </div>
-
-                           
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA1_2" style="width:90px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label1_2" style="color:Silver;">Addition BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label2_2" style="font-size:Medium;">0</span>
-                            </div>
-
-                            <div id="ContentPlaceHolder1_gvStudents_divBA2_2" style="width:110px;float:left;height:50px;position:relative;">
-                                <span id="ContentPlaceHolder1_gvStudents_Label6_2" style="color:Silver;">Subtraction BA</span><br />
-                                <span id="ContentPlaceHolder1_gvStudents_Label7_2" style="font-size:Medium;">0</span>
-                            </div>
-
-                            
-
-                            
-                                                       
-                            
-
-                            <div class="clear-fix"></div>
-                        </div>
-                        </td>
-			</tr>
-		</table>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>National Math Bee</title>
+		<meta name="description" />
+		<meta name="keywords" />
+		<meta name="author" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+	</head>
+
+	<body class="background">
+
+	<div class="page">
+		<header id="hdrMain">
+			<a href="../index.html" class="logo"></a>                    
+		</header>
+
+
+
+
+		<div class="page_content">
+
+			<div style="border-top:1px solid #333;">
+				<div class="pageWrapper">
+					<div class="navTeacherMenu">
+						<a href="teacher.html" id="ContentPlaceHolder1_navTeacherTab" class="navTeacher">Teacher</a>
+						<a href="classrooms.html" id="ContentPlaceHolder1_navClassroomTab" class="navClassroom">Classroom</a>
+						<a href="students.html" id="ContentPlaceHolder1_navStudentsTab" class="navStudents">Students</a>
+						<a href="reports.html" class="navReports currentSection">Reports</a>
+						<div class="clear-fix"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pageWrapper">
+
+				<div id="ContentPlaceHolder1_UpdatePanelMaster">
+
+					<div>
+						<div style="width:250px;float:left;">
+							<h1 id="ContentPlaceHolder1_h1List">Batting Averages</h1>
+						</div>
+						<div id="ContentPlaceHolder1_divClassroomFilter" style="min-width:350px;float:left;">
+							<span id="ContentPlaceHolder1_lblShowClassroom" style="color:Gray;font-size:Medium;">For Classroom:</span>
+							<select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlClassroomFilter\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;">
+								<option selected="selected" value="All Classrooms">All Classrooms</option>
+								<option value="2126">myclass</option>
+								<option value="2127">class</option>
+							</select>
+						</div>
+						<div class="clear-fix"></div>   
+						<br />
+					</div>
+
+					<div>
+						<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>
+									<div class="editStudentRow">
+										<div class="editStudentIconshort">
+											<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Player#</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Grade</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">2</span>
+										</div>
+
+										<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+											<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
+											<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_0" value="2" />
+										</div>
+
+										<div style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA1_0" style="width:90px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Addition BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label2_0" style="font-size:Medium;">0</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA2_0" style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Subtraction BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label7_0" style="font-size:Medium;">0</span>
+										</div>
+
+										<div class="clear-fix"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<div class="editStudentRow">
+									<div class="editStudentIconshort">
+										<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+									</div>
+
+									<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+										<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Player#</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label21_1" style="font-size:Medium;">16026</span>
+									</div>
+
+									<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+										<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Grade</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label11_1" style="font-size:Medium;">2</span>
+									</div>
+
+									<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+										<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">p, m </span>
+										<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2" />
+									</div>
+
+									<div style="width:110px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label5_1" title="mp320" style="font-size:Medium;">mp320</span>
+									</div>
+
+									<div id="ContentPlaceHolder1_gvStudents_divBA1_1" style="width:90px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label1_1" style="color:Silver;">Addition BA</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label2_1" style="font-size:Medium;">0</span>
+									</div>
+
+									<div id="ContentPlaceHolder1_gvStudents_divBA2_1" style="width:110px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Subtraction BA</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label7_1" style="font-size:Medium;">0</span>
+									</div>
+
+									<div class="clear-fix"></div>
+								</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="editStudentRow">
+										<div class="editStudentIconshort">
+											<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label12_2" style="color:Silver;">Player#</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label21_2" style="font-size:Medium;">16294</span>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label10_2" style="color:Silver;">Grade</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label11_2" style="font-size:Medium;">2</span>
+										</div>
+
+										<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+											<span id="ContentPlaceHolder1_gvStudents_Label3_2" style="color:Silver;">Name</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_2" style="font-size:Medium;">sfadfsd, fsasdf sadfsfda</span>
+											<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_2" value="2" />
+										</div>
+
+										<div style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label4_2" style="color:Silver;">Username</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label5_2" title="ssfad" style="font-size:Medium;">ssfad</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA1_2" style="width:90px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label1_2" style="color:Silver;">Addition BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label2_2" style="font-size:Medium;">0</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA2_2" style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label6_2" style="color:Silver;">Subtraction BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label7_2" style="font-size:Medium;">0</span>
+										</div>
+
+										<div class="clear-fix"></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<a href="../index.html" id="navHome" class="navHome">Home</a>
+			<a href="../tournament/default.html" id="navTournament" class="navTournament">Tournament</a>
+			<a href="../batterup/batterup.html" id="navBatterUp" class="navBatterUp">BatterUp</a>
+			<a href="../contact/default.html" id="navContact" class="navContact">Contact Us</a>
+			<a href="../singin/default.html" id="navSignIn" class="navSignIn" >Sign Out</a>
+			<a href="teacher.html" id="navTeachers" class="navTeachers selected">Teacher</a>
+		</nav>
+
+		<div class="social">
+			<a href="https://twitter.com/NationalMathBee" class="social_twitter" target="_blank">Twitter</a>
+			<a href="http://www.facebook.com/pages/National-Math-Bee/191250144339108" class="social_facebook" target="_blank">Facebook</a>
+			<a href="https://plus.google.com/111804013780922297750" rel="publisher" class="social_google_plus" target="_blank">Google+</a>
+			<a href="http://www.pinterest.com/nationalmathbee" class="social_pinterest" target="_blank">Pinterest</a>
+			<a href="http://www.youtube.com/NationalMathBee" class="social_youtube" target="_blank">YouTube</a>
+		</div>
+
+		<footer> 
+			© <span id="spDates">2017-2018</span>  National Math Bee
+		</footer>
 	</div>
 
 
-
-    
-</div>
-</div>
-
-
-
-
-
-                </div>
-
-                
-
-                <nav>
-                    <a href="../default.aspx" id="navHome" class="navHome">Home</a>
-                    
-                    <a href="../tournament/default.aspx" id="navTournament" class="navTournament">Tournament</a>
-                    <a href="../batterup/batterup.aspx" id="navBatterUp" class="navBatterUp">BatterUp</a>
-                    
-                    <a href="../contact/default.aspx" id="navContact" class="navContact">Contact Us</a>
-                    <a id="navSignIn" class="navSignIn" href="javascript:__doPostBack(&#39;ctl00$navSignIn&#39;,&#39;&#39;)">Sign Out</a>
-                    <a href="./" id="navTeachers" class="navTeachers selected">Teacher</a>
-                </nav>
-
-                <div class="social">
-
-                    <a href="https://twitter.com/NationalMathBee" class="social_twitter" target="_blank">Twitter</a>
-                    <a href="http://www.facebook.com/pages/National-Math-Bee/191250144339108" class="social_facebook" target="_blank">Facebook</a>
-                    <a href="https://plus.google.com/111804013780922297750" rel="publisher" class="social_google_plus" target="_blank">Google+</a>
-                    
-                    <a href="http://www.pinterest.com/nationalmathbee" class="social_pinterest" target="_blank">Pinterest</a>
-                    <a href="http://www.youtube.com/NationalMathBee" class="social_youtube" target="_blank">YouTube</a>
-
-                </div>
-
-                <footer> 
-                    &copy; <span id="spDates">2017-2018</span>  National Math Bee
-                </footer>
-            </div>
-    
-        </form>
-    </body>
+	</body>
 </html>
 
 
