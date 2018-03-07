@@ -3,13 +3,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
-		
 		<title>National Math Bee</title>
-		
 		<meta name="description" />
 		<meta name="keywords" />
 		<meta name="author" />
-		
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
 		<link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" />
 		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
@@ -35,9 +32,9 @@
 								<div class="col_content">
 									<h3>State</h3>
 									<select name="ctl00$ContentPlaceHolder1$ddlStates" id="ContentPlaceHolder1_ddlStates" style="font-size:Larger;height:30px;width:100%;">
-										<option value="Select A State">Select A State</option>
+										<option selected="selected" value="Select A State">Select A State</option>
 										<option value="AL">Alabama</option>
-										<option selected="selected" value="AZ">Arizona</option>
+										<option value="AZ">Arizona</option>
 										<option value="CA">California</option>
 										<option value="CO">Colorado</option>
 										<option value="CT">Connecticut</option>
@@ -59,9 +56,8 @@
 							<div class="col col1_3">
 								<div class="col_content">
 									<h3>Grade</h3>
-									<select name="ctl00$ContentPlaceHolder1$ddlGrades" id="ContentPlaceHolder1_ddlGrades" style="font-size:Larger;height:30px;width:100%;">
-										<option value="Select A Grade">Select A Grade</option>
-										<option selected="selected" value="6">6</option>
+									<select name="ctl00$ContentPlaceHolder1$ddlGrades" id="ContentPlaceHolder1_ddlGrades" disabled="disabled" style="font-size:Larger;height:30px;width:100%;">
+										<option selected="selected" value="Select A Grade">Select A Grade</option>
 									</select>
 								</div>
 							</div>
@@ -259,6 +255,8 @@
 				© <span id="spDates">2017-2018</span>  National Math Bee
 			</footer>
 		</div>
+		<script src="../scripts/jquery-3.3.1.min.js"></script>
+		<script src="../scripts/tournament.js"></script>
 	</body>
 </html>
 
