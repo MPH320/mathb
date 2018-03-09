@@ -40,8 +40,8 @@
 				<div class="pageWrapper"><br>
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
 
-						<div id="ContentPlaceHolder1_divAddStudents">
-							<h1 id="ContentPlaceHolder1_h1Add">Add A Student</h1>
+						<div id="ContentPlaceHolder1_divAddStudents" style="display:none">
+							<h1 id="ContentPlaceHolder1_h1Add" >Add A Student</h1>
 							<div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
 								<div style="float:left;width:100%;min-width:300px;">
 									<span id="ContentPlaceHolder1_lblClassrooms" style="color:Gray;font-size:Medium;">Assign Student to this Classroom</span><br>
@@ -132,12 +132,17 @@
 
 								<div class="clear-fix"></div>
 								<span id="ContentPlaceHolder1_lblSaveStudentError" style="color:#990000;font-size:Medium;"></span><br>
-								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;">Student Saved Succesfully</span>
+								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;"></span>
 							</div><br>
-							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png">
-						</div><br><br>
+							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png" onclick="done()">
+						</div>
+						
+						<div id="ContentPlaceHolder1_divAddMessage">
+							<span id="ContentPlaceHolder1_lblAddMessage" style="color:Gray;font-size:Medium;">Click Add to begin adding students!</span><br><br>
+						</div>
+						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src='../images/btn_AddOver.png'" onmouseout="this.src='../images/btn_AddUp.png'" src="../images/btn_AddUp.png" onclick="add()"><br><br>
 
-						<div id="ContentPlaceHolder1_divStudents">
+						<div id="ContentPlaceHolder1_divStudents" style="display:none">
 							<div style="width:200px;float:left;">
 								<h1 id="ContentPlaceHolder1_h1List">Students</h1>
 							</div>
@@ -397,6 +402,9 @@
 			<footer> 
 				© <span id="spDates">2017-2018</span>  National Math Bee
 			</footer>
+			
+			<script src="../scripts/jquery-3.3.1.min.js"></script>
+		<script src="../scripts/students.js"></script>
 		</div>
 	</body>
 </html>
