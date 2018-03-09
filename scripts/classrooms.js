@@ -13,6 +13,13 @@ function noClassrooms(){
 	$( "#ContentPlaceHolder1_lblClassroomMessage" ).show();
 }
 
+function save(){
+	$( "#ContentPlaceHolder1_lblAddClassroomMessage" ).text('');
+	if(!$("#ContentPlaceHolder1_txtClassroomName").val()){
+		$( "#ContentPlaceHolder1_lblAddClassroomMessage" ).text('A classroom name is required.');
+	}
+}
+
 
 //ContentPlaceHolder1_h1Current
 //Current Classrooms
