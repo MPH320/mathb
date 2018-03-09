@@ -28,14 +28,23 @@
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
 
 						<br /><h1>Recover Login Credentials</h1>
+						
+						
+						
+						<div id="ContentPlaceHolder1_divMessage">
+                <span id="ContentPlaceHolder1_lblMessage" style="font-size:Larger;"></span> 
+            </div>
+						
+						
+						
 
 						<div id="ContentPlaceHolder1_divRecover">
 
 							<span id="ContentPlaceHolder1_Label1">Please Enter Your Email Address</span><br />
 
 							<input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" id="ContentPlaceHolder1_txtEmail" style="height:35px;width:300px;" /><br />
-							<span id="ContentPlaceHolder1_lblEmailError" style="color:#CC0000;">Please enter an email address.</span><br /><br />
-							<input type="image" name="ctl00$ContentPlaceHolder1$btnSend" id="ContentPlaceHolder1_btnSend" onmouseover="this.src=&#39;../images/button_send_over.png&#39;" onmouseout="this.src=&#39;../images/button_send.png&#39;" src="../images/button_send.png" />
+							<span id="ContentPlaceHolder1_lblEmailError" style="color:#CC0000;"></span><br /><br />
+							<input onclick="send()" type="image" name="ctl00$ContentPlaceHolder1$btnSend" id="ContentPlaceHolder1_btnSend" onmouseover="this.src=&#39;../images/button_send_over.png&#39;" onmouseout="this.src=&#39;../images/button_send.png&#39;" src="../images/button_send.png" />
 
 						</div>
 
@@ -68,7 +77,9 @@
 				© <span id="spDates">2017-2018</span>  National Math Bee
 			</footer>
 		</div>
-
+		
+		<script src="../scripts/jquery-3.3.1.min.js"></script>
+		<script src="../scripts/retrievelogin.js"></script>
 	</body>
 </html>
 
