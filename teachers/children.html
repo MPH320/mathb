@@ -36,9 +36,12 @@
 
 				<div class="pageWrapper"><br />
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
-						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" /><br /><br />
+						<div id="ContentPlaceHolder1_divAddMessage">
+							<span id="ContentPlaceHolder1_lblAddMessage" style="color:Gray;font-size:Medium;">Click Add to begin adding BatterUp players!</span><br><br>
+						</div>
+						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" onclick="add()"/>
 
-						<div id="ContentPlaceHolder1_divAddStudents">
+						<div id="ContentPlaceHolder1_divAddStudents" style="display:none">
 							<h1 id="ContentPlaceHolder1_h1Add">Add A Child</h1>
 							<div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
 								<div style="float:left;width:100%;min-width:300px;"><br><br><br>
@@ -127,16 +130,16 @@
 								<span id="ContentPlaceHolder1_lblSaveStudentError" style="color:#990000;font-size:Medium;">A username is required. A password is required. First name is required. Last name is required. A birthday is required. Please select a gender. Please select a grade. Please select a race. </span><br>
 								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;"></span>
 							</div><br>
-							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png">
-						</div>
-						<div id="ContentPlaceHolder1_divStudents"><br /><br />
+							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png" onclick="done()">
+						</div><br /><br />
+						<div id="ContentPlaceHolder1_divStudents" style="display:none"><br /><br />
 							<div style="width:200px;float:left;">
 								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
 							</div>
 							<div style="min-width:350px;float:left;"></div>
 							<div class="clear-fix"></div><br>
 							<div>
-								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
+								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;" >
 									<tbody>
 										<tr>
 											<td>
@@ -272,7 +275,9 @@
 				© <span id="spDates">2017-2018</span>  National Math Bee
 			</footer>
 		</div>
-
+		
+		<script src="../scripts/jquery-3.3.1.min.js"></script>
+		<script src="../scripts/students.js"></script>
 	</body>
 </html>
 
