@@ -146,15 +146,7 @@ function register(){
 			success = false;
 	}
 	
-	
-	 
-	 
-		
-	
-	
-	
 
-	
 	if(success){
 		console.log("success");
 	}
