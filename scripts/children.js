@@ -8,14 +8,12 @@ $( document ).ready(function() {
 function add(){
 	//console.log("hello");
 	$("#ContentPlaceHolder1_divAddStudents").show();
-	$("#ContentPlaceHolder1_divAddMessage").hide();
 	$("#ContentPlaceHolder1_btnAdd").hide();
 }
 
 function done(){
 	//console.log("hello");
 	$("#ContentPlaceHolder1_divAddStudents").hide();
-	$("#ContentPlaceHolder1_divAddMessage").show();
 	$("#ContentPlaceHolder1_btnAdd").show();
 	
 	
@@ -55,7 +53,7 @@ function clearAddChildForm(){
 
 
 function saveChild(){
-	console.log("clicked")
+	//console.log("clicked")
 	clearAddChildForm()
 	
 		var success = true;

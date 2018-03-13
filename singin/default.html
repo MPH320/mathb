@@ -79,7 +79,7 @@
 										<input name="ctl00$ContentPlaceHolder1$txtRegisterEmailRetype" type="text" id="ContentPlaceHolder1_txtRegisterEmailRetype" style="color:Black;background-color:#FFFFFF;border-style:Solid;height:25px;width:90%;" ><br><br>
 
 										<span id="ContentPlaceHolder1_lblRegisterSchoolType">School Type</span><br>
-										<select name="ctl00$ContentPlaceHolder1$ddlSchoolType" id="ContentPlaceHolder1_ddlSchoolType" style="border-style:Solid;font-size:16px;height:25px;width:90%;">
+										<select name="ctl00$ContentPlaceHolder1$ddlSchoolType" id="ContentPlaceHolder1_ddlSchoolType" style="color:Gray;border-style:Solid;font-size:16px;height:25px;width:90%;" onchange="schoolName()">
 											
 											<option selected="selected" value="Make a Selection">Make a Selection</option>
 											<option value="public">Public School</option>
@@ -87,7 +87,14 @@
 											<option value="homeschool">Homeschool</option>
 											<option value="household">Household</option>
 
-										</select><br><br><br><br>
+										</select><br><br>
+										
+										<div id="ContentPlaceHolder1_divSchoolName" style="display: none;">
+											<span id="ContentPlaceHolder1_lblRegisterSchoolName">School Name</span><br>
+											<input name="ctl00$ContentPlaceHolder1$txtRegisterSchoolName" type="text" id="ContentPlaceHolder1_txtRegisterSchoolName" style="border-style:Solid;height:25px;width:90%;">
+										</div>
+										
+										<br><br>
 
 										<input id="ContentPlaceHolder1_cbOutsiteUS" type="checkbox" name="ctl00$ContentPlaceHolder1$cbOutsiteUS" onclick="checkBox()">
 										<label for="ContentPlaceHolder1_cbOutsiteUS">Check if Outside the United States</label><br>
@@ -378,7 +385,7 @@
 										<div id="ContentPlaceHolder1_divInsideUS">
 											<span id="ContentPlaceHolder1_lblState">State</span><br>
 											
-											<select name="ctl00$ContentPlaceHolder1$ddlStates" id="ContentPlaceHolder1_ddlStates" style="font-size:Medium;height:25px;width:90%;">
+											<select name="ctl00$ContentPlaceHolder1$ddlStates" id="ContentPlaceHolder1_ddlStates" style="color:Gray;font-size:Medium;height:25px;width:90%;">
 												<option selected="selected" value="Select A State">Select A State</option>
 												<option value="AL">Alabama</option>
 												<option value="AK">Alaska</option>

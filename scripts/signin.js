@@ -16,6 +16,20 @@ function checkBox(){
 	}
 }
 
+function schoolName(){
+	console.log("schoolname");
+	if ($('#ContentPlaceHolder1_ddlSchoolType').val() == "public" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "private" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "Homeschool") {
+		
+		console.log("show");
+		$('#ContentPlaceHolder1_divSchoolName').show();
+		
+	} else {
+		console.log("hide");
+		$('#ContentPlaceHolder1_divSchoolName').hide();
+	
+	}
+}
+
 function signIn(){
 	var success = true;
 	$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'Black');
@@ -69,7 +83,17 @@ function clearRegisterForm(){
 	$( "#ContentPlaceHolder1_ddlSchoolType" ).css('color', 'Black');
 	$( "#ContentPlaceHolder1_ddlSchoolType" ).css('background-color', 'White');
 	
+	$( "#ContentPlaceHolder1_ddlStates" ).css('color', 'Black');
+	$( "#ContentPlaceHolder1_ddlStates" ).css('background-color', 'White');
 	
+	$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('color', 'Black');
+	$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('background-color', 'White');
+	
+	$( "#ContentPlaceHolder1_ddlCountries" ).css('color', 'Black');
+	$( "#ContentPlaceHolder1_ddlCountries" ).css('background-color', 'White');
+	
+	$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('color', 'Black');
+	$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('background-color', 'White');
 	
 	$( "#ContentPlaceHolder1_lblRegisterMessage" ).text('');
 	
@@ -146,9 +170,59 @@ function register(){
 			success = false;
 	}
 	
+	
+	
+	if ($('#ContentPlaceHolder1_ddlSchoolType').val() == "public" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "private" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "Homeschool") {
+	
+			if(!$("#ContentPlaceHolder1_txtRegisterSchoolName").val()){
+				$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('color', 'White');
+			$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('background-color', '#FF9999');
+				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A school name is required. " ));
+					success = false;
+			}
+		
+	}
+	
+	if(!$('#ContentPlaceHolder1_cbOutsiteUS').is(':checked')){
+		
+			console.log("unchecked");
+
+			if($("#ContentPlaceHolder1_ddlStates").val() == "Select A State"){
+				$( "#ContentPlaceHolder1_ddlStates" ).css('color', 'White');
+			$( "#ContentPlaceHolder1_ddlStates" ).css('background-color', '#FF9999');
+				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A state is required. " ));
+					success = false;
+			} 
+		
+		} else {
+			
+			
+				console.log("checked");
+			
+			if(!$("#ContentPlaceHolder1_txtRegisterStateProvince").val()){
+			$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('color', 'White');
+			$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('background-color', '#FF9999');
+			$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( " A state or province is required. " ));
+				success = false;
+			}
+			
+			if($("#ContentPlaceHolder1_ddlCountries").val() == "Select A Country"){
+			$( "#ContentPlaceHolder1_ddlCountries" ).css('color', 'White');
+			$( "#ContentPlaceHolder1_ddlCountries" ).css('background-color', '#FF9999');
+			$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A country is required. " ));
+				success = false;
+			
+			}
+			
+			
+			
+		}
+
+
 
 	if(success){
-		console.log("success");
+		//console.log("success");
+		window.location.href = "registered.html";
 	}
 }
 

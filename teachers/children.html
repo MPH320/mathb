@@ -36,12 +36,11 @@
 
 				<div class="pageWrapper"><br />
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
-						<div id="ContentPlaceHolder1_divAddMessage">
-							<span id="ContentPlaceHolder1_lblAddMessage" style="color:Gray;font-size:Medium;">Click Add to begin adding BatterUp players!</span><br><br>
-						</div>
-						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" onclick="add()"/>
+					
+						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" onclick="add()"/><br /><br />
 
-						<div id="ContentPlaceHolder1_divAddStudents" style="display:none">
+						<div id="ContentPlaceHolder1_divAddStudents" style="display:none;">
+							
 							<h1 id="ContentPlaceHolder1_h1Add">Add A Child</h1>
 							<div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
 								<div style="float:left;width:100%;min-width:300px;"><br><br><br>
@@ -131,7 +130,13 @@
 								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;"></span>
 							</div><br>
 							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png" onclick="done()">
-						</div><br /><br />
+							<div><br /><br /></div>
+						</div>
+						
+							<div style="width:200px;float:left;">
+								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
+							</div><br /><br /><br />
+						
 						<div id="ContentPlaceHolder1_divStudents" style="display:none"><br /><br />
 							<div style="width:200px;float:left;">
 								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
