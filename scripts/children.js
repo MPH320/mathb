@@ -3,7 +3,9 @@ $( document ).ready(function() {
 	//$("table").hide();
 	//$("#ContentPlaceHolder1_divAddStudents").hide();
 	
+	
 });
+
 
 function add(){
 	//console.log("hello");
@@ -99,12 +101,26 @@ function saveChild(){
 			success = false;
 	}
 	
-		if(!$("#ContentPlaceHolder1_txtBirthday").val()){
+	if(!$("#ContentPlaceHolder1_txtBirthday").val()){
 		$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
+		$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "A birthday is required. " ));
 			success = false;
+	}else{
+
+		var d = new Date($("#ContentPlaceHolder1_txtBirthday").val()).toString();
+		if(isNaN(Date.parse(d))){
+			$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'White');
+			$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
+			$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Birthday is not in the correct format.  " ));
+			success = false;
+		}
+
 	}
+	
+	
+
+
 	
 		if($("#ContentPlaceHolder1_ddlGender").val() == "Choose A Gender"){
 		$( "#ContentPlaceHolder1_ddlGender" ).css('color', 'White');
@@ -128,7 +144,7 @@ function saveChild(){
 	}
 
 	if(success){
-		console.log("success");
+		//console.log("success");
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('Child Saved Succesfully');
 		
 	}

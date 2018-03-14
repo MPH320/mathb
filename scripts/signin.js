@@ -30,12 +30,18 @@ function schoolName(){
 	}
 }
 
-function signIn(){
-	var success = true;
+function clearSignInForm(){
 	$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'Black');
 	$( "#ContentPlaceHolder1_txtUsername" ).css('background-color', 'White');
 	$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'Black');
 	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', 'White');
+	
+	$( "#ContentPlaceHolder1_lblSignInMessage" ).text('');
+}
+
+function signIn(){
+	clearSignInForm()
+	var success = true;
 	
 	$( "#ContentPlaceHolder1_lblSignInMessage" ).text('');
 	if(!$("#ContentPlaceHolder1_txtUsername").val()){
