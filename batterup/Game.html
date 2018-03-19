@@ -22,9 +22,30 @@
 			</div>
 			<div class="batterupgame" style="text-align:center;">
 				<a id="btnBack" class="batterup_back" href="selectgame.html"></a>
-				<iframe width="800" height="600" id="divFlash" align="middle" style="visibility: visible;"></iframe><br /><br />
+		
+				
+				<canvas class="emscripten" id="canvas" align="middle" oncontextmenu="event.preventDefault()" width="800" height="600"></canvas><br /><br />
 				<h3 style="color:#fff;">Use the SPACEBAR to pitch, skip base running, and bypass the scoreboard.</h3>
 			</div>
 		</div>
+		
+		
+
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "../Release/BatterUp_20180318_2.data",
+    codeUrl: "../Release/BatterUp_20180318_2.js",
+    asmUrl: "../Release/BatterUp_20180318_2.asm.js",
+    memUrl: "../Release/BatterUp_20180318_2.mem",
+  };
+</script>
+<script src="../Release/UnityLoader.js"></script>
+		
+		
 	</body>
 </html>
