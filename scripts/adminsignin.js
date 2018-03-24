@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   //console.log("hello");
 	
+	
 	//$('#ContentPlaceHolder1_divOutsideUS').hide();
 });
 
@@ -34,7 +35,13 @@ function signIn(){
 			success = false;
 	}
 	
-	if(success){
+	var username = $("#txtUsername").val();
+	///this will need to check the db
+	if(success && username == "test"){
+    // Send Ajax request to backend.php, with src set as "img" in the POST data
+    $.post("../signin/adminsignin.php", {"username": username});
+		window.location="http://localhost/nationalmathbee/admin/adminhome.php"
+	} else{
 		$( "#lblSignInMessage" ).text('Login Failed. Please try again.');
 	}
 	

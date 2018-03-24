@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+		if(!isset($_SESSION['adminuser'])){
+			echo "<script> window.location='http://localhost/nationalmathbee/signin/adminsignin.html'; </script>";
+		}
+		
+		
+		
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -19,7 +30,7 @@
 
 		<div class="page">
 		<header>
-		<a href="../admin/adminhome.html" class="logo logo-a"></a>                    
+		<a href="../admin/adminhome.php" class="logo logo-a"></a>                    
 		</header>
 
 		<div class="page_content">
@@ -58,9 +69,9 @@
 
 
 		<nav>
-			<a href="adminhome.html" id="navHome" class="navHome">Home</a>
-			<a href="adminstats.html" id="navStats" class="navStats selected">Stats</a>
-			<a href="../singin/adminsignin.html" id="navSignIn" class="navSignIn">Sign Out</a>
+			<a href="adminhome.php" id="navHome" class="navHome">Home</a>
+			<a href="adminstats.php" id="navStats" class="navStats selected">Stats</a>
+			<a href="../admin/adminlogout.php" id="navSignIn" class="navSignIn">Sign Out</a>
 		</nav>
 
 		<div class="social">
