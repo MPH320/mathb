@@ -58,7 +58,20 @@ function signIn(){
 			success = false;
 	}
 	
-	if(success){
+	
+	var username = $("#ContentPlaceHolder1_txtUsername").val();
+	
+	console.log(username)
+	
+	if(success && username == "testParent"){
+		//console.log("success");
+		 $.post("../teachers/parentsignin.php", {"username": username});
+		window.location="http://localhost/nationalmathbee/teachers/parents.php"
+	} else if (success && username == "testTeacher"){
+		 $.post("../teachers/teachersignin.php", {"username": username});
+		window.location="http://localhost/nationalmathbee/teachers/teacher.php"
+		
+	} else{
 		$( "#ContentPlaceHolder1_lblSignInMessage" ).text('Login Failed. Please try again.');
 	}
 	
@@ -223,8 +236,7 @@ function register(){
 			
 			
 		}
-
-
+	
 
 	if(success){
 		//console.log("success");

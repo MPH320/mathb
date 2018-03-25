@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+		if(!isset($_SESSION['parentuser'])){
+			echo "<script> window.location='http://localhost/nationalmathbee/signin/default.html'; </script>";
+		}
+		
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -26,9 +35,9 @@
 				<div style="border-top:1px solid #333;">
 					<div class="pageWrapper">
 						<div class="navTeacherMenu">
-							<a href="teacher.html" id="ContentPlaceHolder1_navTeacherTab" class="navParent currentSection">Teacher</a>
-							<a href="children.html" id="ContentPlaceHolder1_navStudentsTab" class="navChildren">Students</a>
-							<a href="childreports.html" class="navReports">Reports</a>
+							<a href="teacher.php" id="ContentPlaceHolder1_navTeacherTab" class="navParent currentSection">Teacher</a>
+							<a href="children.php" id="ContentPlaceHolder1_navStudentsTab" class="navChildren">Students</a>
+							<a href="childreports.php" class="navReports">Reports</a>
 							<div class="clear-fix"></div>
 						</div>
 					</div>
@@ -48,8 +57,8 @@
 				<a href="../tournament/default.html" id="navTournament" class="navTournament">Tournament</a>
 				<a href="../batterup/batterup.html" id="navBatterUp" class="navBatterUp">BatterUp</a>
 				<a href="../contact/default.html" id="navContact" class="navContact">Contact Us</a>
-				<a href="../index.html" id="navSignIn" class="navSignIn">Sign Out</a>
-				<a href="parents.html" id="navTeachers" class="navTeachers selected">Parents</a>
+				<a href="signout.php" id="navSignIn" class="navSignIn">Sign Out</a>
+				<a href="parents.php" id="navTeachers" class="navTeachers selected">Parents</a>
 			</nav>
 
 			<div class="social">

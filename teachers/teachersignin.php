@@ -2,7 +2,7 @@
 
 		session_start();
 
-			$_SESSION['adminuser'] = $_POST['username'];
+			$_SESSION['teacheruser'] = $_POST['username'];
 
 		//echo $_SESSION['adminuser'];
 		

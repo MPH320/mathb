@@ -1,0 +1,230 @@
+<?php
+    session_start();
+
+		if(!isset($_SESSION['teacheruser'])){
+			echo "<script> window.location='http://localhost/nationalmathbee/signin/default.html'; </script>";
+		}
+		
+?>
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>National Math Bee</title>
+		<meta name="description" />
+		<meta name="keywords" />
+		<meta name="author" />
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_styles.css" />
+		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+	</head>
+
+	<body class="background">
+
+	<div class="page">
+		<header id="hdrMain">
+			<a href="../index.html" class="logo"></a>                    
+		</header>
+
+
+
+
+		<div class="page_content">
+
+			<div style="border-top:1px solid #333;">
+				<div class="pageWrapper">
+					<div class="navTeacherMenu">
+						<a href="teacher.php" id="ContentPlaceHolder1_navTeacherTab" class="navTeacher">Teacher</a>
+						<a href="classrooms.php" id="ContentPlaceHolder1_navClassroomTab" class="navClassroom">Classroom</a>
+						<a href="students.php" id="ContentPlaceHolder1_navStudentsTab" class="navStudents">Students</a>
+						<a href="reports.php" class="navReports currentSection">Reports</a>
+						<div class="clear-fix"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pageWrapper">
+
+				<div id="ContentPlaceHolder1_UpdatePanelMaster">
+
+					<div>
+						<div style="width:250px;float:left;">
+							<h1 id="ContentPlaceHolder1_h1List">Batting Averages</h1>
+						</div>
+						<div id="ContentPlaceHolder1_divClassroomFilter" style="min-width:350px;float:left;">
+							<span id="ContentPlaceHolder1_lblShowClassroom" style="color:Gray;font-size:Medium;">For Classroom:</span>
+							<select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ContentPlaceHolder1$ddlClassroomFilter\&#39;,\&#39;\&#39;)&#39;, 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;">
+								<option selected="selected" value="All Classrooms">All Classrooms</option>
+							</select>
+						</div>
+						<div class="clear-fix"></div>   
+						<br />
+					</div>
+
+					<div>
+						<table style="display:none;" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
+							<tr>
+								<td>
+									<div class="editStudentRow">
+										<div class="editStudentIconshort">
+											<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Player#</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Grade</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">2</span>
+										</div>
+
+										<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+											<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
+											<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_0" value="2" />
+										</div>
+
+										<div style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA1_0" style="width:90px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Addition BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label2_0" style="font-size:Medium;">0</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA2_0" style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Subtraction BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label7_0" style="font-size:Medium;">0</span>
+										</div>
+
+										<div class="clear-fix"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<div class="editStudentRow">
+									<div class="editStudentIconshort">
+										<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+									</div>
+
+									<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+										<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Player#</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label21_1" style="font-size:Medium;">16026</span>
+									</div>
+
+									<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+										<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Grade</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label11_1" style="font-size:Medium;">2</span>
+									</div>
+
+									<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+										<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">p, m </span>
+										<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2" />
+									</div>
+
+									<div style="width:110px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label5_1" title="mp320" style="font-size:Medium;">mp320</span>
+									</div>
+
+									<div id="ContentPlaceHolder1_gvStudents_divBA1_1" style="width:90px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label1_1" style="color:Silver;">Addition BA</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label2_1" style="font-size:Medium;">0</span>
+									</div>
+
+									<div id="ContentPlaceHolder1_gvStudents_divBA2_1" style="width:110px;float:left;height:50px;position:relative;">
+										<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Subtraction BA</span><br />
+										<span id="ContentPlaceHolder1_gvStudents_Label7_1" style="font-size:Medium;">0</span>
+									</div>
+
+									<div class="clear-fix"></div>
+								</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="editStudentRow">
+										<div class="editStudentIconshort">
+											<img src="../images/icon_student.png" alt="Student" class="editStudentIcon"/>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label12_2" style="color:Silver;">Player#</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label21_2" style="font-size:Medium;">16294</span>
+										</div>
+
+										<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
+											<span id="ContentPlaceHolder1_gvStudents_Label10_2" style="color:Silver;">Grade</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label11_2" style="font-size:Medium;">2</span>
+										</div>
+
+										<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
+											<span id="ContentPlaceHolder1_gvStudents_Label3_2" style="color:Silver;">Name</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_2" style="font-size:Medium;">sfadfsd, fsasdf sadfsfda</span>
+											<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_2" value="2" />
+										</div>
+
+										<div style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label4_2" style="color:Silver;">Username</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label5_2" title="ssfad" style="font-size:Medium;">ssfad</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA1_2" style="width:90px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label1_2" style="color:Silver;">Addition BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label2_2" style="font-size:Medium;">0</span>
+										</div>
+
+										<div id="ContentPlaceHolder1_gvStudents_divBA2_2" style="width:110px;float:left;height:50px;position:relative;">
+											<span id="ContentPlaceHolder1_gvStudents_Label6_2" style="color:Silver;">Subtraction BA</span><br />
+											<span id="ContentPlaceHolder1_gvStudents_Label7_2" style="font-size:Medium;">0</span>
+										</div>
+
+										<div class="clear-fix"></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<a href="../index.html" id="navHome" class="navHome">Home</a>
+			<a href="../tournament/default.html" id="navTournament" class="navTournament">Tournament</a>
+			<a href="../batterup/batterup.html" id="navBatterUp" class="navBatterUp">BatterUp</a>
+			<a href="../contact/default.html" id="navContact" class="navContact">Contact Us</a>
+			<a href="signout.php" id="navSignIn" class="navSignIn" >Sign Out</a>
+			<a href="teacher.php" id="navTeachers" class="navTeachers selected">Teacher</a>
+		</nav>
+
+		<div class="social">
+			<a href="https://twitter.com/NationalMathBee" class="social_twitter" target="_blank">Twitter</a>
+			<a href="http://www.facebook.com/pages/National-Math-Bee/191250144339108" class="social_facebook" target="_blank">Facebook</a>
+			<a href="https://plus.google.com/111804013780922297750" rel="publisher" class="social_google_plus" target="_blank">Google+</a>
+			<a href="http://www.pinterest.com/nationalmathbee" class="social_pinterest" target="_blank">Pinterest</a>
+			<a href="http://www.youtube.com/NationalMathBee" class="social_youtube" target="_blank">YouTube</a>
+		</div>
+
+		<footer> 
+			© <span id="spDates">2017-2018</span>  National Math Bee
+		</footer>
+	</div>
+
+		<script src="../scripts/jquery-3.3.1.min.js"></script>
+		<script src="../scripts/reports.js"></script>
+	</body>
+</html>
+
+
