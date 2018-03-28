@@ -25,6 +25,7 @@
 	</head>
 
 	<body class="background">
+		<?php include "childrenhelper.php"; ?>
 
 		<div class="page">
 			<header id="hdrMain">
@@ -142,11 +143,9 @@
 							<div><br /><br /></div>
 						</div>
 						
-							<div style="width:200px;float:left;">
-								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
-							</div><br /><br /><br />
 						
-						<div id="ContentPlaceHolder1_divStudents" style="display:none"><br /><br />
+						
+						<div id="ContentPlaceHolder1_divStudents" >
 							<div style="width:200px;float:left;">
 								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
 							</div>
@@ -155,111 +154,9 @@
 							<div>
 								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;" >
 									<tbody>
-										<tr>
-											<td>
-											<div class="editStudentRow">
-												<div class="editStudentIcons">
-													<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_0" title="Edit Student" class="editStudent" src="../images/invEdit.png">
-												</div>
-
-												<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Player#</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16421</span>
-												</div>
-
-												<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label8_0" style="color:Silver;">Grade</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label9_0" style="font-size:Medium;">2</span>
-												</div>
-
-												<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-													<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">fsd, asfd sdf</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-													<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="fdsfsd" style="font-size:Medium;">fdsfsd</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Password</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label7_0" title="password" style="font-size:Medium;">password</span>
-												</div>
-
-												<div style="width:70px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Gender</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">Female</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label14_0" style="color:Silver;">Birthday</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label15_0" style="font-size:Medium;">12/31/2004</span>
-												</div>
-
-												<div style="width:180px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Race</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label13_0" style="font-size:Medium;">African-American</span>
-												</div>
-
-												<div class="clear-fix"></div>
-											</div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-											<div class="editStudentRow">
-
-												<div class="editStudentIcons">
-													<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_1" title="Edit Student" class="editStudent" src="../images/invEdit.png">
-												</div>
-
-												<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label1_1" style="color:Silver;">Player#</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label21_1" style="font-size:Medium;">16420</span>
-												</div>
-
-												<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label8_1" style="color:Silver;">Grade</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label9_1" style="font-size:Medium;">2</span>
-												</div>
-
-												<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-													<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">sdfs, dfs fsd</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-													<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label5_1" title="newkid" style="font-size:Medium;">newkid</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Password</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label7_1" title="password" style="font-size:Medium;">password</span>
-												</div>
-
-												<div style="width:70px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Gender</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label11_1" style="font-size:Medium;">Male</span>
-												</div>
-
-												<div style="width:100px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label14_1" style="color:Silver;">Birthday</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label15_1" style="font-size:Medium;">12/31/2004</span>
-												</div>
-
-												<div style="width:180px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Race</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label13_1" style="font-size:Medium;">Asian</span>
-												</div>
-
-												<div class="clear-fix"></div>
-											</div>
-											</td>
-										</tr>
+										<?php 
+									
+										?>
 									</tbody>
 								</table>
 							</div>
