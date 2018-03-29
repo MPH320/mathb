@@ -26,6 +26,7 @@
 	</head>
 
 	<body class="background">
+		<?php include "classroomhelper.php"; ?>
 
 		<div class="page">
 			<header id="hdrMain">
@@ -55,90 +56,11 @@
 					</div>
 
 					<div>
-						<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvClassrooms" style="display:none;width:100%;border-collapse:collapse;">
-							<tr>
-								<td><br />
-									<div style="background-color:#eee;position:relative;min-width:320px;width:100%;height:auto;background-color:#eee;">
-										<div style="min-width:60px;width:20%;float:left;background-color:#eee;">
-											<div style="float:left;height:60px;">
-												<div style="padding:5px;" class="center">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Edit</span><br />
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invEdit.png" alt="Edit This Item" />
-												</div>
-											</div>
-											<div style="float:left;height:60px;">
-												<div style="padding:5px;" class="center">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_0" style="color:Gray;">Delete</span><br />
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_0" src="../images/iconDelete25.png" alt="Delete This Item" />
-												</div>
-											</div>
-										</div>
-
-
-										<div style="width:80%;float:left;background-color:#f6f6f6;">
-											<div style="float:left;height:60px;width:50%;min-width:250px;">
-												<div style="padding:5px;">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomName_0" style="color:Gray;">Classroom Name</span><br />
-													<span id="ContentPlaceHolder1_gvClassrooms_Label1_0" style="color:#333333;font-size:Medium;">myclass</span><br />
-													<div class=""></div>
-												</div>
-											</div>
-											<div style="float:left;height:60px;width:50%;min-width:250px;">
-												<div style="padding:5px;">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomDescription_0" style="color:Gray;">Description</span><br />
-													<span id="ContentPlaceHolder1_gvClassrooms_Label2_0" style="color:#333333;font-size:Medium;"></span><br />
-												</div>                        
-											</div>
-										</div>
-										<div class="cleardiv"></div>                            
-
-										<input type="hidden" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$hfClassroomID" id="ContentPlaceHolder1_gvClassrooms_hfClassroomID_0" value="2126" />
-									</div><br /><br />
-
-								</td>
-							</tr>
-							
-							<tr>
-								<td>
-									<br /><div style="background-color:#eee;position:relative;min-width:320px;width:100%;height:auto;background-color:#eee;">
-										<div style="min-width:60px;width:20%;float:left;background-color:#eee;">
-											<div style="float:left;height:60px;">
-												<div style="padding:5px;" class="center">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_1" style="color:Gray;">Edit</span><br />
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl03$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_1" src="../images/invEdit.png" alt="Edit This Item" />
-												</div>
-											</div>
-											<div style="float:left;height:60px;">
-												<div style="padding:5px;" class="center">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_1" style="color:Gray;">Delete</span><br />
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl03$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_1" src="../images/iconDelete25.png" alt="Delete This Item" />
-												</div>
-											</div>
-										</div>
-
-
-										<div style="width:80%;float:left;background-color:#f6f6f6;">
-											<div style="float:left;height:60px;width:50%;min-width:250px;">
-												<div style="padding:5px;">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomName_1" style="color:Gray;">Classroom Name</span><br />
-													<span id="ContentPlaceHolder1_gvClassrooms_Label1_1" style="color:#333333;font-size:Medium;">class</span><br />
-													<div class=""></div>
-												</div>
-											</div>
-											<div style="float:left;height:60px;width:50%;min-width:250px;">
-												<div style="padding:5px;">
-													<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomDescription_1" style="color:Gray;">Description</span><br />
-													<span id="ContentPlaceHolder1_gvClassrooms_Label2_1" style="color:#333333;font-size:Medium;"></span><br />
-												</div>                        
-											</div>
-										</div>
-										<div class="cleardiv"></div>                            
-
-										<input type="hidden" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl03$hfClassroomID" id="ContentPlaceHolder1_gvClassrooms_hfClassroomID_1" value="2127" />
-									</div><br /><br />
-
-								</td>
-							</tr>
+						<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvClassrooms" style="width:100%;border-collapse:collapse;">
+							<?php 
+									generateClassroom();
+									generateClassroom();
+										?>
 						</table>
 					</div><br /><br />
 
