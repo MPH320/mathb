@@ -60,7 +60,7 @@
 							<?php 
 									generateClassroom();
 									generateClassroom();
-										?>
+							?>
 						</table>
 					</div><br /><br />
 

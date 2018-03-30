@@ -26,7 +26,7 @@
 	</head>
 
 	<body class="background">
-
+		<?php include "studentshelper.php"; ?>
 
 
 		<div class="page">
@@ -57,7 +57,7 @@
 						</div>
 
 
-						<div id="ContentPlaceHolder1_divAddStudents" style="display:none">
+						<div id="ContentPlaceHolder1_divAddStudents" style="display:none;">
 							<h1 id="ContentPlaceHolder1_h1Add" >Add A Student</h1>
 							<div style="background-color:#eee;margin-top:0px;padding:10px;min-width:320px;">
 								<div style="float:left;width:100%;min-width:300px;">
@@ -173,223 +173,16 @@
 							<div class="clear-fix"></div><br>
 
 							<div>
-								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;display:none;">
+								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
 									<tbody>
-										<tr>
-											<td>
-												<div class="editStudentRow">
-													<div class="editStudentIcons">
-														<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-														<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_0" title="Edit Student" class="editStudent" src="../images/invEdit.png">
-													</div>
-													<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">
-														<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Player#</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16295</span>
-													</div>
-
-													<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">             
-														<span id="ContentPlaceHolder1_gvStudents_Label8_0" style="color:Silver;">Grade</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label9_0" style="font-size:Medium;">2</span>
-													</div>
-
-													<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-														<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">dgfsdsfg, sdf sdfgg</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-														<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="gfdssgf" style="font-size:Medium;">gfdssgf</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Password</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label7_0" title="password" style="font-size:Medium;">password</span>
-													</div>
-
-													<div style="width:70px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Gender</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">Female</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label14_0" style="color:Silver;">Birthday</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label15_0" style="font-size:Medium;">3/20/1985</span>
-													</div>
-
-													<div style="width:180px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Race</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label13_0" style="font-size:Medium;">Asian</span>
-													</div>
-
-													<div class="clear-fix"></div>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<td><br>
-												<div class="editStudentRow">
-													<div id="ContentPlaceHolder1_gvStudents_divEditForm_1">
-
-														<div class="editModeStudentIcons">
-															<img src="../images/icon_student.png" alt="Student" class="editModeStudentIcon">
-															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_1" title="Update Student" class="editModeStudent" src="../images/invSave.png">
-															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnDeleteStudent" id="ContentPlaceHolder1_gvStudents_btnDeleteStudent_1" title="Delete Student" class="deleteStudent" src="../images/iconDelete25.png">
-															<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnCancelStudent" id="ContentPlaceHolder1_gvStudents_btnCancelStudent_1" title="Cancel" class="cancelStudent" src="../images/iconCancel.png">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">            
-															<span id="ContentPlaceHolder1_gvStudents_Label8_1" style="color:Silver;">Grade</span><br>      
-															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGrade" id="ContentPlaceHolder1_gvStudents_ddlGrade_1" style="font-size:Medium;height:35px;width:90px;">
-																<option value="1">First</option>
-																<option selected="selected" value="2">Second</option>
-																<option value="3">Third</option>
-																<option value="4">Fourth</option>
-																<option value="5">Fifth</option>
-																<option value="6">Sixth</option>
-															</select>
-															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-															<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">First Name</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentFName" type="text" value="m" id="ContentPlaceHolder1_gvStudents_txtEditStudentFName_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-															<span id="ContentPlaceHolder1_gvStudents_Label16_1" style="color:Silver;">Middle Name</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentMName" type="text" id="ContentPlaceHolder1_gvStudents_txtEditStudentMName_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;overflow:hidden;">    
-															<span id="ContentPlaceHolder1_gvStudents_Label17_1" style="color:Silver;">Last Name</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentLName" type="text" value="p" id="ContentPlaceHolder1_gvStudents_txtEditStudentLName_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentUsername" type="text" value="mp320" id="ContentPlaceHolder1_gvStudents_txtEditStudentUsername_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Password</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentPassword" type="text" value="password" id="ContentPlaceHolder1_gvStudents_txtEditStudentPassword_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Gender</span><br>
-															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlGender" id="ContentPlaceHolder1_gvStudents_ddlGender_1" style="font-size:Medium;height:35px;width:100px;">
-																<option value="Female">Female</option>
-																<option selected="selected" value="Male">Male</option>
-															</select>
-															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGender" id="ContentPlaceHolder1_gvStudents_hfStudentGender_1" value="Male">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_Label14_1" style="color:Silver;">Birthday</span><br>
-															<input name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$txtEditStudentBirthday" type="text" value="3/20/2004" id="ContentPlaceHolder1_gvStudents_txtEditStudentBirthday_1" style="font-size:Medium;height:30px;width:100px;">
-														</div>
-
-														<div style="width:120px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Race</span><br>
-															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlRace" id="ContentPlaceHolder1_gvStudents_ddlRace_1" style="font-size:Medium;height:35px;width:100px;">
-																<option value="African-American">African-American</option>
-																<option value="Asian">Asian</option>
-																<option value="Caucasian">Caucasian</option>
-																<option selected="selected" value="Hispanic">Hispanic</option>
-																<option value="Native American">Native American</option>
-																<option value="Other">Other</option>
-															</select>
-															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentRace" id="ContentPlaceHolder1_gvStudents_hfStudentRace_1" value="Hispanic">
-														</div>
-
-														<div style="width:300px;float:left;height:60px;position:relative;">
-															<span id="ContentPlaceHolder1_gvStudents_lblClassroomEdit_1" style="color:Silver;">Classroom</span><br>
-															<select name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$gvStudents$ctl03$ddlClassroomEdit\',\'\')', 0)" id="ContentPlaceHolder1_gvStudents_ddlClassroomEdit_1" style="font-size:Large;height:35px;width:280px;">
-																<option value="No Classroom Assigned">No Classroom Assigned</option>
-																<option value="2126">myclass</option>
-																<option selected="selected" value="2127">class</option>
-															</select>
-															<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfClassroomID" id="ContentPlaceHolder1_gvStudents_hfClassroomID_1" value="2127">
-														</div>
-
-														<div class="clear-fix"></div>
-														<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentID" id="ContentPlaceHolder1_gvStudents_hfStudentID_1" value="16026"><br>
-														<span id="ContentPlaceHolder1_gvStudents_lblUpdateMessage_1" style="color:#990000;"></span><br>
-													</div>
-
-												</div>
-												<br>
-
-
-											</td>
-										</tr>
-										<tr>
-											<td><br>
-												<div class="editStudentRow">
-													<div id="ContentPlaceHolder1_gvStudents_divConfirmDelete_2" class="editConfirmDelete">
-														<span id="ContentPlaceHolder1_gvStudents_Label19_2" style="color:White;font-size:Large;">Are you sure you want to delete this student - fsasdf sfadfsd?</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label18_2" style="color:White;font-size:Large;">All BatterUp inning data will be deleted as well.</span><br>
-														<input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvStudents_btnConfirmDelete_2">
-														<input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl04$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvStudents_btnCancelDelete_2">
-													</div>
-												</div>
-												<br>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div class="editStudentRow">
-													<div class="editStudentIcons">
-														<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-														<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl05$btnEditStudent" id="ContentPlaceHolder1_gvStudents_btnEditStudent_3" title="Edit Student" class="editStudent" src="../images/invEdit.png">
-													</div>
-
-													<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">             
-														<span id="ContentPlaceHolder1_gvStudents_Label1_3" style="color:Silver;">Player#</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label21_3" style="font-size:Medium;">16296</span>
-													</div>
-
-													<div style="width:50px;float:left;height:50px;position:relative;overflow:hidden;">                  
-														<span id="ContentPlaceHolder1_gvStudents_Label8_3" style="color:Silver;">Grade</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label9_3" style="font-size:Medium;">6</span>
-													</div>
-
-													<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-														<span id="ContentPlaceHolder1_gvStudents_Label3_3" style="color:Silver;">Name</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_3" style="font-size:Medium;">vxzczx, xvzc vxcz</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;overflow:hidden;">
-														<span id="ContentPlaceHolder1_gvStudents_Label4_3" style="color:Silver;">Username</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label5_3" title="xvcvcx" style="font-size:Medium;">xvcvcx</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label6_3" style="color:Silver;">Password</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label7_3" title="password" style="font-size:Medium;">password</span>
-													</div>
-
-													<div style="width:70px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label10_3" style="color:Silver;">Gender</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label11_3" style="font-size:Medium;">Female</span>
-													</div>
-
-													<div style="width:100px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label14_3" style="color:Silver;">Birthday</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label15_3" style="font-size:Medium;">3/20/1985</span>
-													</div>
-
-													<div style="width:180px;float:left;height:50px;position:relative;">
-														<span id="ContentPlaceHolder1_gvStudents_Label12_3" style="color:Silver;">Race</span><br>
-														<span id="ContentPlaceHolder1_gvStudents_Label13_3" style="font-size:Medium;">Asian</span>
-													</div>
-
-													<div class="clear-fix"></div>
-												</div>
-											</td>
-										</tr>
-									</tbody>
+										<?php 
+											generateStudent();
+											generateStudent();
+											generateStudent();
+											generateStudent();
+										?>
+										
+									
 								</table>
 							</div>
 						</div>
