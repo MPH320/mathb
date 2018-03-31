@@ -25,7 +25,7 @@
 	</head>
 
 	<body class="background">
-
+		<?php include "childreportshelper.php"; ?>
 		<div class="page">
 			<header id="hdrMain">
 				<a href="../index.html" class="logo"></a>                    
@@ -53,93 +53,14 @@
 						</div>
 
 						<div>
-							<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="display:none;width:100%;border-collapse:collapse;">
+							<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
 								<tbody>
-									<tr>
-										<td>
-										<div class="editStudentRow">
-											<div class="editStudentIconshort">
-												<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-											</div>
-
-											<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-												<span id="ContentPlaceHolder1_gvStudents_Label12_0" style="color:Silver;">Player#</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_Label21_0" style="font-size:Medium;">16421</span>
-											</div>
-
-											<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-												<span id="ContentPlaceHolder1_gvStudents_Label10_0" style="color:Silver;">Grade</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_Label11_0" style="font-size:Medium;">2</span>
-											</div>
-
-											<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-												<span id="ContentPlaceHolder1_gvStudents_Label3_0" style="color:Silver;">Name</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_0" style="font-size:Medium;">fsd, asfd sdf</span>
-												<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_0" value="2" wtx-context="629A4850-9CEA-45B0-8313-6A26DDBF3ED7">
-											</div>
-
-											<div style="width:110px;float:left;height:50px;position:relative;">
-												<span id="ContentPlaceHolder1_gvStudents_Label4_0" style="color:Silver;">Username</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_Label5_0" title="fdsfsd" style="font-size:Medium;">fdsfsd</span>
-											</div>
-
-											<div id="ContentPlaceHolder1_gvStudents_divBA1_0" style="width:90px;float:left;height:50px;position:relative;">
-												<span id="ContentPlaceHolder1_gvStudents_Label1_0" style="color:Silver;">Addition BA</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_Label2_0" style="font-size:Medium;">0</span>
-											</div>
-
-											<div id="ContentPlaceHolder1_gvStudents_divBA2_0" style="width:110px;float:left;height:50px;position:relative;">
-												<span id="ContentPlaceHolder1_gvStudents_Label6_0" style="color:Silver;">Subtraction BA</span><br>
-												<span id="ContentPlaceHolder1_gvStudents_Label7_0" style="font-size:Medium;">0</span>
-											</div>
-
-											<div class="clear-fix"></div>
-										</div>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="editStudentRow">
-
-												<div class="editStudentIconshort">
-													<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">
-												</div>
-
-												<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label12_1" style="color:Silver;">Player#</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label21_1" style="font-size:Medium;">16420</span>
-												</div>
-
-												<div style="width:60px;float:left;height:50px;position:relative;overflow:hidden;">                      
-													<span id="ContentPlaceHolder1_gvStudents_Label10_1" style="color:Silver;">Grade</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label11_1" style="font-size:Medium;">2</span>
-												</div>
-
-												<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">    
-													<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">sdfs, dfs fsd</span>
-													<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="2" wtx-context="52460537-85F3-4A48-87FD-6D85EC711AA2">
-												</div>
-
-												<div style="width:110px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label5_1" title="newkid" style="font-size:Medium;">newkid</span>
-												</div>
-
-												<div id="ContentPlaceHolder1_gvStudents_divBA1_1" style="width:90px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label1_1" style="color:Silver;">Addition BA</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label2_1" style="font-size:Medium;">0</span>
-												</div>
-
-												<div id="ContentPlaceHolder1_gvStudents_divBA2_1" style="width:110px;float:left;height:50px;position:relative;">
-													<span id="ContentPlaceHolder1_gvStudents_Label6_1" style="color:Silver;">Subtraction BA</span><br>
-													<span id="ContentPlaceHolder1_gvStudents_Label7_1" style="font-size:Medium;">0</span>
-												</div>
-
-												<div class="clear-fix"></div>
-											</div>
-										</td>
-									</tr>
+									<?php 
+										generateChildReports();
+										generateChildReports();
+										generateChildReports();
+										generateChildReports();
+									?>
 								</tbody>
 							</table>
 						</div>
