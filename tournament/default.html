@@ -30,202 +30,42 @@
 						<div id="ContentPlaceHolder1_divPhases">
 							<div class="col col1_3">
 								<div class="col_content">
-									<h3>State</h3>
-									<select name="ctl00$ContentPlaceHolder1$ddlStates" id="ContentPlaceHolder1_ddlStates" style="font-size:Larger;height:30px;width:100%;">
-										<option selected="selected" value="Select A State">Select A State</option>
-										<option value="AL">Alabama</option>
-										<option value="AZ">Arizona</option>
-										<option value="CA">California</option>
-										<option value="CO">Colorado</option>
-										<option value="CT">Connecticut</option>
-										<option value="DE">Delaware</option>
-										<option value="FL">Florida</option>
-										<option value="GA">Georgia</option>
-										<option value="IL">Illinois</option>
-										<option value="MD">Maryland</option>
-										<option value="NJ">New Jersey</option>
-										<option value="NY">New York</option>
-										<option value="NC">North Carolina</option>
-										<option value="OH">Ohio</option>
-										<option value="VA">Virginia</option>
-										<option value="WI">Wisconsin</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="col col1_3">
-								<div class="col_content">
-									<h3>Grade</h3>
-									<select name="ctl00$ContentPlaceHolder1$ddlGrades" id="ContentPlaceHolder1_ddlGrades" disabled="disabled" style="font-size:Larger;height:30px;width:100%;">
+								<h3>Grade</h3>
+									<select onchange="getval(this);" name="ctl00$ContentPlaceHolder1$ddlGrades"  id="ContentPlaceHolder1_ddlGrades" style="font-size:Larger;height:30px;width:100%;">
 										<option selected="selected" value="Select A Grade">Select A Grade</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+
 									</select>
 								</div>
 							</div>
 
 							<div class="clear-fix"></div>
-							<div id="ContentPlaceHolder1_hSchoolName" class="batter_rankings_title" style="display:none">AZ Student Rankings</div>
+							<div id="ContentPlaceHolder1_hSchoolName" class="batter_rankings_title" style="display:none;">National Student Rankings</div>
 							<div id="ContentPlaceHolder1_hMathModes" class="batter_modes_title" style="display:none">Choose A Math Mode</div>
 							
 							<div id="mmodes" style="display:none">
 								<div id="ContentPlaceHolder1_divMathModes" class="batter_modes">
-									<input type="image" name="ctl00$ContentPlaceHolder1$btnAddition" id="ContentPlaceHolder1_btnAddition" disabled="disabled" class="aspNetDisabled" src="../images/btn_Addition_Inactive.png">
-									<input type="image" name="ctl00$ContentPlaceHolder1$btnSubtraction" id="ContentPlaceHolder1_btnSubtraction" disabled="disabled" class="aspNetDisabled" src="../images/btn_Subtraction_Inactive.png">
+									<input type="image" name="ctl00$ContentPlaceHolder1$btnAddition" id="ContentPlaceHolder1_btnAddition" disabled="disabled" src="../images/btn_Addition_Inactive.png">
+									<input type="image" name="ctl00$ContentPlaceHolder1$btnSubtraction" id="ContentPlaceHolder1_btnSubtraction" disabled="disabled"  src="../images/btn_Subtraction_Inactive.png">
 									<input type="image" name="ctl00$ContentPlaceHolder1$btnMultiplication" id="ContentPlaceHolder1_btnMultiplication" src="../images/btn_Multiplication_Selected.png" >
-									<input type="image" name="ctl00$ContentPlaceHolder1$btnDivision" id="ContentPlaceHolder1_btnDivision" disabled="disabled" class="aspNetDisabled" src="../images/btn_Division_Inactive.png">
+									<input type="image" name="ctl00$ContentPlaceHolder1$btnDivision" id="ContentPlaceHolder1_btnDivision" disabled="disabled"  src="../images/btn_Division_Inactive.png">
 									<div id="ContentPlaceHolder1_divRefresh" style="width:200px;margin:10px auto;">
 										<input type="image" name="ctl00$ContentPlaceHolder1$btnRefresh" id="ContentPlaceHolder1_btnRefresh" src="../images/btn_RefreshStats.png">
 									</div>
 								</div>
 							</div>
 							
-							<div id="divRankings" class="batter_rankings" style="display:none">
+							<div id="divRankings" class="batter_rankings">
 			
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15823.jpg">
-										<div class="batter_image_header">Rank: 1</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15823</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.571</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15826.jpg">
-										<div class="batter_image_header">Rank: 2</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15826</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.571</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15841.jpg">
-											<div class="batter_image_header">Rank: 3</div>
-											<div class="batter_image_state">State: AZ</div>
-											<div class="batter_image_number">Player# 15841</div>
-											<div class="batter_image_baTitle">Batting Average</div>
-											<div class="batter_image_ba">0.556</div>
-											<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15832.jpg">
-										<div class="batter_image_header">Rank: 4</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15832</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.54</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/16091.jpg">
-										<div class="batter_image_header">Rank: 5</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 16091</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.54</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/base.jpg">
-										<div class="batter_image_header">Rank: 6</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 16131</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.54</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15835.jpg">
-										<div class="batter_image_header">Rank: 7</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15835</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.508</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15815.jpg">
-										<div class="batter_image_header">Rank: 8</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15815</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.46</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15816.jpg">
-										<div class="batter_image_header">Rank: 9</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15816</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.413</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15839.jpg">
-										<div class="batter_image_header">Rank: 10</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15839</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.413</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/15837.jpg">
-										<div class="batter_image_header">Rank: 11</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 15837</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.397</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
-
-								<div class="col_batter">
-									<div class="batter_image">
-										<img src="../build-a-batter/batters/base.jpg">
-										<div class="batter_image_header">Rank: 12</div>
-										<div class="batter_image_state">State: AZ</div>
-										<div class="batter_image_number">Player# 16123</div>
-										<div class="batter_image_baTitle">Batting Average</div>
-										<div class="batter_image_ba">0.397</div>
-										<div class="batter_image_school">Indian Oasis Intermediate</div>
-									</div>
-								</div>  
+						
 
 								<div class="clear-fix"></div>
-								<span id="ContentPlaceHolder1_DataPager1"><span>1</span>&nbsp;</span>       
+								<span id="ContentPlaceHolder1_DataPager1" style="display:none;"><span>1</span>&nbsp;</span>       
 								<div class="clear-fix"></div>
 							</div>
 						</div>
@@ -255,8 +95,10 @@
 				© <span id="spDates">2017-2018</span>  National Math Bee
 			</footer>
 		</div>
+		
 		<script src="../scripts/jquery-3.3.1.min.js"></script>
 		<script src="../scripts/tournament.js"></script>
+		
 	</body>
 </html>
 
