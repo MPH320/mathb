@@ -13,6 +13,19 @@ function add(){
 	$("#ContentPlaceHolder1_btnAdd").hide();
 }
 
+function resetForm(){
+	$( "#ContentPlaceHolder1_txtUsername" ).val("");
+	$( "#ContentPlaceHolder1_txtPassword" ).val("");
+	$( "#ContentPlaceHolder1_txtPasswordRetype" ).val("");
+	$( "#ContentPlaceHolder1_txtFName" ).val("");
+	$( "#ContentPlaceHolder1_txtMName").val("");
+	$( "#ContentPlaceHolder1_txtLName" ).val("");
+	$( "#ContentPlaceHolder1_txtBirthday" ).val("");
+	$( "#ContentPlaceHolder1_ddlGender" ).val("Choose A Gender");
+	$( "#ContentPlaceHolder1_ddlGrade" ).val("Choose A Grade");
+	$( "#ContentPlaceHolder1_ddlRace" ).val("Choose A Race");
+}
+
 function done(){
 	//console.log("hello");
 	$("#ContentPlaceHolder1_divAddStudents").hide();
@@ -117,9 +130,6 @@ function saveChild(){
 		}
 
 	}
-	
-	
-
 
 	
 		if($("#ContentPlaceHolder1_ddlGender").val() == "Choose A Gender"){
@@ -144,8 +154,37 @@ function saveChild(){
 	}
 
 	if(success){
-		//console.log("success");
-		$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('Child Saved Succesfully');
 		
+		var tempURL = '../teachers/childrenhelper.php';
+		var fName = $("#ContentPlaceHolder1_txtFName").val();
+		var lName = $("#ContentPlaceHolder1_txtLName").val();
+		var mName = $("#ContentPlaceHolder1_txtMName").val();
+		var uName = $("#ContentPlaceHolder1_txtUsername").val();
+		var pWord = $("#ContentPlaceHolder1_txtPassword").val();
+		var gender = $("#ContentPlaceHolder1_ddlGender").val();
+		var bDay = $("#ContentPlaceHolder1_txtBirthday").val();
+		var race = $("#ContentPlaceHolder1_ddlRace").val();
+		var grade = $("#ContentPlaceHolder1_ddlGrade").val();
+		
+		if(!mName){
+			tempURL = tempURL + '?fName=' + fName + '&lName=' + lName + '&uName=' + uName + '&pWord=' + pWord + '&gender=' + gender + '&bDay=' + bDay + '&race=' + race + '&grade=' + grade;
+		}else{
+			tempURL = tempURL + '?fName=' + fName + '&lName=' + lName + '&mName=' + mName + '&uName=' + uName + '&pWord=' + pWord + '&gender=' + gender + '&bDay=' + bDay + '&race=' + race + '&grade=' + grade;
+		}
+		
+		//console.log(tempURL)	
+		
+		
+		$.ajax({
+				url: tempURL,
+				success: function (response) {//response is value returned from php (for your example it's "bye bye"
+				//alert(response);
+					$('tbody').append(response);
+			}
+		});
+		
+		resetForm();
+		$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('Child Saved Succesfully');
+
 	}
 }

@@ -25,7 +25,7 @@
 	</head>
 
 	<body class="background">
-		<?php include "childrenhelper.php"; ?>
+		
 
 		<div class="page">
 			<header id="hdrMain">
@@ -47,7 +47,7 @@
 				<div class="pageWrapper"><br />
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
 					
-						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" onclick="add()"/><br /><br />
+						<input type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src=&#39;../images/btn_AddOver.png&#39;" onmouseout="this.src=&#39;../images/btn_AddUp.png&#39;" src="../images/btn_AddUp.png" onclick="add()"/>
 
 						<div id="ContentPlaceHolder1_divAddStudents" style="display:none;">
 							
@@ -140,23 +140,21 @@
 								<span id="ContentPlaceHolder1_lblAddClassroomMessage" style="color:#990000;font-size:Medium;"></span>
 							</div><br>
 							<input type="image" name="ctl00$ContentPlaceHolder1$btnDone" id="ContentPlaceHolder1_btnDone" onmouseover="this.src='../images/btn_DoneOver.png'" onmouseout="this.src='../images/btn_DoneUp.png'" src="../images/btn_DoneUp.png" onclick="done()">
-							<div><br /><br /></div>
+							<div><br /></div>
 						</div>
 						
 						
 						
 						<div id="ContentPlaceHolder1_divStudents" >
 							<div style="width:200px;float:left;">
-								<h1 id="ContentPlaceHolder1_h1List">Children</h1>
+								<br><h1 id="ContentPlaceHolder1_h1List">Children</h1>
 							</div>
 							<div style="min-width:350px;float:left;"></div>
 							<div class="clear-fix"></div><br>
 							<div>
 								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;" >
 									<tbody>
-										<?php 
 									
-										?>
 									</tbody>
 								</table>
 							</div>
