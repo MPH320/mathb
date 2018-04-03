@@ -26,7 +26,7 @@
 	</head>
 
 	<body class="background">
-		<?php include "classroomhelper.php"; ?>
+
 
 		<div class="page">
 			<header id="hdrMain">
@@ -57,10 +57,7 @@
 
 					<div>
 						<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvClassrooms" style="width:100%;border-collapse:collapse;">
-							<?php 
-									generateClassroom();
-									generateClassroom();
-							?>
+							
 						</table>
 					</div><br /><br />
 

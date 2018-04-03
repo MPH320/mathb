@@ -1,9 +1,10 @@
 <?php
 
-	//generate a tweet from a specified tweet object
-	function generateClassroom() {
-		
-		
+		$cName = $_GET['cName'];
+
+		if (isset($_GET['desc'])) {
+    	$desc = $_GET['desc'];
+		}
 		
 		$classroomContent = '<tr>';
 		$classroomContent .= '<td><br />';
@@ -26,14 +27,18 @@
 		$classroomContent .= '<div style="float:left;height:60px;width:50%;min-width:250px;">';
 		$classroomContent .= '<div style="padding:5px;">';
 		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomName_0" style="color:Gray;">Classroom Name</span><br />';
-		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_Label1_0" style="color:#333333;font-size:Medium;">myclass</span><br />';
+		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_Label1_0" style="color:#333333;font-size:Medium;">' . $cName . '</span><br />';
 		$classroomContent .= '<div class=""></div>';
 		$classroomContent .= '</div>';
 		$classroomContent .= '</div>';
 		$classroomContent .= '<div style="float:left;height:60px;width:50%;min-width:250px;">';
 		$classroomContent .= '<div style="padding:5px;">';
 		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_lblClassroomDescription_0" style="color:Gray;">Description</span><br />';
-		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_Label2_0" style="color:#333333;font-size:Medium;"></span><br />';
+		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_Label2_0" style="color:#333333;font-size:Medium;">';
+		if (isset($_GET['desc'])) {
+    		$classroomContent .= 	$desc;
+		}
+		$classroomContent .= 	'</span><br />';
 		$classroomContent .= '</div>';                        
 		$classroomContent .= '</div>';
 		$classroomContent .= '</div>';
@@ -44,7 +49,5 @@
 		$classroomContent .= '</tr>';
 		
 		echo $classroomContent;
-		
-	}
 
 ?>

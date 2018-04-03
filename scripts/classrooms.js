@@ -14,15 +14,35 @@ function noClassrooms(){
 }
 
 function save(){
+
 	$( "#ContentPlaceHolder1_lblAddClassroomMessage" ).text('');
 	if(!$("#ContentPlaceHolder1_txtClassroomName").val()){
 		$( "#ContentPlaceHolder1_lblAddClassroomMessage" ).text('A classroom name is required.');
 	}
+	else{
+		
+				
+		var tempURL = '../teachers/classroomhelper.php';
+		var cName = $("#ContentPlaceHolder1_txtClassroomName").val();
+				var desc = $("#ContentPlaceHolder1_txtClassroomDescription").val();
+	
+		if(!desc){
+			tempURL = tempURL + '?cName=' + cName;
+		}else{
+			tempURL = tempURL + '?cName=' + cName + '&desc=' + desc;
+		}
+		
+		$.ajax({
+			url: tempURL,
+			success: function (response) {//response is value returned from php (for your example it's "bye bye"
+			//alert(response);
+				$('table').append(response);
+			}
+		});
+		
+		$("#ContentPlaceHolder1_txtClassroomName").val("");
+		$("#ContentPlaceHolder1_txtClassroomDescription").val("");
+		
+	}
+
 }
-
-
-//ContentPlaceHolder1_h1Current
-//Current Classrooms
-
-//ContentPlaceHolder1_lblClassroomMessage
-//Create Classrooms to organize your students.  Once you've added a classroom, click on the Students tab to add students. 
