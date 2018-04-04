@@ -26,7 +26,7 @@
 	</head>
 
 	<body class="background">
-		<?php include "studentshelper.php"; ?>
+
 
 
 		<div class="page">
@@ -51,7 +51,7 @@
 					<div id="ContentPlaceHolder1_UpdatePanelMaster">
 						
 						
-						<div id="ContentPlaceHolder1_divClassroomMessage">
+						<div style="display:none;" id="ContentPlaceHolder1_divClassroomMessage">
 							<h1>Oops!</h1>
 							<span id="ContentPlaceHolder1_Label20" style="color:Gray;font-size:Medium;">Before you can add students, you must first create a classroom.  Click on the Classroom tab to create a classroom, then return here to add students.</span><br><br>
 						</div>
@@ -64,8 +64,7 @@
 									<span id="ContentPlaceHolder1_lblClassrooms" style="color:Gray;font-size:Medium;">Assign Student to this Classroom</span><br>
 									<select name="ctl00$ContentPlaceHolder1$ddlClassrooms" id="ContentPlaceHolder1_ddlClassrooms" style="color:Black;background-color:#FFFFFF;border-style:Solid;font-size:Medium;height:40px;width:280px;">
 										<option selected="selected" value="Choose A Classroom">Choose A Classroom</option>
-										<option value="2126">myclass</option>
-										<option value="2127">class</option>
+										<option value="2126">testClass</option>
 									</select><br><br>
 									<span id="ContentPlaceHolder1_Label2" style="color:Gray;font-size:Medium;">Names will not be displayed on the website.</span><br><br>
 								</div>
@@ -157,7 +156,7 @@
 						<div id="ContentPlaceHolder1_divAddMessage" style="display:none;" >
 							<span id="ContentPlaceHolder1_lblAddMessage" style="color:Gray;font-size:Medium;"></span><br><br>
 						</div>
-						<input style="display:none;"  type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src='../images/btn_AddOver.png'" onmouseout="this.src='../images/btn_AddUp.png'" src="../images/btn_AddUp.png" onclick="add()"><br><br>
+						<input   type="image" name="ctl00$ContentPlaceHolder1$btnAdd" id="ContentPlaceHolder1_btnAdd" onmouseover="this.src='../images/btn_AddOver.png'" onmouseout="this.src='../images/btn_AddUp.png'" src="../images/btn_AddUp.png" onclick="add()"><br><br>
 
 						<div id="ContentPlaceHolder1_divStudents">
 							<div style="width:200px;float:left;">
@@ -168,6 +167,7 @@
 								<select name="ctl00$ContentPlaceHolder1$ddlClassroomFilter" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlClassroomFilter\',\'\')', 0)" id="ContentPlaceHolder1_ddlClassroomFilter" style="font-size:Large;height:40px;width:280px;">
 									<option selected="selected" value="All Classrooms">All Classrooms</option>
 									<option value="Unassigned">Unassigned</option>
+									<option value="testClass">testClass</option>
 								</select>
 							</div>
 							<div class="clear-fix"></div><br>
@@ -175,14 +175,8 @@
 							<div>
 								<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
 									<tbody>
-										<?php 
-											generateStudent();
-											generateStudent();
-											generateStudent();
-											generateStudent();
-										?>
 										
-									
+									</tbody>
 								</table>
 							</div>
 						</div>
