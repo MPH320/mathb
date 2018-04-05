@@ -49,14 +49,30 @@
 
 			<div class="pageWrapper">
 				<br /><div id="ContentPlaceHolder1_UpdatePanelMaster">
-					<h1 id="ContentPlaceHolder1_h1Current"></h1>
+					<h1 id="ContentPlaceHolder1_h1Current">Current Classrooms</h1>
 					
-					<div id="ContentPlaceHolder1_divMessage">
+					<div id="ContentPlaceHolder1_divMessage" style="display:none;">
 						<span id="ContentPlaceHolder1_lblClassroomMessage" style="color:#333333;font-size:Medium;">Create Classrooms to organize your students.  Once you've added a classroom, click on the Students tab to add students. </span><br>
 					</div>
 
 					<div>
 						<table cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvClassrooms" style="width:100%;border-collapse:collapse;">
+							
+							<tr><td><br><div style="background-color:#eee;position:relative;min-width:320px;width:100%;height:auto;background-color:#eee;">
+								
+								<div class='deleteClassroomBoxParent'  style="position:absolute;top:0px;left:0px;width:100%;height:auto;background-color:#ff6767;display:none;">
+									<div style="padding:5px;">
+									<span id="ContentPlaceHolder1_gvClassrooms_Label19_0" style="color:White;font-size:Large;">Are you sure you want to delete this classroom? Any students in this classroom will become unassigned.</span><br>
+
+									<input onclick="confirmDelete(event)" type="submit" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvClassrooms_btnConfirmDelete_0" >
+									<input onclick="cancelDelete(event)" type="submit" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvClassrooms_btnCancelDelete_0" >
+									</div>
+                </div>
+								
+								
+								
+								<div class='deleteClassroomButtonParent' style="min-width:60px;width:20%;float:left;background-color:#eee;"><div style="float:left;height:60px;"><div style="padding:5px;" class="center"><span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Edit</span><br><input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invEdit.png" alt="Edit This Item" wtx-context="442DD9AB-ABF2-445E-9BF1-8746C43FC36C"></div></div><div style="float:left;height:60px;"><div style="padding:5px;" class="center"><span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_0" style="color:Gray;">Delete</span><br>
+								<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_0" src="../images/iconDelete25.png" alt="Delete This Item" onclick="deleteClassRoom(event)"></div></div></div><div style="width:80%;float:left;background-color:#f6f6f6;"><div style="float:left;height:60px;width:50%;min-width:250px;"><div style="padding:5px;"><span id="ContentPlaceHolder1_gvClassrooms_lblClassroomName_0" style="color:Gray;">Classroom Name</span><br><span id="ContentPlaceHolder1_gvClassrooms_Label1_0" style="color:#333333;font-size:Medium;">testClass</span><br><div class=""></div></div></div><div style="float:left;height:60px;width:50%;min-width:250px;"><div style="padding:5px;"><span id="ContentPlaceHolder1_gvClassrooms_lblClassroomDescription_0" style="color:Gray;">Description</span><br><span id="ContentPlaceHolder1_gvClassrooms_Label2_0" style="color:#333333;font-size:Medium;">for testing</span><br></div></div></div><div class="cleardiv"></div><input type="hidden" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$hfClassroomID" id="ContentPlaceHolder1_gvClassrooms_hfClassroomID_0" value="2126" wtx-context="CF7D06D5-BD67-4E52-812D-AD449A9DE107"></div><br><br></td></tr>
 							
 						</table>
 					</div><br /><br />

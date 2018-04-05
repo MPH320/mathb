@@ -57,9 +57,6 @@
 								<tbody>
 									<?php 
 										generateChildReports();
-										generateChildReports();
-										generateChildReports();
-										generateChildReports();
 									?>
 								</tbody>
 							</table>

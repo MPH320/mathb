@@ -71,9 +71,6 @@
 						<table  cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_gvStudents" style="width:100%;border-collapse:collapse;">
 							<?php 
 									generateReport();
-									generateReport();
-									generateReport();
-									generateReport();
 							?>
 						</table>
 					</div>

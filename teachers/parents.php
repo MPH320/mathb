@@ -35,7 +35,7 @@
 				<div style="border-top:1px solid #333;">
 					<div class="pageWrapper">
 						<div class="navTeacherMenu">
-							<a href="teacher.php" id="ContentPlaceHolder1_navTeacherTab" class="navParent currentSection">Teacher</a>
+							<a href="parents.php" id="ContentPlaceHolder1_navTeacherTab" class="navParent currentSection">Teacher</a>
 							<a href="children.php" id="ContentPlaceHolder1_navStudentsTab" class="navChildren">Students</a>
 							<a href="childreports.php" class="navReports">Reports</a>
 							<div class="clear-fix"></div>

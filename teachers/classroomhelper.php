@@ -9,7 +9,26 @@
 		$classroomContent = '<tr>';
 		$classroomContent .= '<td><br />';
 		$classroomContent .= '<div style="background-color:#eee;position:relative;min-width:320px;width:100%;height:auto;background-color:#eee;">';
-		$classroomContent .= '<div style="min-width:60px;width:20%;float:left;background-color:#eee;">';
+
+		
+
+		$classroomContent .= '<div class="deleteClassroomBoxParent" style="position:absolute;top:0px;left:0px;width:100%;height:auto;background-color:#ff6767;display:none;">
+									<div style="padding:5px;">
+									<span id="ContentPlaceHolder1_gvClassrooms_Label19_0" style="color:White;font-size:Large;">Are you sure you want to delete this classroom? Any students in this classroom will become unassigned.</span><br>
+
+									<input onclick="confirmDelete(event)" type="submit" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvClassrooms_btnConfirmDelete_0" >
+									<input onclick="cancelDelete(event)" type="submit" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvClassrooms_btnCancelDelete_0" >
+									</div>
+                </div>';
+
+
+
+														
+		
+
+
+
+		$classroomContent .= '<div class="deleteClassroomButtonParent" style="min-width:60px;width:20%;float:left;background-color:#eee;">';
 		$classroomContent .= '<div style="float:left;height:60px;">';
 		$classroomContent .= '<div style="padding:5px;" class="center">';
 		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Edit</span><br />';
@@ -19,7 +38,7 @@
 		$classroomContent .= '<div style="float:left;height:60px;">';
 		$classroomContent .= '<div style="padding:5px;" class="center">';
 		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_0" style="color:Gray;">Delete</span><br />
-													<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_0" src="../images/iconDelete25.png" alt="Delete This Item" />';
+													<input type="image" onclick="deleteClassRoom(event)" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_0" src="../images/iconDelete25.png" alt="Delete This Item" />';
 		$classroomContent .= '</div>';
 		$classroomContent .= '</div>';
 		$classroomContent .= '</div>';

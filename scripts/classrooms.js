@@ -1,7 +1,35 @@
 $( document ).ready(function() {
   //console.log("hello")
 	//$("table").hide();
+	
+	messageCheck();
+	
+	$("table").bind("DOMSubtreeModified", function() {
+    console.log("Hurrey table changed");
+
+		messageCheck();
+		
 });
+
+	
+	
+	
+	
+});
+
+
+function messageCheck(){
+		var rowCount = $('table tr').length;
+		
+		
+		if(rowCount > 0) {
+			$( "#ContentPlaceHolder1_h1Current" ).show();
+			$( "#ContentPlaceHolder1_divMessage" ).hide();
+		}else{
+			$( "#ContentPlaceHolder1_h1Current" ).hide();
+			$( "#ContentPlaceHolder1_divMessage" ).show();
+		}
+}
 
 function classrooms(){
 	$( "#ContentPlaceHolder1_h1Current" ).text('Current Classrooms');
@@ -11,6 +39,23 @@ function classrooms(){
 function noClassrooms(){
 	$( "#ContentPlaceHolder1_h1Current" ).text('');
 	$( "#ContentPlaceHolder1_lblClassroomMessage" ).show();
+}
+
+function confirmDelete(event) {
+	var domElement =$(event.target).parents( "tr" )
+	domElement.remove()
+}
+
+function cancelDelete(event) {
+	var domElement =$(event.target).parents( ".deleteClassroomBoxParent" );
+	domElement.hide()
+}
+	
+function deleteClassRoom(event){
+	
+	var domElement =$(event.target).parents( ".deleteClassroomButtonParent" ).prev();
+	domElement.show();
+
 }
 
 function save(){
