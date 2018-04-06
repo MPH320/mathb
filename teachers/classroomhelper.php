@@ -8,6 +8,38 @@
 		
 		$classroomContent = '<tr>';
 		$classroomContent .= '<td><br />';
+
+
+
+							
+		$classroomContent .= '<div class="classRoomEdit" style="display:none" >
+														<div  style="width:75px; height:160px;float:left;background-color:#eee;">
+                                    <div style="height:50px;padding:5px;" class="center">
+                                        <span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Update</span><br>
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invSave.png" alt="Update This Item"  >
+                                    </div>
+                                    <div style="height:50px;padding:5px;" class="center">
+                                        <span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_0" style="color:Gray;">Cancel</span><br>
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnDelete" id="ContentPlaceHolder1_gvClassrooms_btnDelete_0" src="../images/iconDelete25.png" alt="Cancel" onclick="cancelEdit(event)">
+                                    </div>
+                                </div>
+										
+										<div style="width:250px; height:160px;float:left;background-color:#f6f6f6;">
+                                    <div style="height:50px;padding:5px;">
+                                        <span id="ContentPlaceHolder1_gvClassrooms_lblCFName_0" style="color:Gray;">Classroom Name</span><br>
+                                        <input name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$txtClassroomName" type="text" value="" id="ContentPlaceHolder1_gvClassrooms_txtClassroomName_0" style="color:#333333;font-size:Medium;height:30px;width:95%;" >
+                                   </div>
+                                    <div style="height:50px;padding:5px;">
+                                        <span id="ContentPlaceHolder1_gvClassrooms_lblCLName_0" style="color:Gray;">Description</span><br>
+                                        <input name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$txtClassroomDescription" type="text" value="" id="ContentPlaceHolder1_gvClassrooms_txtClassroomDescription_0" style="color:#333333;font-size:Medium;height:30px;width:95%;" >                                        
+                                   </div>
+                                    <span id="ContentPlaceHolder1_gvClassrooms_lblClassroomEditMessage_0" style="color:#990000;"></span><br>
+                                </div>
+									</div>';
+
+
+
+
 		$classroomContent .= '<div style="background-color:#eee;position:relative;min-width:320px;width:100%;height:auto;background-color:#eee;">';
 
 		
@@ -32,7 +64,7 @@
 		$classroomContent .= '<div style="float:left;height:60px;">';
 		$classroomContent .= '<div style="padding:5px;" class="center">';
 		$classroomContent .= '<span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Edit</span><br />';
-		$classroomContent .= '<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invEdit.png" alt="Edit This Item" />';
+		$classroomContent .= '<input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invEdit.png" alt="Edit This Item" onclick="editClassroom(event)" />';
 		$classroomContent .= '</div>';
 		$classroomContent .= '</div>';
 		$classroomContent .= '<div style="float:left;height:60px;">';

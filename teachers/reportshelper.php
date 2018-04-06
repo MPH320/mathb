@@ -21,7 +21,7 @@
 		$reportContent .='<div style="width:160px;float:left;height:50px;position:relative;overflow:hidden;">';    
     $reportContent .='<span id="ContentPlaceHolder1_gvStudents_Label3_1" style="color:Silver;">Name</span><br>';
     $reportContent .='<span id="ContentPlaceHolder1_gvStudents_lblStudentFullName_1" style="font-size:Medium;">Gatsby, Jean David</span>';
-    $reportContent .='<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="3" wtx-context="A2158836-FDBE-478B-AA5E-50129FBDADBD">';
+    $reportContent .='<input type="hidden" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$hfStudentGrade" id="ContentPlaceHolder1_gvStudents_hfStudentGrade_1" value="3">';
     $reportContent .='</div>';
 		$reportContent .='<div style="width:110px;float:left;height:50px;position:relative;">';
     $reportContent .='<span id="ContentPlaceHolder1_gvStudents_Label4_1" style="color:Silver;">Username</span><br>';
