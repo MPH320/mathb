@@ -64,7 +64,7 @@
 														<div  style="width:75px; height:160px;float:left;background-color:#eee;">
                                     <div style="height:50px;padding:5px;" class="center">
                                         <span id="ContentPlaceHolder1_gvClassrooms_lblCEdit_0" style="color:Gray;">Update</span><br>
-                                        <input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invSave.png" alt="Update This Item" >
+                                        <input type="image" name="ctl00$ContentPlaceHolder1$gvClassrooms$ctl02$btnEdit" id="ContentPlaceHolder1_gvClassrooms_btnEdit_0" src="../images/invSave.png" alt="Update This Item" onclick="updateClassrooms(event)">
                                     </div>
                                     <div style="height:50px;padding:5px;" class="center">
                                         <span id="ContentPlaceHolder1_gvClassrooms_lblCDelete_0" style="color:Gray;">Cancel</span><br>

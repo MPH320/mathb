@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	messageCheck();
 	
 	$("table").bind("DOMSubtreeModified", function() {
-    console.log("Hurrey table changed");
+   // console.log("Hurrey table changed");
 
 		messageCheck();
 		
@@ -41,6 +41,31 @@ function noClassrooms(){
 	$( "#ContentPlaceHolder1_lblClassroomMessage" ).show();
 }
 
+function cancelEdit(event){
+	var otherElement = $(event.target).parents( ".classRoomEdit" );
+	var domElement = $(event.target).parents( ".classRoomEdit" ).next();
+	domElement.show();
+	otherElement.hide();
+	
+}
+
+function updateClassrooms(event){
+	var domElement = $(event.target).parent().parent().next().children().first().children().first().next().next().val();
+	
+	var otherElement =  $(event.target).parent().parent().next().children().first().next().children().first().next().next().val();
+	
+	var targetOne = $(event.target).parent().parent().parent().next().children().first().next().next().children().first().children().first().children().first().next().next();
+	
+	targetOne.text(domElement);
+	
+	var targetTwo = $(event.target).parent().parent().parent().next().children().first().next().next().children().first().next().children().first().children().first().next().next();
+	
+	targetTwo.text(otherElement);
+	
+	cancelEdit(event);
+	
+}
+
 function editClassroom(event){
 	var className = $(event.target).parent().parent().parent().next().children().first().children().first().children().first().next().next().text();
 	var classDesc = $(event.target).parent().parent().parent().next().children().first().next().children().first().children().first().next().next().text();
@@ -52,14 +77,6 @@ function editClassroom(event){
 	targetTwo.val(classDesc)
 	domElement.show();
 	otherElement.hide();
-}
-
-function cancelEdit(event){
-	var otherElement = $(event.target).parents( ".classRoomEdit" );
-	var domElement = $(event.target).parents( ".classRoomEdit" ).next();
-	domElement.show();
-	otherElement.hide();
-	
 }
 
 function confirmDelete(event) {
