@@ -44,26 +44,34 @@ function noClassrooms(){
 function cancelEdit(event){
 	var otherElement = $(event.target).parents( ".classRoomEdit" );
 	var domElement = $(event.target).parents( ".classRoomEdit" ).next();
+	var targetOne = $(event.target).parent().parent().next().children().first().next().next();
+	targetOne.text("");
 	domElement.show();
 	otherElement.hide();
 	
 }
 
 function updateClassrooms(event){
+	//A classroom name is required.
+	
 	var domElement = $(event.target).parent().parent().next().children().first().children().first().next().next().val();
 	
 	var otherElement =  $(event.target).parent().parent().next().children().first().next().children().first().next().next().val();
 	
 	var targetOne = $(event.target).parent().parent().parent().next().children().first().next().next().children().first().children().first().children().first().next().next();
 	
-	targetOne.text(domElement);
-	
 	var targetTwo = $(event.target).parent().parent().parent().next().children().first().next().next().children().first().next().children().first().children().first().next().next();
 	
-	targetTwo.text(otherElement);
+	var targetThree = $(event.target).parent().parent().next().children().first().next().next();
 	
-	cancelEdit(event);
-	
+	if(!domElement){
+			targetThree.text("A classroom name is required.");
+	}else{
+		targetOne.text(domElement);
+		targetTwo.text(otherElement);
+		targetThree.text("");
+		cancelEdit(event);
+	}
 }
 
 function editClassroom(event){
