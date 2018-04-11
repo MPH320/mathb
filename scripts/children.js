@@ -1,9 +1,5 @@
 $( document ).ready(function() {
-  //console.log("hello");
-	//$("table").hide();
-	//$("#ContentPlaceHolder1_divAddStudents").hide();
-	
-	
+
 });
 
 
@@ -188,3 +184,4 @@ function saveChild(){
 
 	}
 }
+

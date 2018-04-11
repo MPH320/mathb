@@ -22,6 +22,10 @@
 		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+		
+		<script src="../scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="../scripts/children.js" type="text/javascript"></script>
+		<script src="../scripts/secondChildrenHelper.js" type="text/javascript"></script>
 	</head>
 
 	<body class="background">
@@ -185,8 +189,6 @@
 			</footer>
 		</div>
 		
-		<script src="../scripts/jquery-3.3.1.min.js"></script>
-		<script src="../scripts/children.js"></script>
 	</body>
 </html>
 
