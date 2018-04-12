@@ -121,7 +121,7 @@ function saveChild(){
 		if(isNaN(Date.parse(d))){
 			$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'White');
 			$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
-			$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Birthday is not in the correct format.  " ));
+			$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Birthday is not in the correct format. " ));
 			success = false;
 		}
 

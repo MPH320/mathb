@@ -21,16 +21,35 @@
 
 		$studentContent = '<tr>';
 		$studentContent .= '<td>';
-		$studentContent .= '<div class="editStudentRow"><div style="display:none;"><br>';
+		$studentContent .= '<div class="editStudentRow">
+		
+		
+		
+		
+		<div  style="display:none;" id="ContentPlaceHolder1_gvStudents_divConfirmDelete_1" class="editConfirmDelete">
+                                    <span id="ContentPlaceHolder1_gvStudents_Label19_1" style="color:White;font-size:Large;">Are you sure you want to delete this student - ' . $fName . ' ' . $lName . '?</span><br>
+                                    <span id="ContentPlaceHolder1_gvStudents_Label18_1" style="color:White;font-size:Large;">All BatterUp inning data will be deleted as well.</span><br>
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnConfirmDelete" value="Delete" id="ContentPlaceHolder1_gvStudents_btnConfirmDelete_1" onclick="confirmDelete(event)">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$gvStudents$ctl03$btnCancelDelete" value="Cancel" id="ContentPlaceHolder1_gvStudents_btnCancelDelete_1" onclick="cancelDelete(event)">
+                                </div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<div style="display:none;"><br>';
 
 
 		$studentContent .= '<div id="ContentPlaceHolder1_gvStudents_divEditForm_0">
 
                                 <div class="editModeStudentIcons">
                                     <img src="../images/icon_student.png" alt="Student" class="editModeStudentIcon">
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" title="Update Student" class="editModeStudent" src="../images/invSave.png" >
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnDeleteStudent" id="ContentPlaceHolder1_gvStudents_btnDeleteStudent_0" title="Delete Student" class="deleteStudent" src="../images/iconDelete25.png" >
-                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnCancelStudent" id="ContentPlaceHolder1_gvStudents_btnCancelStudent_0" title="Cancel" class="cancelStudent" src="../images/iconCancel.png" >
+                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent" title="Update Student" class="editModeStudent" src="../images/invSave.png" onclick="updateStudent(event)">
+                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnDeleteStudent" id="ContentPlaceHolder1_gvStudents_btnDeleteStudent_0" title="Delete Student" class="deleteStudent" src="../images/iconDelete25.png" onclick="deleteStudent(event)">
+                                    <input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnCancelStudent" id="ContentPlaceHolder1_gvStudents_btnCancelStudent_0" title="Cancel" class="cancelStudent" src="../images/iconCancel.png" onclick="cancelEdit(event)">
 
                                 </div>
 
