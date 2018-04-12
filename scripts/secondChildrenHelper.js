@@ -5,13 +5,7 @@ function editStudent(event){
 	otherElement.show();
 }
 
-function cancelEdit(event){
-	var domElement = $(event.target).parent().parent().parent();
-	var otherElement = $(event.target).parent().parent().parent().next();
-	domElement.hide();
-	otherElement.show();
 
-}
 
 function deleteStudent(event){
 	var domElement = $(event.target).parents(".editStudentRow").children().first();
@@ -44,6 +38,59 @@ function errorCss(element){
 
 function errorMsg(element, msg){
 	element.append(document.createTextNode( msg ));
+}
+
+function cancelEdit(event){
+	
+	var errorSpan = $(event.target).parent().parent().find( "span" )[15];
+	errorSpan = $(event.target).parent().parent().find( errorSpan )
+	
+	var inputParent = $(event.target).parent().parent().find( "input" );
+	var selectParent = $(event.target).parent().parent().find( "select" );
+	
+	var valLocation = $(event.target).parent().parent();
+	
+	var fName = valLocation.find( inputParent[4] );
+	var mName = valLocation.find( inputParent[5] );
+	var lName = valLocation.find( inputParent[6] );
+	var uName = valLocation.find( inputParent[7] );
+	var pWord = valLocation.find( inputParent[8] );
+	var bDay = valLocation.find( inputParent[10] );
+	var grade = valLocation.find( selectParent[0] );
+	var gender = valLocation.find( selectParent[1] );
+	var race = valLocation.find( selectParent[2] );
+	
+	errorSpan.text('');
+	cleanCss(fName)
+	cleanCss(lName)
+	cleanCss(uName)
+	cleanCss(pWord)
+	cleanCss(bDay)
+	
+	var originalValLoc = $(event.target).parent().parent().parent().next().find("span");
+	var changeLoc = $(event.target).parent().parent().parent().next();
+
+	var nameVal = changeLoc.find( originalValLoc[5] ).text();
+	var uNameVal = changeLoc.find( originalValLoc[7] ).text();
+	var pWordVal = changeLoc.find( originalValLoc[9] ).text();
+	var bDayVal = changeLoc.find( originalValLoc[13] ).text();
+	var gradeVal = changeLoc.find( originalValLoc[3]).text();
+	var genderVal = changeLoc.find( originalValLoc[11] ).text();
+	var raceVal = changeLoc.find( originalValLoc[15] ).text();
+	
+	uName.val(uNameVal);
+	pWord.val(pWordVal);
+	bDay.val(bDayVal);
+	grade.val(gradeVal);
+	gender.val(genderVal);
+	race.val(raceVal);
+
+	var domElement = $(event.target).parent().parent().parent();
+	var otherElement = $(event.target).parent().parent().parent().next();
+	
+	domElement.hide();
+	otherElement.show();
+
 }
 
 function updateStudent(event){
