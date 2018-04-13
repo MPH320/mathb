@@ -267,6 +267,9 @@ function updateStudent(event){
 		
 		var oneElement = $(event.target).parents('.editStudents');
 		var secondElement = $(event.target).parents('.editStudents').next();
+		var deleteElement = oneElement.prev().children().first();
+		
+		deleteElement.text("Are you sure you want to delete this student - " + fName.val() + " " + lName.val() + "?");
 		
 		oneElement.hide();
 		secondElement.show();

@@ -207,6 +207,7 @@
 			
 			<script src="../scripts/jquery-3.3.1.min.js"></script>
 			<script src="../scripts/students.js"></script>
+			<script src="../scripts/studentshelper.js"></script>
 		</div>
 	</body>
 </html>

@@ -2,7 +2,10 @@
 
 	//generate a tweet from a specified tweet object
 	function generateReport() {
-
+		
+		
+		
+		if(isset($_SESSION['teacheruser'])){
 
 		$reportContent ='<tr>';
 		$reportContent .='<td>';
@@ -49,6 +52,7 @@
 		$reportContent .='</tr>';
 	
 		echo $reportContent;
+		}
 		
 	}
 

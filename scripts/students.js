@@ -71,7 +71,6 @@ function clearAddChildForm(){
 
 
 function saveStudent(){
-	console.log("clicked")
 	clearAddChildForm()
 	
 		var success = true;
@@ -153,10 +152,7 @@ function saveStudent(){
 	}
 
 	if(success){
-		console.log("success");
-		
-		
-		
+
 		
 		var tempURL = '../teachers/studentshelper.php';
 		var fName = $("#ContentPlaceHolder1_txtFName").val();

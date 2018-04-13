@@ -25,7 +25,7 @@
 		
 		<script src="../scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script src="../scripts/children.js" type="text/javascript"></script>
-		<script src="../scripts/secondChildrenHelper.js" type="text/javascript"></script>
+		<script src="../scripts/childrenHelper.js" type="text/javascript"></script>
 	</head>
 
 	<body class="background">

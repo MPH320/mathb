@@ -1,5 +1,7 @@
 <?php
 
+	if(isset($_SESSION['teacheruser'])){
+
 		$cName = $_GET['cName'];
 
 		if (isset($_GET['desc'])) {
@@ -100,5 +102,6 @@
 		$classroomContent .= '</tr>';
 		
 		echo $classroomContent;
+	}
 
 ?>
