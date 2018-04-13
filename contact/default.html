@@ -36,19 +36,20 @@
 								<div class="contact_form_left">
 									<h1>Contact Us</h1>
 
-									<div class="content">
+									<form class="content contactForm">
 										<p>Your Name</p>
-										<input name="ctl00$ContentPlaceHolder1$txtEmailName" type="text" id="ContentPlaceHolder1_txtEmailName" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
+										<input name="name" type="text" id="ContentPlaceHolder1_txtEmailName" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
 
 										<p>Your Email</p>
-										<input name="ctl00$ContentPlaceHolder1$txtEmailAddress" type="text" id="ContentPlaceHolder1_txtEmailAddress" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
+										<input type="text" name="email" id="ContentPlaceHolder1_txtEmailAddress" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
 
 										<p>Your Message</p>
-										<textarea name="ctl00$ContentPlaceHolder1$txtEmailMessage" rows="2" cols="20" id="ContentPlaceHolder1_txtEmailMessage" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:130px;width:100%;"></textarea>
+										<textarea type="text" name="message" rows="2" cols="20" id="ContentPlaceHolder1_txtEmailMessage" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:130px;width:100%;"></textarea>
 										<span id="ContentPlaceHolder1_lblEmailError" style="color:#00ACDC;font-size:Larger;"></span>
 
-										<input type="image" name="ctl00$ContentPlaceHolder1$btnSendEmail" id="ContentPlaceHolder1_btnSendEmail" onmouseover="this.src='../images/button_send_over.png'" onmouseout="this.src='../images/button_send.png'" class="contact_button content_center" src="../images/button_send.png" style="height:45px;width:91px;" onclick="submitContact()">
-									</div>
+										<input type="image" name="ctl00$ContentPlaceHolder1$btnSendEmail" id="ContentPlaceHolder1_btnSendEmail" onmouseover="this.src='../images/button_send_over.png'" onmouseout="this.src='../images/button_send.png'" class="contact_button content_center" src="../images/button_send.png" style="height:45px;width:91px;" onclick="submitContact(event)">
+										
+									</form>
 								</div>
 							</div>
 
