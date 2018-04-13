@@ -40,7 +40,7 @@
 		
 		
 		
-		<div style="display:none;"><br>';
+		<div class="editStudents" style="display:none;"><br>';
 
 
 		$studentContent .= '<div id="ContentPlaceHolder1_gvStudents_divEditForm_0">
@@ -210,7 +210,7 @@
 
 
 
-		$studentContent .= '</div><div><div class="editStudentIcons">';
+		$studentContent .= '</div><div class="studentsRow"><div class="editStudentIcons">';
 		$studentContent .= '<img src="../images/icon_student.png" alt="Student" class="editStudentIcon">';
 		$studentContent .= '<input type="image" name="ctl00$ContentPlaceHolder1$gvStudents$ctl02$btnEditStudent"';
 		$studentContent .= ' title="Edit Student" class="editStudent" src="../images/invEdit.png" onclick="editStudent(event)" >';
