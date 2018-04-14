@@ -23,12 +23,25 @@ function submitContact(event){
 	}
 }
 
-function subscribe(){
+function subscribe(event){
+	event.preventDefault();
+
+
 		$( "#ContentPlaceHolder1_lblSubscriptionError" ).css('color', '#00ACDC');
 	if(!$("#ContentPlaceHolder1_txtSubscribe").val()){
 		$( "#ContentPlaceHolder1_lblSubscriptionError" ).text('Please enter an email address.');
 	}else{
-		$( "#ContentPlaceHolder1_lblSubscriptionError" ).css('color', '#48473E');
-		$( "#ContentPlaceHolder1_lblSubscriptionError" ).text('Thank you for subscribing.');
+		
+		$.post("../contact/subscribe.php", {"email": $("#ContentPlaceHolder1_txtSubscribe").val()})
+			.done(function( data ) {
+
+			if (data == "Subscribed"){
+		
+				$( "#ContentPlaceHolder1_lblSubscriptionError" ).css('color', '#48473E');
+				$( "#ContentPlaceHolder1_lblSubscriptionError" ).text('Thank you for subscribing.');
+			}
+    	
+  	});
+
 	}
 }

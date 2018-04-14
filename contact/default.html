@@ -56,14 +56,15 @@
 							<div class="contact_follow">
 								<div class="contact_form_right">
 									<h1>Subscribe to Newsletter</h1>
-									<div class="content">
+									<form class="content">
 										<p>Your Email</p>
-										<input name="ctl00$ContentPlaceHolder1$txtSubscribe" type="text" id="ContentPlaceHolder1_txtSubscribe" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
+										<input type="hidden" name="u" value="6c98685fb48f01030b012f0c8">
+										<input type="hidden" name="id" value="f81683bcc8">
+										<input type="email" name="b_email" id="ContentPlaceHolder1_txtSubscribe" style="color:#1B1B1B;background-color:#F1F1F1;border-color:#D1D1D1;border-width:1px;border-style:Solid;font-size:Larger;height:30px;width:100%;">
 										<span id="ContentPlaceHolder1_lblSubscriptionError" style="color:#00ACDC;font-size:Larger;"></span>
 																				
-
-										<input type="image" name="ctl00$ContentPlaceHolder1$btnSubscribe" id="ContentPlaceHolder1_btnSubscribe" onmouseover="this.src='../images/button_subscribe_over.png'" onmouseout="this.src='../images/button_subscribe.png'" class="contact_button content_center" src="../images/button_subscribe.png" style="height:45px;width:141px;" onclick="subscribe()">
-									</div>
+										<input type="image" name="ctl00$ContentPlaceHolder1$btnSubscribe" id="ContentPlaceHolder1_btnSubscribe" onmouseover="this.src='../images/button_subscribe_over.png'" onmouseout="this.src='../images/button_subscribe.png'" class="contact_button content_center" src="../images/button_subscribe.png" style="height:45px;width:141px;" onclick="subscribe(event)">
+									</form>
 								</div>
 
 							</div>
