@@ -1,5 +1,7 @@
 <?php
 
+	session_start();
+
 	if(isset($_SESSION['teacheruser'])){
 
 		$cName = $_GET['cName'];
