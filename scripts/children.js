@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 
 function add(){
-	//console.log("hello");
+
 	$("#ContentPlaceHolder1_divAddStudents").show();
 	$("#ContentPlaceHolder1_btnAdd").hide();
 }
@@ -23,7 +23,7 @@ function resetForm(){
 }
 
 function done(){
-	//console.log("hello");
+
 	$("#ContentPlaceHolder1_divAddStudents").hide();
 	$("#ContentPlaceHolder1_btnAdd").show();
 	
@@ -64,7 +64,7 @@ function clearAddChildForm(){
 
 
 function saveChild(){
-	//console.log("clicked")
+
 	clearAddChildForm()
 	
 		var success = true;
@@ -83,7 +83,7 @@ function saveChild(){
 			success = false;
 	} else if ($("#ContentPlaceHolder1_txtPassword").val() != $("#ContentPlaceHolder1_txtPasswordRetype").val()){
 
-			//console.log("no match")
+
 		$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'White');
 	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('color', 'White');
@@ -168,13 +168,13 @@ function saveChild(){
 			tempURL = tempURL + '?fName=' + fName + '&lName=' + lName + '&mName=' + mName + '&uName=' + uName + '&pWord=' + pWord + '&gender=' + gender + '&bDay=' + bDay + '&race=' + race + '&grade=' + grade;
 		}
 		
-		//console.log(tempURL)	
+
 		
 		
 		$.ajax({
 				url: tempURL,
 				success: function (response) {//response is value returned from php (for your example it's "bye bye"
-				//alert(response);
+
 					$('tbody').append(response);
 			}
 		});

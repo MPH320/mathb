@@ -1,12 +1,9 @@
 $( document ).ready(function() {
-  //console.log("hello");
-	//$("table").hide();
-	//$("#ContentPlaceHolder1_divAddStudents").hide();
-	
+
 });
 
 function add(){
-	//console.log("hello");
+
 	$("#ContentPlaceHolder1_divAddStudents").show();
 	$("#ContentPlaceHolder1_divAddMessage").hide();
 	$("#ContentPlaceHolder1_btnAdd").hide();
@@ -89,7 +86,6 @@ function saveStudent(){
 			success = false;
 	} else if ($("#ContentPlaceHolder1_txtPassword").val() != $("#ContentPlaceHolder1_txtPasswordRetype").val()){
 
-			//console.log("no match")
 		$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'White');
 	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('color', 'White');
@@ -171,9 +167,7 @@ function saveStudent(){
 		}else{
 			tempURL = tempURL + '?fName=' + fName + '&lName=' + lName + '&mName=' + mName + '&uName=' + uName + '&pWord=' + pWord + '&gender=' + gender + '&bDay=' + bDay + '&race=' + race + '&grade=' + grade + '&cRoom=' + cRoom;
 		}
-		
-		//console.log(tempURL)	
-		
+
 		
 		$.ajax({
 				url: tempURL,
@@ -183,10 +177,7 @@ function saveStudent(){
 			}
 		});
 		
-		
-		
-		
-		
+
 		
 		resetForm();
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('Child Saved Succesfully');

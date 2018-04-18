@@ -1,6 +1,5 @@
 <?php
 
-	//generate a tweet from a specified tweet object
 	function generateReport() {
 		
 		

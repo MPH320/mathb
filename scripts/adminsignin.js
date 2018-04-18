@@ -1,8 +1,5 @@
 $( document ).ready(function() {
-  //console.log("hello");
-	
-	
-	//$('#ContentPlaceHolder1_divOutsideUS').hide();
+
 });
 
 

@@ -1,6 +1,5 @@
 $( document ).ready(function() {
-  //console.log("hello")
-	//$("table").hide();
+
 	
 	messageCheck();
 	
@@ -52,7 +51,7 @@ function cancelEdit(event){
 }
 
 function updateClassrooms(event){
-	//A classroom name is required.
+
 	
 	var domElement = $(event.target).parent().parent().next().children().first().children().first().next().next().val();
 	

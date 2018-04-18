@@ -1,12 +1,8 @@
 <?php
 
-	//generate a tweet from a specified tweet object
 session_start();
 
 if(isset($_SESSION['parentuser'])){
-			
-
-
 
 		$fName = $_GET['fName'];
 		$lName = $_GET['lName'];

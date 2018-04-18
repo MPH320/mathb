@@ -1,7 +1,5 @@
 $( document ).ready(function() {
-  //console.log("hello");
-	
-	//$('#ContentPlaceHolder1_divOutsideUS').hide();
+
 });
 
 
@@ -252,7 +250,7 @@ function register(){
 	
 
 	if(success){
-		//console.log("success");
+
 		window.location.href = "registered.html";
 	}
 }

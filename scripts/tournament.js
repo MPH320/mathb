@@ -112,11 +112,7 @@ $( document ).ready(function() {
 		$('#ContentPlaceHolder1_DataPager1').show();
 		getStats()
 	});
-	
-	
-	
-	
-	
+
 });
 
 function getval(sel)
