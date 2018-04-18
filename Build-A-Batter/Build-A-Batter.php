@@ -21,6 +21,10 @@
 		<link rel="Stylesheet" type="text/css" href="../css/screen_layout_large.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="../css/screen_layout_small.css" />
 		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="../css/screen_layout_medium.css" />
+		<script src="../Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("divFlash", "../Build/BuildABatter_20180415.json");
+    </script>
 	</head>
 
 	<body class="batteruppage">
@@ -29,9 +33,11 @@
 			<br /><br /><br /><br />
 			<div class="batterupgame" style="text-align:center;">
 
-				<div id="divFlash">
-					<iframe width="760" height="480" id="divFlash" align="middle" style="visibility: visible;"></iframe>
+				<div id="divFlash" align="middle" style="visibility: visible;box-sizing:border-box;width:760px;height:480px">
 				</div>
+				
+				
+
 				
 			</div>
 		</div>

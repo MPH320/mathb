@@ -65,11 +65,24 @@ function signIn(){
 	
 	if(success && username == "testParent"){
 		//console.log("success");
-		 $.post("../teachers/parentsignin.php", {"username": username});
-		window.location="http://localhost/nationalmathbee/teachers/parents.php"
+		 $.post("../teachers/parentsignin.php", {"username": username})
+			 .done(function( data ) {
+
+			if (data == "Success"){
+				window.location="http://localhost/nationalmathbee/teachers/parents.php"
+			}
+    	
+  	});
+		
 	} else if (success && username == "testTeacher"){
-		 $.post("../teachers/teachersignin.php", {"username": username});
-		window.location="http://localhost/nationalmathbee/teachers/teacher.php"
+		 $.post("../teachers/teachersignin.php", {"username": username}).done(function( data ) {
+
+			if (data == "Success"){
+				window.location="http://localhost/nationalmathbee/teachers/teacher.php"
+			}
+    	
+  	});
+		
 		
 	} else{
 		$( "#ContentPlaceHolder1_lblSignInMessage" ).text('Login Failed. Please try again.');

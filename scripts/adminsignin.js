@@ -39,8 +39,15 @@ function signIn(){
 	///this will need to check the db
 	if(success && username == "test"){
     // Send Ajax request to backend.php, with src set as "img" in the POST data
-    $.post("../signin/adminsignin.php", {"username": username});
-		window.location="http://localhost/nationalmathbee/admin/adminhome.php"
+    $.post("../signin/adminsignin.php", {"username": username})
+		.done(function( data ) {
+
+				if (data == "Success"){
+					window.location="http://localhost/nationalmathbee/admin/adminhome.php"
+				}
+    	
+  	});
+		
 	} else{
 		$( "#lblSignInMessage" ).text('Login Failed. Please try again.');
 	}

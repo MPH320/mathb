@@ -4,6 +4,6 @@
 
 			$_SESSION['teacheruser'] = $_POST['username'];
 
-		//echo $_SESSION['adminuser'];
+		echo "Success";
 		
 ?>
