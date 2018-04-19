@@ -2,7 +2,15 @@ $( document ).ready(function() {
 
 });
 
+function errorCSS(theElement){
+	theElement.css('color', 'White');
+	theElement.css('background-color', '#FF9999');
+}
 
+function clearCSS(theElement){
+	theElement.css('color', 'Black');
+	theElement.css('background-color', 'White');
+}
 
 function checkBox(){
 	if ($('#ContentPlaceHolder1_cbOutsiteUS').prop( "checked" )) {
@@ -29,10 +37,8 @@ function schoolName(){
 }
 
 function clearSignInForm(){
-	$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtUsername" ).css('background-color', 'White');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', 'White');
+	clearCSS($( "#ContentPlaceHolder1_txtUsername" ));
+	clearCSS($( "#ContentPlaceHolder1_txtPassword" ));
 	
 	$( "#ContentPlaceHolder1_lblSignInMessage" ).text('');
 }
@@ -43,24 +49,19 @@ function signIn(){
 	
 	$( "#ContentPlaceHolder1_lblSignInMessage" ).text('');
 	if(!$("#ContentPlaceHolder1_txtUsername").val()){
-		$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtUsername" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtUsername" ));
 		$( "#ContentPlaceHolder1_lblSignInMessage" ).text('A username is required. ');
 		success = false;
 	}
 	
 		if(!$("#ContentPlaceHolder1_txtPassword").val()){
-		$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', '#FF9999');
+			errorCSS($( "#ContentPlaceHolder1_txtPassword" ));
 		$( "#ContentPlaceHolder1_lblSignInMessage" ).append(document.createTextNode( "A password is required." ));
 			success = false;
 	}
 	
-	
 	var username = $("#ContentPlaceHolder1_txtUsername").val();
-	
 
-	
 	if(success && username == "testParent"){
 	
 		 $.post("../teachers/parentsignin.php", {"username": username})
@@ -89,41 +90,18 @@ function signIn(){
 }
 
 function clearRegisterForm(){
-	$( "#ContentPlaceHolder1_txtRegisterUsername" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterUsername" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterEmailRetype" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterEmailRetype" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterFName" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterFName" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterLName" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterLName" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlSchoolType" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlSchoolType" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlStates" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlStates" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlCountries" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlCountries" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('background-color', 'White');
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterUsername" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterPassword" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterEmail" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterEmailRetype" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterFName" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterLName" ));
+	clearCSS($( "#ContentPlaceHolder1_ddlSchoolType" ));
+	clearCSS($( "#ContentPlaceHolder1_ddlStates" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterSchoolName" ));
+	clearCSS($( "#ContentPlaceHolder1_ddlCountries" ));
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterStateProvince" ));S
 	
 	$( "#ContentPlaceHolder1_lblRegisterMessage" ).text('');
 	
@@ -136,24 +114,20 @@ function register(){
 		var success = true;
 
 	if(!$("#ContentPlaceHolder1_txtRegisterUsername").val()){
-		$( "#ContentPlaceHolder1_txtRegisterUsername" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterUsername" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterUsername" ));
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).text('A username is required. ');
 		success = false;
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtRegisterPassword").val()){
-		$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterPassword" ));
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A password is required. " ));
 			success = false;
 	} else if ($("#ContentPlaceHolder1_txtRegisterPassword").val() != $("#ContentPlaceHolder1_txtRegisterPasswordRetype").val()){
-
 		
-		$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('background-color', '#FF9999');
-		$( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterPassword" ));
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ));
+		
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "Passwords do not match. " ));
 		
 		success = false;
@@ -161,41 +135,34 @@ function register(){
 	
 	if(!$("#ContentPlaceHolder1_txtRegisterEmail").val()){
 
-		
-		$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterEmail" ));
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "An email is required. " ));
 			success = false;		
 		
 	} else if ($("#ContentPlaceHolder1_txtRegisterEmail").val() != $("#ContentPlaceHolder1_txtRegisterEmailRetype").val()){
-
-		
-		$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('background-color', '#FF9999');
-		$( "#ContentPlaceHolder1_txtRegisterEmailRetype" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterEmailRetype" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterEmail" ));
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterEmailRetype" ));
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "Email addresses do not match. " ));
 		
 		success = false;
 	}
 	
 		if(!$("#ContentPlaceHolder1_txtRegisterFName").val()){
-		$( "#ContentPlaceHolder1_txtRegisterFName" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterFName" ).css('background-color', '#FF9999');
+			errorCSS($( "#ContentPlaceHolder1_txtRegisterFName" ));
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "First name is required. " ));
 			success = false;
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtRegisterLName").val()){
-		$( "#ContentPlaceHolder1_txtRegisterLName" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtRegisterLName" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtRegisterLName" ));
+
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "Last name is required. " ));
 			success = false;
 	}
 	
 	if($("#ContentPlaceHolder1_ddlSchoolType").val() == "Make a Selection"){
-		$( "#ContentPlaceHolder1_ddlSchoolType" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_ddlSchoolType" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_ddlSchoolType" ));
+
 		$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "Please select a school type. " ));
 			success = false;
 	}
@@ -205,8 +172,7 @@ function register(){
 	if ($('#ContentPlaceHolder1_ddlSchoolType').val() == "public" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "private" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "Homeschool") {
 	
 			if(!$("#ContentPlaceHolder1_txtRegisterSchoolName").val()){
-				$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('color', 'White');
-			$( "#ContentPlaceHolder1_txtRegisterSchoolName" ).css('background-color', '#FF9999');
+				errorCSS($( "#ContentPlaceHolder1_txtRegisterSchoolName" ));
 				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A school name is required. " ));
 					success = false;
 			}
@@ -214,40 +180,28 @@ function register(){
 	}
 	
 	if(!$('#ContentPlaceHolder1_cbOutsiteUS').is(':checked')){
-		
-
 
 			if($("#ContentPlaceHolder1_ddlStates").val() == "Select A State"){
-				$( "#ContentPlaceHolder1_ddlStates" ).css('color', 'White');
-			$( "#ContentPlaceHolder1_ddlStates" ).css('background-color', '#FF9999');
+				errorCSS($( "#ContentPlaceHolder1_ddlStates" ));
 				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A state is required. " ));
 					success = false;
 			} 
 		
 		} else {
 			
-			
-			
 			if(!$("#ContentPlaceHolder1_txtRegisterStateProvince").val()){
-			$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('color', 'White');
-			$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('background-color', '#FF9999');
-			$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( " A state or province is required. " ));
+				errorCSS($( "#ContentPlaceHolder1_txtRegisterStateProvince" ));
+				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( " A state or province is required. " ));
 				success = false;
 			}
 			
 			if($("#ContentPlaceHolder1_ddlCountries").val() == "Select A Country"){
-			$( "#ContentPlaceHolder1_ddlCountries" ).css('color', 'White');
-			$( "#ContentPlaceHolder1_ddlCountries" ).css('background-color', '#FF9999');
-			$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A country is required. " ));
+				errorCSS($( "#ContentPlaceHolder1_ddlCountries" ));
+				$( "#ContentPlaceHolder1_lblRegisterMessage" ).append(document.createTextNode( "A country is required. " ));
 				success = false;
-			
 			}
-			
-			
-			
 		}
 	
-
 	if(success){
 
 		window.location.href = "registered.html";

@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-	
 	messageCheck();
 	
 	$("table").bind("DOMSubtreeModified", function() {
@@ -8,12 +7,8 @@ $( document ).ready(function() {
 
 		messageCheck();
 		
-});
+	});
 
-	
-	
-	
-	
 });
 
 
@@ -42,7 +37,7 @@ function noClassrooms(){
 
 function cancelEdit(event){
 	var otherElement = $(event.target).parents( ".classRoomEdit" );
-	var domElement = $(event.target).parents( ".classRoomEdit" ).next();
+	var domElement = otherElement.next();
 	var targetOne = $(event.target).parent().parent().next().children().first().next().next();
 	targetOne.text("");
 	domElement.show();
@@ -77,7 +72,7 @@ function editClassroom(event){
 	var className = $(event.target).parent().parent().parent().next().children().first().children().first().children().first().next().next().text();
 	var classDesc = $(event.target).parent().parent().parent().next().children().first().next().children().first().children().first().next().next().text();
 	var otherElement = $(event.target).parent().parent().parent().parent();
-	var domElement = $(event.target).parent().parent().parent().parent().prev();
+	var domElement = otherElement.prev();
 	var targetOne = domElement.children().first().next().children().first().children().first().next().next();
 	var targetTwo = domElement.children().first().next().children().first().next().children().first().next().next();
 	targetOne.val(className)
@@ -92,13 +87,13 @@ function confirmDelete(event) {
 }
 
 function cancelDelete(event) {
-	var domElement =$(event.target).parents( ".deleteClassroomBoxParent" );
+	var domElement = $(event.target).parents( ".deleteClassroomBoxParent" );
 	domElement.hide()
 }
 	
 function deleteClassRoom(event){
 	
-	var domElement =$(event.target).parents( ".deleteClassroomButtonParent" ).prev();
+	var domElement = $(event.target).parents( ".deleteClassroomButtonParent" ).prev();
 	domElement.show();
 
 }
@@ -124,8 +119,7 @@ function save(){
 		
 		$.ajax({
 			url: tempURL,
-			success: function (response) {//response is value returned from php (for your example it's "bye bye"
-			//alert(response);
+			success: function (response) {
 				$('table').append(response);
 			}
 		});
