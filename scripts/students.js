@@ -10,11 +10,10 @@ function add(){
 }
 
 function done(){
-	console.log("hello");
+
 	$("#ContentPlaceHolder1_divAddStudents").hide();
 	$("#ContentPlaceHolder1_divAddMessage").show();
 	$("#ContentPlaceHolder1_btnAdd").show();
-	
 	
 }
 

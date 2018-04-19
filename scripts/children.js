@@ -30,34 +30,27 @@ function done(){
 	
 }
 
-function clearAddChildForm(){
-	$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtUsername" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtFName" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtFName" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtLName" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtLName" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlGender" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlGender" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlGrade" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlGrade" ).css('background-color', 'White');
-	
-	$( "#ContentPlaceHolder1_ddlRace" ).css('color', 'Black');
-	$( "#ContentPlaceHolder1_ddlRace" ).css('background-color', 'White');
+function clearCSS(theElement){
+	theElement.css('color', 'Black');
+	theElement.css('background-color', 'White');
+}
 
+function errorCSS(theElement){
+	theElement.css('color', 'White');
+	theElement.css('background-color', '#FF9999');
+}
+
+function clearAddChildForm(){
+	clearCSS($( "#ContentPlaceHolder1_txtUsername" ));
+	clearCSS($( "#ContentPlaceHolder1_txtPassword" ));
+	clearCSS($( "#ContentPlaceHolder1_txtPasswordRetype" ));
+	clearCSS($( "#ContentPlaceHolder1_txtFName" ));
+	clearCSS($( "#ContentPlaceHolder1_txtLName" ));
+	clearCSS($( "#ContentPlaceHolder1_txtBirthday" ));
+	clearCSS($( "#ContentPlaceHolder1_ddlGender" ));
+	clearCSS($( "#ContentPlaceHolder1_ddlGrade"  ));
+	clearCSS($( "#ContentPlaceHolder1_ddlRace" ));
+	
 	$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('');
 	
 }
@@ -70,57 +63,46 @@ function saveChild(){
 		var success = true;
 
 	if(!$("#ContentPlaceHolder1_txtUsername").val()){
-		$( "#ContentPlaceHolder1_txtUsername" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtUsername" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtUsername" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).text('A username is required. ');
 		success = false;
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtPassword").val()){
-		$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtPassword" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "A password is required. " ));
 			success = false;
 	} else if ($("#ContentPlaceHolder1_txtPassword").val() != $("#ContentPlaceHolder1_txtPasswordRetype").val()){
-
-
-		$( "#ContentPlaceHolder1_txtPassword" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtPassword" ).css('background-color', '#FF9999');
-		$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtPasswordRetype" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtPassword" ));
+		errorCSS($( "#ContentPlaceHolder1_txtPasswordRetype" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Passwords do not match. " ));
 		
 		success = false;
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtFName").val()){
+		errorCSS($( "#ContentPlaceHolder1_txtFName" ));
 
-		
-		$( "#ContentPlaceHolder1_txtFName" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtFName" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "First name is required. " ));
 			success = false;		
 		
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtLName").val()){
-		$( "#ContentPlaceHolder1_txtLName" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_txtLName" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtLName" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Last name is required. " ));
 			success = false;
 	}
 	
 	if(!$("#ContentPlaceHolder1_txtBirthday").val()){
-		$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'White');
-		$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_txtBirthday" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "A birthday is required. " ));
 			success = false;
 	}else{
 
 		var d = new Date($("#ContentPlaceHolder1_txtBirthday").val()).toString();
 		if(isNaN(Date.parse(d))){
-			$( "#ContentPlaceHolder1_txtBirthday" ).css('color', 'White');
-			$( "#ContentPlaceHolder1_txtBirthday" ).css('background-color', '#FF9999');
+			errorCSS($( "#ContentPlaceHolder1_txtBirthday" ));
 			$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Birthday is not in the correct format. " ));
 			success = false;
 		}
@@ -129,22 +111,19 @@ function saveChild(){
 
 	
 		if($("#ContentPlaceHolder1_ddlGender").val() == "Choose A Gender"){
-		$( "#ContentPlaceHolder1_ddlGender" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_ddlGender" ).css('background-color', '#FF9999');
+			errorCSS($( "#ContentPlaceHolder1_ddlGender" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Please select a gender. " ));
 			success = false;
 	}
 	
 	if($("#ContentPlaceHolder1_ddlGrade").val() == "Choose A Grade"){
-		$( "#ContentPlaceHolder1_ddlGrade" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_ddlGrade" ).css('background-color', '#FF9999');
+		errorCSS($( "#ContentPlaceHolder1_ddlGrade" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Please select a grade. " ));
 			success = false;
 	}
 	
 		if($("#ContentPlaceHolder1_ddlRace").val() == "Choose A Race"){
-		$( "#ContentPlaceHolder1_ddlRace" ).css('color', 'White');
-	$( "#ContentPlaceHolder1_ddlRace" ).css('background-color', '#FF9999');
+			errorCSS($( "#ContentPlaceHolder1_ddlRace" ));
 		$( "#ContentPlaceHolder1_lblSaveStudentError" ).append(document.createTextNode( "Please select a race. " ));
 			success = false;
 	}
@@ -173,7 +152,7 @@ function saveChild(){
 		
 		$.ajax({
 				url: tempURL,
-				success: function (response) {//response is value returned from php (for your example it's "bye bye"
+				success: function (response) {
 
 					$('tbody').append(response);
 			}

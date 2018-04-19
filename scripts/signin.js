@@ -15,14 +15,14 @@ function checkBox(){
 }
 
 function schoolName(){
-	console.log("schoolname");
+
 	if ($('#ContentPlaceHolder1_ddlSchoolType').val() == "public" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "private" || $('#ContentPlaceHolder1_ddlSchoolType').val() == "Homeschool") {
 		
-		console.log("show");
+	
 		$('#ContentPlaceHolder1_divSchoolName').show();
 		
 	} else {
-		console.log("hide");
+	
 		$('#ContentPlaceHolder1_divSchoolName').hide();
 	
 	}
@@ -59,10 +59,10 @@ function signIn(){
 	
 	var username = $("#ContentPlaceHolder1_txtUsername").val();
 	
-	console.log(username)
+
 	
 	if(success && username == "testParent"){
-		//console.log("success");
+	
 		 $.post("../teachers/parentsignin.php", {"username": username})
 			 .done(function( data ) {
 
@@ -130,7 +130,7 @@ function clearRegisterForm(){
 }
 
 function register(){
-	//console.log("clicked")
+
 	clearRegisterForm()
 	
 		var success = true;
@@ -149,7 +149,7 @@ function register(){
 			success = false;
 	} else if ($("#ContentPlaceHolder1_txtRegisterPassword").val() != $("#ContentPlaceHolder1_txtRegisterPasswordRetype").val()){
 
-			//console.log("no match")
+		
 		$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('color', 'White');
 	$( "#ContentPlaceHolder1_txtRegisterPassword" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_txtRegisterPasswordRetype" ).css('color', 'White');
@@ -169,7 +169,7 @@ function register(){
 		
 	} else if ($("#ContentPlaceHolder1_txtRegisterEmail").val() != $("#ContentPlaceHolder1_txtRegisterEmailRetype").val()){
 
-			//console.log("no match")
+		
 		$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('color', 'White');
 	$( "#ContentPlaceHolder1_txtRegisterEmail" ).css('background-color', '#FF9999');
 		$( "#ContentPlaceHolder1_txtRegisterEmailRetype" ).css('color', 'White');
@@ -215,7 +215,7 @@ function register(){
 	
 	if(!$('#ContentPlaceHolder1_cbOutsiteUS').is(':checked')){
 		
-			console.log("unchecked");
+
 
 			if($("#ContentPlaceHolder1_ddlStates").val() == "Select A State"){
 				$( "#ContentPlaceHolder1_ddlStates" ).css('color', 'White');
@@ -227,7 +227,6 @@ function register(){
 		} else {
 			
 			
-				console.log("checked");
 			
 			if(!$("#ContentPlaceHolder1_txtRegisterStateProvince").val()){
 			$( "#ContentPlaceHolder1_txtRegisterStateProvince" ).css('color', 'White');

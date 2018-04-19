@@ -2,14 +2,21 @@ $( document ).ready(function() {
 
 });
 
+function clearCSS(theElement){
+	theElement.css('color', 'Black');
+	theElement.css('background-color', 'White');
+}
+
+function errorCSS(theElement){
+	theElement.css('color', 'White');
+	theElement.css('background-color', '#FF9999');
+}
 
 
 function clearSignInForm(){
-	$( "#txtUsername" ).css('color', 'Black');
-	$( "#txtUsername" ).css('background-color', 'White');
-	$( "#txtPassword" ).css('color', 'Black');
-	$( "#txtPassword" ).css('background-color', 'White');
-	
+	 clearCSS($( "#txtUsername" ));
+	 clearCSS($( "#txtPassword" ));
+
 	$( "#lblSignInMessage" ).text('');
 }
 
@@ -19,23 +26,21 @@ function signIn(){
 	
 	$( "#ContentPlaceHolder1_lblSignInMessage" ).text('');
 	if(!$("#txtUsername").val()){
-		$( "#txtUsername" ).css('color', 'White');
-		$( "#txtUsername" ).css('background-color', '#FF9999');
+		errorCSS($( "#txtUsername" ));
 		$( "#lblSignInMessage" ).text('A username is required. ');
 		success = false;
 	}
 	
 		if(!$("#txtPassword").val()){
-		$( "#txtPassword" ).css('color', 'White');
-		$( "#txtPassword" ).css('background-color', '#FF9999');
-		$( "#lblSignInMessage" ).append(document.createTextNode( "A password is required." ));
+			errorCSS($( "#txtPassword" ));
+			$( "#lblSignInMessage" ).append(document.createTextNode( "A password is required." ));
 			success = false;
 	}
 	
 	var username = $("#txtUsername").val();
-	///this will need to check the db
+
 	if(success && username == "test"){
-    // Send Ajax request to backend.php, with src set as "img" in the POST data
+  
     $.post("../signin/adminsignin.php", {"username": username})
 		.done(function( data ) {
 
