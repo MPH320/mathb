@@ -35,6 +35,8 @@ function editStudent(event){
 		if(!$(editStudentDivs[i]).is(':hidden') ){
 			
 			var valLocation = $(editStudentDivs[i]).children().first().next();
+			var errorSpan = valLocation.find( "span" )[16];
+			errorSpan = valLocation.find( errorSpan );
 			
 			var inputParent = valLocation.find('input');
 			var selectParent = valLocation.find( "select" );
@@ -50,6 +52,12 @@ function editStudent(event){
 			var race = valLocation.find( selectParent[2] );
 			var classroom = valLocation.find( selectParent[3] );
 			
+			errorSpan.text('');
+			cleanCss(fName)
+			cleanCss(lName)
+			cleanCss(uName)
+			cleanCss(pWord)
+			cleanCss(bDay)
 			
 			fName.val(firstName);
 			mName.val(middleName);
@@ -74,36 +82,38 @@ function editStudent(event){
 	studentsRowDivs.show();
 	
 	var domElement = $(event.target).parent().parent();
-	var otherElement = $(event.target).parent().parent().prev();
+	var otherElement = domElement.prev();
 	
-	var nameSpans = $(event.target).parents(".studentsRow").prev().find('input');
-	var selectLoc = $(event.target).parents(".studentsRow").prev().find('select');
+	var studentsRowDiv = $(event.target).parents(".studentsRow");
 	
-	firstName = $(event.target).parents(".studentsRow").prev().find(nameSpans[4]);
+	var nameSpans = studentsRowDiv.prev().find('input');
+	var selectLoc = studentsRowDiv.prev().find('select');
+	
+	firstName = studentsRowDiv.prev().find(nameSpans[4]);
 	firstName = firstName.val();
 	
-	middleName = $(event.target).parents(".studentsRow").prev().find(nameSpans[5]);
+	middleName = studentsRowDiv.prev().find(nameSpans[5]);
 	middleName = middleName.val();
 	
-	lastName = $(event.target).parents(".studentsRow").prev().find(nameSpans[6]);
+	lastName = studentsRowDiv.prev().find(nameSpans[6]);
 	lastName = lastName.val();
 	
-	userName = $(event.target).parents(".studentsRow").prev().find(nameSpans[7]);
+	userName = studentsRowDiv.prev().find(nameSpans[7]);
 	userName = userName.val();
 	
-	passWord = $(event.target).parents(".studentsRow").prev().find(nameSpans[8]);
+	passWord = studentsRowDiv.prev().find(nameSpans[8]);
 	passWord = passWord.val();
 	
-	birthday = $(event.target).parents(".studentsRow").prev().find(nameSpans[10]);
+	birthday = studentsRowDiv.prev().find(nameSpans[10]);
 	birthday = birthday.val();
 	
-	savedGrade = $(event.target).parents(".studentsRow").prev().find(selectLoc[0]);
+	savedGrade = studentsRowDiv.prev().find(selectLoc[0]);
 	savedGrade = savedGrade.val();
 	
-	savedGender = $(event.target).parents(".studentsRow").prev().find(selectLoc[1]);
+	savedGender = studentsRowDiv.prev().find(selectLoc[1]);
 	savedGender = savedGender.val();
 	
-	savedRace = $(event.target).parents(".studentsRow").prev().find(selectLoc[2]);
+	savedRace = studentsRowDiv.prev().find(selectLoc[2]);
 	savedRace = savedRace.val();
 	
 	domElement.hide();
@@ -112,14 +122,13 @@ function editStudent(event){
 }
 
 function cancelEdit(event){
-	
-	var errorSpan = $(event.target).parent().parent().find( "span" )[15];
-	errorSpan = $(event.target).parent().parent().find( errorSpan )
-	
-	var inputParent = $(event.target).parent().parent().find( "input" );
-	var selectParent = $(event.target).parent().parent().find( "select" );
-	
 	var valLocation = $(event.target).parent().parent();
+	
+	var errorSpan = valLocation.find( "span" )[15];
+	errorSpan = valLocation.find( errorSpan )
+	
+	var inputParent = valLocation.find( "input" );
+	var selectParent = valLocation.find( "select" );
 	
 	var fName = valLocation.find( inputParent[4] );
 	var mName = valLocation.find( inputParent[5] );
@@ -139,16 +148,17 @@ function cancelEdit(event){
 	cleanCss(pWord)
 	cleanCss(bDay)
 	
-	var originalValLoc = $(event.target).parent().parent().parent().next().find("span");
-	var changeLoc = $(event.target).parent().parent().parent().next();
-
-	var nameVal = changeLoc.find( originalValLoc[5] ).text();
-	var uNameVal = changeLoc.find( originalValLoc[7] ).text();
-	var pWordVal = changeLoc.find( originalValLoc[9] ).text();
-	var bDayVal = changeLoc.find( originalValLoc[13] ).text();
-	var gradeVal = changeLoc.find( originalValLoc[3]).text();
-	var genderVal = changeLoc.find( originalValLoc[11] ).text();
-	var raceVal = changeLoc.find( originalValLoc[15] ).text();
+	var domElement = valLocation.parent();
+	var otherElement = domElement.next();
+	var originalValLoc = otherElement.find("span");
+	
+	var nameVal = otherElement.find( originalValLoc[5] ).text();
+	var uNameVal = otherElement.find( originalValLoc[7] ).text();
+	var pWordVal = otherElement.find( originalValLoc[9] ).text();
+	var bDayVal = otherElement.find( originalValLoc[13] ).text();
+	var gradeVal = otherElement.find( originalValLoc[3]).text();
+	var genderVal = otherElement.find( originalValLoc[11] ).text();
+	var raceVal = otherElement.find( originalValLoc[15] ).text();
 	
 	uName.val(uNameVal);
 	pWord.val(pWordVal);
@@ -161,9 +171,6 @@ function cancelEdit(event){
 	fName.val(firstName);
 	mName.val(middleName);
 	lName.val(lastName);
-
-	var domElement = $(event.target).parent().parent().parent();
-	var otherElement = $(event.target).parent().parent().parent().next();
 	
 	domElement.hide();
 	otherElement.show();
@@ -171,15 +178,16 @@ function cancelEdit(event){
 }
 
 function deleteStudent(event){
-	var domElement = $(event.target).parents(".editStudentRow").children().first();
-	var otherElement = $(event.target).parents(".editStudentRow").children().first().next()
+	var editStudentRowDiv = $(event.target).parents(".editStudentRow");
+	var domElement = editStudentRowDiv.children().first();
+	var otherElement = domElement.next()
 	domElement.show();
 	otherElement.hide();
 }
 
 function cancelDelete(event){
 	var domElement = $(event.target).parent();
-	var otherElement = $(event.target).parent().next();
+	var otherElement = domElement.next();
 	domElement.hide();
 	otherElement.show();
 }
@@ -191,14 +199,13 @@ function confirmDelete(event){
 
 function updateStudent(event){
 	
-	
-	var errorSpan = $(event.target).parent().parent().find( "span" )[10];
-	errorSpan = $(event.target).parent().parent().find( errorSpan )
-	
-	var inputParent = $(event.target).parent().parent().find( "input" );
-	var selectParent = $(event.target).parent().parent().find( "select" );
-	
 	var valLocation = $(event.target).parent().parent();
+	
+	var errorSpan = valLocation.find( "span" )[16];
+	errorSpan = valLocation.find( errorSpan );
+	
+	var inputParent = valLocation.find( "input" );
+	var selectParent = valLocation.find( "select" );
 	
 	var fName = valLocation.find( inputParent[4] );
 	var mName = valLocation.find( inputParent[5] );
@@ -259,9 +266,9 @@ function updateStudent(event){
 	}
 	
 	if (success){
-		var edit = $(event.target)
-		var domElement = $(event.target).parent().parent().parent().next().find("span");
-		var changeLoc = $(event.target).parent().parent().parent().next();
+		var edit = $(event.target);
+		var changeLoc = edit.parent().parent().parent().next();
+		var domElement = changeLoc.find("span");
 	
 		changeLoc.find( domElement[5] ).text(lName.val() + ", " + fName.val() + " " + mName.val());
 		changeLoc.find( domElement[7] ).text(uName.val());
@@ -271,8 +278,8 @@ function updateStudent(event){
 		changeLoc.find( domElement[11] ).text(gender.val());
 		changeLoc.find( domElement[15] ).text(race.val());
 		
-		var oneElement = $(event.target).parents('.editStudents');
-		var secondElement = $(event.target).parents('.editStudents').next();
+		var oneElement = edit.parents('.editStudents');
+		var secondElement = oneElement.next();
 		var deleteElement = oneElement.prev().children().first();
 		
 		deleteElement.text("Are you sure you want to delete this student - " + fName.val() + " " + lName.val() + "?");

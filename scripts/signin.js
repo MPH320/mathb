@@ -101,7 +101,7 @@ function clearRegisterForm(){
 	clearCSS($( "#ContentPlaceHolder1_ddlStates" ));
 	clearCSS($( "#ContentPlaceHolder1_txtRegisterSchoolName" ));
 	clearCSS($( "#ContentPlaceHolder1_ddlCountries" ));
-	clearCSS($( "#ContentPlaceHolder1_txtRegisterStateProvince" ));S
+	clearCSS($( "#ContentPlaceHolder1_txtRegisterStateProvince" ));
 	
 	$( "#ContentPlaceHolder1_lblRegisterMessage" ).text('');
 	

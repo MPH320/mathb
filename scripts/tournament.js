@@ -4,8 +4,7 @@ function getStats(){
 	
 	$.ajax({
 			url: '../tournament/tournamenthelper.php',
-			success: function (response) {//response is value returned from php (for your example it's "bye bye"
-			//alert(response);
+			success: function (response) {
 				$('#divRankings').prepend(response);
 		}
 	});
